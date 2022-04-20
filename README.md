@@ -4,11 +4,11 @@ Tobira Study Resources is a website that offers a vast collection of exercises f
 
 **Online Version:** https://sethclydesdale.github.io/tobira-study-resources/
 
-**Offline Version:** [download](https://github.com/SethClydesdale/tobira-study-resources/archive/master.zip)
+**Offline Version:** [download](https://github.com/SethClydesdale/tobira-study-resources/archive/refs/heads/main.zip)
 
 **Please note that this project is still under development**, so all lessons are not currently available and bugs or errors may be present.
 
-New exercises will be added periodically as I continue studying. You can follow updates via [GitHub](https://github.com/SethClydesdale/tobira-study-resources/commits/master), [Twitter](https://twitter.com/search?q=%23TobiraStudyResources%20from%3Asethc1995&src=typed_query&f=live), or [Ko-fi](https://ko-fi.com/sethc95/posts). Feel free to also contact us on GitHub if you have any questions or feedback.
+New exercises will be added periodically as I continue studying. You can follow updates via [GitHub](https://github.com/SethClydesdale/tobira-study-resources/commits/main), [Twitter](https://twitter.com/search?q=%23TobiraStudyResources%20from%3Asethc1995&src=typed_query&f=live), or [Ko-fi](https://ko-fi.com/sethc95/posts). Feel free to also contact us on GitHub if you have any questions or feedback.
 
 -----
 

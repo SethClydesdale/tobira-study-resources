@@ -22,7 +22,7 @@
       // [NOT USED CURRENTLY; GSR remnant] edition: [OPTIONAL] restricts the announcement to a specific edition, possible values are: 3rd || 2nd, announcements are global by default
       msg : [
         {
-          content : 'Tobira Study Resources is currently under development. New exercises will be added periodically as I continue studying. You can follow updates via <a href="https://github.com/SethClydesdale/tobira-study-resources/commits/master">GitHub</a>, <a href="https://twitter.com/search?q=(%23TobiraStudyResources)%20(from%3Asethc1995)&src=typed_query&f=live">Twitter</a>, or <a href="https://ko-fi.com/sethc95/posts">Ko-fi</a>. Feel free to also contact us on <a href="https://github.com/SethClydesdale/tobira-study-resources/issues">GitHub\</a> if you have any questions or feedback.'
+          content : 'Tobira Study Resources is currently under development. New exercises will be added periodically as I continue studying. You can follow updates via <a href="https://github.com/SethClydesdale/tobira-study-resources/commits/main">GitHub</a>, <a href="https://twitter.com/search?q=(%23TobiraStudyResources)%20(from%3Asethc1995)&src=typed_query&f=live">Twitter</a>, or <a href="https://ko-fi.com/sethc95/posts">Ko-fi</a>. Feel free to also contact us on <a href="https://github.com/SethClydesdale/tobira-study-resources/issues">GitHub\</a> if you have any questions or feedback.'
         },
         
         {
@@ -30,7 +30,7 @@
         },
 
         /*{
-          content : 'Want to stay up to date on the latest changes made to Tobira Study Resources? You can follow updates via <a href="https://github.com/SethClydesdale/tobira-study-resources/commits/master">GitHub</a>, <a href="https://twitter.com/search?q=(%23TobiraStudyResources)%20(from%3Asethc1995)&src=typed_query&f=live">Twitter</a>, or <a href="https://ko-fi.com/sethc95/posts">Ko-fi</a>. Feel free to also contact us on <a href="https://github.com/SethClydesdale/tobira-study-resources/issues">GitHub\</a> if you have any questions or feedback.'
+          content : 'Want to stay up to date on the latest changes made to Tobira Study Resources? You can follow updates via <a href="https://github.com/SethClydesdale/tobira-study-resources/commits/main">GitHub</a>, <a href="https://twitter.com/search?q=(%23TobiraStudyResources)%20(from%3Asethc1995)&src=typed_query&f=live">Twitter</a>, or <a href="https://ko-fi.com/sethc95/posts">Ko-fi</a>. Feel free to also contact us on <a href="https://github.com/SethClydesdale/tobira-study-resources/issues">GitHub\</a> if you have any questions or feedback.'
         },*/
 
         {
