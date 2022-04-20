@@ -1,5 +1,5 @@
 ﻿# Tobira Study Resources
-Tobira Study Resources is a website that offers a vast collection of exercises for practicing what is taught in [Tobira: Gateway to Advanced Japanese](https://tobiraweb.9640.jp/). Much like [Genki Study Resources](https://github.com/SethClydesdale/tobira-study-resources), this was created to help aid those self-studying with Tobira, and if you've used its predecessor you should feel right at home! Choose one of the links below to begin testing the Japanese you've learned in Tobira!
+Tobira Study Resources is a website that offers a vast collection of exercises for practicing what is taught in [Tobira: Gateway to Advanced Japanese](https://tobiraweb.9640.jp/). Much like [Genki Study Resources](https://github.com/SethClydesdale/genki-study-resources), this was created to help aid those self-studying with Tobira, and if you've used its predecessor you should feel right at home! Choose one of the links below to begin testing the Japanese you've learned in Tobira!
 
 
 **Online Version:** https://sethclydesdale.github.io/tobira-study-resources/
@@ -54,7 +54,7 @@ Shortcuts that can only be used in exercises.
 
 
 ### Suggestions, Feedback, Bug Reports
-If you have any suggestions, feedback, questions, or bugs to report, feel free to [open a new issue](https://github.com/SethClydesdale/genki-study-resources/issues) in this repository. For alternative contact methods and detailed reporting information, please see the [report page](https://sethclydesdale.github.io/tobira-study-resources/report/) for Tobira Study Resources.
+If you have any suggestions, feedback, questions, or bugs to report, feel free to [open a new issue](https://github.com/SethClydesdale/tobira-study-resources/issues) in this repository. For alternative contact methods and detailed reporting information, please see the [report page](https://sethclydesdale.github.io/tobira-study-resources/report/) for Tobira Study Resources.
 
 
 ### Resources for Studying Japanese
