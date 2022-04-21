@@ -66,6 +66,9 @@ window.GenkiExercises = [
   'lesson-1/kanji-wb-12|漢字の練習：問題9|p.28',
   'lesson-1/kanji-wb-13|漢字の練習：問題10|p.28',
 
+  // Lesson 2
+  'lesson-2/vocab-1|単語：読み物・その1|p.32',
+
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
   'appendix/grammar-index|文法索引|p.399-401',
