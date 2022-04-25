@@ -1664,6 +1664,7 @@ Genki.jisho = {
     { ja : "司会(者)|しかい(しゃ)", en : "moderator; chairperson", v : "N", l : "L14討" },
     { ja : "しかし", en : "but; however", v : "Conj", l : "L5読" },
     { ja : "しかしながら", en : "however", v : "Conj", l : "L10読" },
+    { ja : "仕方|しかた", en : "way; method; means", v : "N", l : "" },
     { ja : "式|しき", en : "ceremony", v : "N", l : "L6読1" },
     { ja : "式を挙げる|しきをあげる", en : "to hold a ceremony", v : "Phr", l : "L6読1" },
     { ja : "四季|しき", en : "for seasons", v : "N", l : "L13読1" },
