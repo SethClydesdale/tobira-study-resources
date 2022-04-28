@@ -21,6 +21,7 @@ Genki.jisho = {
   
   "あ" : [
     // Tobira
+    { ja : "アーティスト", en : "artist", v : "", l : "" },
     { ja : "合言葉|あいことば", en : "password", v : "N", l : "L15読3" },
     { ja : "挨拶|あいさつ", en : "greeting", v : "VN", l : "L4読" },
     { ja : "愛情|あいじょう", en : "love; affection", v : "N", l : "L7読1" },
