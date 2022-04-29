@@ -4091,6 +4091,7 @@ Genki.jisho = {
     { ja : "様子|ようす", en : "aspect; state; appearance", v : "N", l : "L7読2" },
     { ja : "要素|ようそ", en : "element", v : "N", l : "L13読2" },
     { ja : "洋服|ようふく", en : "Western clothes", v : "N", l : "L9会2" },
+    { ja : "用法|ようほう", en : "directions; rules of use", v : "N", l : "" },
     { ja : "ようやく", en : "finally; barely", v : "Adv", l : "L14読" },
     { ja : "ヨーロッパ", en : "Europe", v : "N", l : "L5読" },
     { ja : "抑止|よくし", en : "suppression; deterrence", v : "VN", l : "L15読3" },
