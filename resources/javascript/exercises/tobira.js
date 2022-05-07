@@ -91,6 +91,10 @@ window.GenkiExercises = [
   'lesson-2/grammar-wb-16|応用練習：問題2|p.27',
   'lesson-2/kanji-wb-1|漢字の練習：読み方|p.29-36',
   'lesson-2/kanji-wb-2|漢字の練習：意味|p.29-36',
+  'lesson-2/kanji-wb-3|漢字の練習：書き順|p.29-36',
+  'lesson-2/kanji-vocab-1|漢字の単語：実、相、難、性|p.29',
+  'lesson-2/kanji-vocab-2|漢字の単語：比、代、感、表、忙|p.30',
+  
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
