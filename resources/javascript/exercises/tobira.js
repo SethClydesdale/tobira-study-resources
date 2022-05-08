@@ -94,7 +94,8 @@ window.GenkiExercises = [
   'lesson-2/kanji-wb-3|漢字の練習：書き順|p.29-36',
   'lesson-2/kanji-vocab-1|漢字の単語：実、相、難、性|p.29',
   'lesson-2/kanji-vocab-2|漢字の単語：比、代、感、表、忙|p.30',
-  
+  'lesson-2/kanji-vocab-3|漢字の単語：短、晩、由、必、要|p.31',
+  'lesson-2/kanji-vocab-4|漢字の単語：合、昨、皆、敬、複、課、例|p.32-33',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
