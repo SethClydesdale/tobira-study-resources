@@ -96,6 +96,10 @@ window.GenkiExercises = [
   'lesson-2/kanji-vocab-2|漢字の単語：比、代、感、表、忙|p.30',
   'lesson-2/kanji-vocab-3|漢字の単語：短、晩、由、必、要|p.31',
   'lesson-2/kanji-vocab-4|漢字の単語：合、昨、皆、敬、複、課、例|p.32-33',
+  'lesson-2/kanji-vocab-5|漢字の単語：落、面、僕、連、絡、困|p.33-34',
+  'lesson-2/kanji-vocab-6|漢字の単語：願、簡、単、論、誰|p.34-35',
+  'lesson-2/kanji-vocab-7|漢字の単語：議、過、無|p.35-36',
+  'lesson-2/kanji-wb-4|漢字の練習：問題1|p.37',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',

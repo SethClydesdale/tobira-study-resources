@@ -350,6 +350,7 @@ Genki.jisho = {
     { ja : "生まれ変わる|うまれかわる", en : "to appear in a different form; be reborn", v : "u-Vi", l : "L12読" },
     { ja : "生まれる|うまれる", en : "to be born; come into being", v : "ru-Vi", l : "L3読" },
     { ja : "生む|うむ", en : "to produce; come into being", v : "ru-Vi", l : "L3読" },
+    { ja : "有無|うむ", en : "existence or nonexistence; presence or absence; yes or no", v : "N", l : "" },
     { ja : "敬う|うやまう", en : "to respect; honor", v : "u-Vt", l : "L6読1" },
     { ja : "裏|うら", en : "back; other side", v : "N", l : "L15討" },
     { ja : "占い|うらない", en : "fortune-telling", v : "N", l : "L15討" },
@@ -509,8 +510,10 @@ Genki.jisho = {
     { ja : "お互いに|おたがいに", en : "(to) each other; (to) one another", v : "Phr", l : "L4読" },
     { ja : "お宅|おたく", en : "one's home [polite]", v : "N", l : "L2会1" },
     { ja : "落ち葉|おちば", en : "fallen leaves", v : "N", l : "L13読1" },
+    { ja : "落ち着く|おちつく", en : "to calm down; compose oneself; regain presence of mind", v : "u-Vi", l : "" },
     { ja : "夫|おっと", en : "husband [humble form]", v : "N", l : "L13会" },
     { ja : "おつり", en : "change (money)", v : "N", l : "L10読" },
+    { ja : "落とし物|おとしもの", en : "lost property; something dropped and left behind", v : "N", l : "" },
     { ja : "訪れる|おとずれる", en : "to visit; call (on a person, at a place)", v : "ru-Vi", l : "L10読(L6読2)" },
     { ja : "踊り|おどり", en : "dance", v : "N", l : "L8読" },
     { ja : "踊る|おどる", en : "to dance", v : "ru-Vt", l : "L8読" },
@@ -753,6 +756,7 @@ Genki.jisho = {
     { ja : "必ずしも|かならずしも", en : "(not) always/necessarily/entirely", v : "Adv", l : "" },
     { ja : "かなり", en : "considerably; quite; fairly", v : "Adv", l : "L14読" },
     { ja : "可能性|かのうせい", en : "possibility; potentiality", v : "N", l : "L9読" },
+    { ja : "過半数|かはんすう", en : "majority", v : "N", l : "" },
     { ja : "花粉症|かふんしょう", en : "pollen allergy; hay fever", v : "N", l : "L13会" },
     { ja : "壁|かべ", en : "wall", v : "N", l : "L1読" },
     { ja : "我慢|がまん", en : "patience; tolerance", v : "VN", l : "L8読" },
@@ -762,6 +766,7 @@ Genki.jisho = {
     { ja : "神棚|かみだな", en : "household Shinto altar", v : "N", l : "L6読1" },
     { ja : "神頼み|かみだのみ", en : "praying to God for help", v : "VN", l : "L6読1" }, // see phr on pg 307
     { ja : "噛み付く|かみつく", en : "to bite", v : "u-Vi", l : "L8ス" },
+    { ja : "画面|がめん", en : "screen (e.g. TV, computer); image (on a screen)", v : "N", l : "" },
     { ja : "通う|かよう", en : "to go to (school, work, etc.) regularly; commute to", v : "u-Vi", l : "L4読" },
     { ja : "からかう", en : "to tease", v : "u-Vt", l : "L8読" },
     { ja : "カラフル(な)", en : "colorful", v : "ANa", l : "L10読" },
@@ -796,6 +801,7 @@ Genki.jisho = {
     { ja : "感謝|かんしゃ", en : "gratitude; appreciation", v : "VN", l : "L4読(L3会1)" },
     { ja : "感謝祭|かんしゃさい", en : "Thanksgiving", v : "N", l : "" },
     { ja : "患者|かんじゃ", en : "patient", v : "N", l : "L8読" },
+    { ja : "願書|がんしょ", en : "(written) application; written request; petition", v : "N", l : "" },
     { ja : "鑑賞|かんしょう", en : "appreciation (of haiku, movie, painting, etc.)", v : "VN", l : "L13読2" },
     { ja : "～に関する|～にかんする", en : "to concern; be related", v : "Irr", l : "" },
     { ja : "関心|かんしん", en : "concern; interest", v : "N", l : "L14読" },
@@ -810,6 +816,7 @@ Genki.jisho = {
     { ja : "関東(地方)|かんとう(ちほう)", en : "the Kanto Region", v : "N", l : "L1会1" },
     { ja : "頑張り屋(さん)|がんばりや(さん)", en : "hard worker", v : "N", l : "L7会2" },
     { ja : "看板|かんばん", en : "advertising sign/display", v : "N", l : "L14読" },
+    { ja : "願望|がんぼう", en : "desire; wish; aspiration", v : "VN", l : "" },
     { ja : "関連|かんれん", en : "relation; connection; relevance", v : "VN", l : "" },
     
     // Genki
@@ -2056,9 +2063,11 @@ Genki.jisho = {
     { ja : "数字|すうじ", en : "numeral; figure; digit", v : "N", l : "L9読" },
     { ja : "姿|すがた", en : "appearance; figure", v : "N", l : "L13読1" },
     { ja : "-過ぎ|-すぎ", en : "after; past", v : "Suf", l : "L2会2" },
+    { ja : "過ぎる|すぎる", en : "to pass by; exceed; surpass", v : "ru-Vi", l : "" },
     { ja : "すき焼き|すきやき", en : "sukiyaki [thin slices of beef, cooked with various vegetables in a table-top pan]", v : "N", l : "L11読" },
     { ja : "図形|ずけい", en : "figure; shape; graphic", v : "N", l : "" },
     { ja : "凄い|すごい", en : "terrific; amazing", v : "A", l : "L1会2" },
+    { ja : "過ごす|すごす", en : "to pass (time); spend; overdo", v : "u-Vt", l : "" },
     { ja : "進む|すすむ", en : "to go on (to a university); make progress; advance", v : "u-Vi", l : "L9読" },
     { ja : "勧める|すすめる", en : "to encourage; suggest (doing something); recommend", v : "ru-Vt", l : "L11読" },
     { ja : "ずっと", en : "all the time; all along; all the way", v : "Adv", l : "L12会" },
@@ -2195,6 +2204,7 @@ Genki.jisho = {
     { ja : "宣伝|せんでん", en : "advertising; promotion; publicity", v : "VN", l : "L10会" },
     { ja : "全土|ぜんど", en : "entire land", v : "N", l : "L15読3" },
     { ja : "先輩|せんぱい", en : "one's senior", v : "N", l : "L4会1" },
+    { ja : "洗面所|せんめんじょ", en : "washroom; bathroom", v : "N", l : "" },
     { ja : "専門|せんもん", en : "one's specialization; one's specialized field", v : "N", l : "L1会1" },
     { ja : "専門家|せんもんか", en : "specialist; expert; professional", v : "N", l : "" },
     { ja : "専門学校|せんもんがっこう", en : "vocationl/technical school", v : "N", l : "L9読" },
@@ -2395,6 +2405,7 @@ Genki.jisho = {
     { ja : "短歌|たんか", en : "31-syllable Japanese poem", v : "N", l : "L13読2" },
     { ja : "段階|だんかい", en : "stage; step; phase", v : "N", l : "" },
     { ja : "短縮形|たんしゅくけい", en : "contracted form", v : "N", l : "L2読" },
+    { ja : "単純(な)|たんじゅん(な)", en : "simple; straightforward; simple-minded", v : "ANa", l : "" },
     { ja : "短所|たんしょ", en : "defect; demerit; weak point; disadvantage", v : "N", l : "" },
     { ja : "男女|だんじょ", en : "man and woman", v : "N", l : "L2読" },
     { ja : "誕生|たんじょう", en : "birth", v : "VN", l : "L13読2" },
@@ -2402,6 +2413,8 @@ Genki.jisho = {
     { ja : "男性|だんせい", en : "male; man", v : "N", l : "L2読" },
     { ja : "短大|たんだい", en : "junior college", v : "N", l : "L9読" },
     { ja : "だんだん", en : "gradually; little by little", v : "Adv", l : "L13読1" },
+    { ja : "単なる|たんなる", en : "mere; simple; sheer", v : "N", l : "" },
+    { ja : "単に|たんに", en : "simply; merely; only; solely", v : "Adv", l : "" },
     { ja : "担任|たんにん", en : "homeroom teacher; person in charge", v : "N", l : "L13読1" },
     
     // Genki
@@ -2479,6 +2492,7 @@ Genki.jisho = {
     { ja : '多分|たぶん', en : 'probably; maybe', l : 'Genki: 会L12' },
     { ja : '食べ物|たべもの', en : 'food', l : 'Genki: 会L5' },
     { ja : '食べる|たべる', en : 'to eat', v : 'ru', l : 'Genki: 会L3' },
+    { ja : '食べ過ぎる|たべすぎる', en : 'to overeat', v : 'ru-Vt', l : '' },
     { ja : '多忙|たぼう', en : 'very busy; busyness', v : 'ANa', l : '' },
     { ja : '卵|たまご', en : 'egg; eggs; spawn; roe', l : 'Genki: 会L8(c)' },
     { ja : 'たまねぎ', en : 'onion', l : 'Genki: 会L8(e)' },
@@ -2598,6 +2612,7 @@ Genki.jisho = {
     { ja : "ついていく", en : "to follow; keep up", v : "u-Vi", l : "L9読" },
     { ja : "遂に|ついに", en : "at last; finally; in the end", v : "Adv", l : "L5読" },
     { ja : "通じる|つうじる", en : "to be understood; be accepted", v : "ru-Vi", l : "L13読1" },
+    { ja : "通過|つうか", en : "passing through/by; transit; passage", v : "VN", l : "" },
     { ja : "使い分ける|つかいわける", en : "to use different things properly according to the situation", v : "ru-Vt", l : "L2読" },
     { ja : "付き合い|つきあい", en : "association; socialization", v : "N", l : "L15読2" },
     { ja : "近所付き合い|きんじょつきあい", en : "neighborly ties", v : "N", l : "L15読2" },
@@ -2659,9 +2674,10 @@ Genki.jisho = {
     { ja : 'つもり', en : 'intention; plan', l : 'Genki: 会L10' },
     { ja : '強い|つよい', en : 'strong', l : 'Genki: 会L17' },
     { ja : 'つり', en : 'fishing', l : 'Genki: 会L11' },
-    { ja : '連れていく|つれていく', en : 'to take (someone) to (a place)', v : 'u', l : 'Genki: 会L16' },
+    { ja : '連れる|つれる', en : 'to take (someone) with one; to bring along; to go with', v : 'ru-Vt', l : '' },
+    { ja : '連れて行く|つれていく', en : 'to take (someone; to a place); to take along; to lead away', v : 'u', l : 'Genki: 会L16' },
     { ja : '連れて帰る|つれてかえる', en : 'to bring (a person) back', v : 'u', l : 'Genki: 読L12-II' },
-    { ja : '連れてくる|つれてくる', en : 'to bring (a person)', v : 'VN', l : 'Genki: 会L6' }
+    { ja : '連れて来る|つれてくる', en : 'to bring (a person)', v : 'VN', l : 'Genki: 会L6' }
   ],
   
   "て" : [
@@ -3239,6 +3255,7 @@ Genki.jisho = {
     { ja : "半年|はんとし", en : "half a year", v : "N", l : "L4会3" },
     { ja : "ハンドル", en : "steering wheel", v : "N", l : "L3会2" },
     { ja : "販売|はんばい", en : "selling; sale", v : "VN", l : "L10読" },
+    { ja : "反論|はんろん", en : "objection; rebuttal; counterargument", v : "VN", l : "" },
     
     // Genki
     { ja : '歯|は', en : 'tooth', l : 'Genki: 会L7(e), 会L12' },
@@ -3383,6 +3400,7 @@ Genki.jisho = {
     { ja : "描写|びょうしゃ", en : "description; depiction", v : "VN", l : "L13読1" },
     { ja : "平等(な)|びょうどう(な)", en : "equal; even", v : "ANa", l : "L9読" },
     { ja : "平等|びょうどう", en : "equality; impartiality", v : "N", l : "L9読" },
+    { ja : "表面|ひょうめん", en : "surface; exterior; appearances", v : "N", l : "" },
     { ja : "開く|ひらく", en : "to open (a book)", v : "u-Vt", l : "L7読1" },
     { ja : "昼寝|ひるね", en : "nap", v : "VN", l : "L13読2" },
     { ja : "広がる|ひろがる", en : "to spread (out); stretch; get around", v : "u-Vi", l : "L11読" },
@@ -3496,6 +3514,7 @@ Genki.jisho = {
     { ja : "袋入りラーメン|ふくろいりラーメン", en : "a package of instant noodles", v : "N", l : "L5読" },
     { ja : "不幸|ふこう", en : "unhappiness; bad luck; misfortune", v : "N", l : "L6読1" },
     { ja : "武士|ぶし", en : "samurai; Japanese warrior", v : "N", l : "L11読" },
+    { ja : "無事|ぶじ", en : "safety; without incident; good health", v : "N", l : "" },
     { ja : "不思議(な)|ふしぎ(な)", en : "wonderful; strange; mysterious", v : "ANa", l : "L6読1" },
     { ja : "富士山|ふじさん", en : "Mt. Fuji", v : "N", l : "L1読" },
     { ja : "不自由(な)|ふじゆう(な)", en : "discomfort; inconvenience; inability", v : "ANa", l : "" },
@@ -3837,7 +3856,9 @@ Genki.jisho = {
     { ja : "観る|みる", en : "to see/watch (a play, movie, sports game, etc.)", v : "ru-Vt", l : "L8会" },
     { ja : "民主化|みんしゅか", en : "democratization", v : "VN", l : "L15読3" },
     { ja : "民主主義|みんしゅしゅぎ", en : "democracy", v : "N", l : "L14読" },
+    { ja : "議会|ぎかい", en : "congress; parliament; diet; legislative assembly", v : "N", l : "" },
     { ja : "議会制民主主義|ぎかいせいみんしゅしゅぎ", en : "parliamentary democracy", v : "N", l : "L14読" },
+    { ja : "議長|ぎちょう", en : "chairman; speaker (of an assembly); president (of a council, senate, etc.)", v : "N", l : "" },
     
     // Genki
     { ja : '磨く|みがく', en : 'to brush (teeth); to polish', v : 'u', l : 'Genki: 会L13' },
@@ -3885,8 +3906,10 @@ Genki.jisho = {
     { ja : "無意味（な）|むいみ（な）", en : "meaningless", v : "ANa", l : "L7読1" },
     { ja : "昔話|むかしばなし", en : "old tale", v : "N", l : "L1会1" },
     { ja : "無関心(な)|むかんしん(な)", en : "apathetic; indifferent", v : "ANa", l : "L14討" },
+    { ja : "無関係|むかんけい", en : "unrelated", v : "N", l : "" },
     { ja : "向ける|むける", en : "to turn (one's eyes, etc.) to; look at", v : "ru-Vt", l : "L5読" },
     { ja : "虫|むし", en : "bug; insect", v : "N", l : "L7読1" },
+    { ja : "無視|むし", en : "disregarding; ignoring", v : "VN", l : "" },
     { ja : "無人(の)|むじん(の)", en : "unmanned", v : "ANo", l : "L10読" },
     { ja : "結びつく|むすびつく", en : "to be connected/related", v : "u-Vi", l : "L14読" },
     { ja : "娘|むすめ", en : "daughter [humble form]", v : "N", l : "L13会" },
@@ -3898,7 +3921,7 @@ Genki.jisho = {
     { ja : "紫色|むらさきいろ", en : "purple color", v : "N", l : "L13読1" },
     { ja : "無料|むりょう", en : "free of charge; gratuitous", v : "N", l : "L15読3" },
     { ja : "無力|むりょく", en : "powerless", v : "N", l : "L8読" },
-    { ja : "無理をする|むりをする", en : "to take it too far; go too far", v : "Phr", l : "L2会2" },
+    { ja : "無理をする|むりをする", en : "to work too hard; try too hard; go too far", v : "Phr", l : "L2会2" },
     { ja : "無理(な)|むり(な)", en : "unreasonable; impossible", v : "ANa", l : "L2会2" },
     
     // Genki
@@ -3936,6 +3959,7 @@ Genki.jisho = {
     { ja : "メダカ", en : "(Japanese) ricefish", v : "N", l : "L13読1" },
     { ja : "目に入る|めにはいる", en : "to come into view", v : "Phr", l : "L10読" },
     { ja : "目の前で|めのまえで", en : "right in front of you", v : "Phr", l : "L5会2" },
+    { ja : "面積|めんせき", en : "area (measurement); square measure; floor space", v : "N", l : "" },
     
     // Genki
     { ja : '目|め', en : 'eye', l : 'Genki: 会L7, 会L7(e)' },
@@ -4277,6 +4301,7 @@ Genki.jisho = {
     { ja : "列|れつ", en : "line (of people, etc.); queue", v : "N", l : "L5読" },
     { ja : "恋愛|れんあい", en : "love; romance", v : "N", l : "L11読" },
     { ja : "恋愛小説|れんあいしょうせつ", en : "love story", v : "N", l : "L11読" },
+    { ja : "連続|れんぞく", en : "continuation; succession; series", v : "VN", l : "" },
     { ja : "連絡|れんらく", en : "contact; communication", v : "VN", l : "L2読" },
     
     // Genki
@@ -4303,6 +4328,7 @@ Genki.jisho = {
     { ja : "浪人|ろうにん", en : "waiting for another chance to enter a university", v : "VN", l : "L9読" },
     { ja : "浪人生|ろうにんせい", en : "student waiting for another chance to enter a university", v : "N", l : "L9読" },
     { ja : "ロサンジェルス", en : "Los Angeles", v : "N", l : "L4読" },
+    { ja : "論争|ろんそう", en : "dispute; controversy; argument", v : "VN", l : "" },
     { ja : "論文|ろんぶん", en : "essay; thesis; dissertation", v : "N", l : "L2読" },
     
     // Genki
