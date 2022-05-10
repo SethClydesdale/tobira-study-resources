@@ -100,6 +100,9 @@ window.GenkiExercises = [
   'lesson-2/kanji-vocab-6|漢字の単語：願、簡、単、論、誰|p.34-35',
   'lesson-2/kanji-vocab-7|漢字の単語：議、過、無|p.35-36',
   'lesson-2/kanji-wb-4|漢字の練習：問題1|p.37',
+  'lesson-2/kanji-wb-5|漢字の練習：問題2|p.37',
+  'lesson-2/kanji-wb-6|漢字の練習：問題3|p.38',
+  'lesson-2/kanji-wb-7|漢字の練習：問題4|p.38',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
