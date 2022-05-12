@@ -721,6 +721,7 @@ Genki.jisho = {
     { ja : "学習|がくしゅう", en : "learning; study", v : "VN", l : "L3読" },
     { ja : "確実(な)|かくじつ(な)", en : "certain; sure; definite", v : "ANa", l : "" },
     { ja : "隠す|かくす", en : "to hide; conceal", v : "u-Vt", l : "L12読" },
+    { ja : "画数|かくすう", en : "stroke count", v : "N", l : "" },
     { ja : "学費|がくひ", en : "tuition; school expenses", v : "N", l : "L9会1" },
     { ja : "確立|かくりつ", en : "establishing", v : "VN", l : "L11読(L7読1)" },
     { ja : "学力|がくりょく", en : "academic ability", v : "N", l : "L9読" },
