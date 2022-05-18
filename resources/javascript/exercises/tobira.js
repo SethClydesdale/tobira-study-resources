@@ -118,6 +118,7 @@ window.GenkiExercises = [
   'lesson-3/kanji-1|漢字：読み方を書く・その1|p.74',
   'lesson-3/kanji-2|漢字：読み方を書く・その2|p.74',
   'lesson-3/vocab-6|単語：カタカナ語|p.75',
+  'lesson-3/grammar-wb-1|基礎練習：問題1|p.29',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
