@@ -2230,7 +2230,7 @@ Genki.jisho = {
     { ja : 'セーター', en : 'sweater', l : 'Genki: 会L13' },
     { ja : '声優|せいゆう', en : 'voice actor', l : 'Genki: 読L20-漢字表' },
     { ja : '世界|せかい', en : 'world', l : 'Genki: 会L10' },
-    { ja : '世界中|せかいじゅう', en : 'all over the world', l : 'Genki: 読L23-II' },
+    { ja : '世界中|せかいじゅう', en : 'all over the world; around the world', l : 'Genki: 読L23-II' },
     { ja : '背が高い|せがたかい', en : 'tall (stature)', l : 'Genki: 会L7' },
     { ja : '背が低い|せがひくい', en : 'short (stature)', l : 'Genki: 会L7' },
     { ja : 'せき', en : 'cough', l : 'Genki: 会L12' },
