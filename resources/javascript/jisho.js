@@ -2724,6 +2724,7 @@ Genki.jisho = {
     { ja : 'Tシャツ', en : 'T-shirt', l : 'Genki: 会L2' },
     { ja : '提案|ていあん', en : 'proposal', l : 'Genki: 読L22-漢字表' },
     { ja : 'ディーブイディー', en : 'DVD', l : 'Genki: 会L7' },
+    { ja : 'ディスコード', en : 'discord', v : 'N', l : '' },
     { ja : '定期券|ていきけん', en : "commuter's pass", l : 'Genki: 会L10(e)' },
     { ja : '提供|ていきょう', en : 'offer', l : 'Genki: 読L16-漢字表' },
     { ja : '定食|ていしょく', en : 'set meal; special (of the day)', l : 'Genki: 会L8(c)' },
@@ -3989,6 +3990,7 @@ Genki.jisho = {
   
   "も" : [
     // Tobira
+    { ja : "もうちょっと", en : "a bit more; a bit longer", v : "Phr", l : "" },
     { ja : "もう一つ|もうひとつ", en : "another; one more", v : "N", l : "L14討" },
     { ja : "燃える|もえる", en : "to burn", v : "ru-Vi", l : "L11会2" },
     { ja : "目的|もくてき", en : "purpose; goal; objective", v : "N", l : "L1読" },
