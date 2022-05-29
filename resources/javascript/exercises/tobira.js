@@ -136,6 +136,8 @@ window.GenkiExercises = [
   'lesson-3/grammar-wb-16|応用練習：問題2|p.40-41',
   'lesson-3/grammar-wb-17|応用練習：問題3|p.41',
   'lesson-3/grammar-wb-18|応用練習：問題4|p.41-42',
+  'lesson-3/kanji-wb-1|漢字の練習：読み方|p.42-49',
+  'lesson-3/kanji-wb-2|漢字の練習：意味|p.42-49',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
