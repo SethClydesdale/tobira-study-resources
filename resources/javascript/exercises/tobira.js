@@ -143,6 +143,9 @@ window.GenkiExercises = [
   'lesson-3/kanji-vocab-2|漢字の単語：集、供、泣、両、当|p.43',
   'lesson-3/kanji-vocab-3|漢字の単語：解、念、笑、法、直|p.44',
   'lesson-3/kanji-vocab-4|漢字の単語：苦、助、呼、技、術|p.45-46',
+  'lesson-3/kanji-vocab-5|漢字の単語：際、緒、型、毛、周、欲|p.46-47',
+  'lesson-3/kanji-vocab-6|漢字の単語：格、遊、寝、将、案|p.47-48',
+  'lesson-3/kanji-vocab-7|漢字の単語：内、頼、君、辞|p.48-49',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
