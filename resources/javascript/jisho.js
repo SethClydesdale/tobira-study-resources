@@ -4411,6 +4411,7 @@ Genki.jisho = {
     // Genki
     { ja : 'ろうそく', en : 'candle', l : 'Genki: 会L18' },
     { ja : '六|ろく', en : 'six', l : 'Genki: 読L3-漢字表' },
+    { ja : '録画|ろくが', en : '(video) recording', v : 'VN', l : '' },
     { ja : '六月|ろくがつ', en : 'June', l : 'Genki: 会L4(e)' },
     { ja : '六歳|ろくさい', en : 'six years old', l : 'Genki: 会L1(e)' },
     { ja : '六時|ろくじ', en : "six o'clock", l : 'Genki: 会L1(e)' },
