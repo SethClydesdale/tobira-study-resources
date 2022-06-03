@@ -147,6 +147,9 @@ window.GenkiExercises = [
   'lesson-3/kanji-vocab-6|漢字の単語：格、遊、寝、将、案|p.47-48',
   'lesson-3/kanji-vocab-7|漢字の単語：内、頼、君、辞|p.48-49',
   'lesson-3/kanji-wb-4|漢字の練習：問題1|p.50',
+  'lesson-3/kanji-wb-5|漢字の練習：問題2|p.50',
+  'lesson-3/kanji-wb-6|漢字の練習：問題3|p.51',
+  'lesson-3/kanji-wb-7|漢字の練習：問題4|p.52',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
