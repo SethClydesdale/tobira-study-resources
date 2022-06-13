@@ -1820,6 +1820,7 @@ Genki.jisho = {
     { ja : "少々|しょうしょう", en : "a little [formal]; a few seconds", v : "Adv", l : "L2会1" },
     { ja : "状態|じょうたい", en : "shape; state of things; condition", v : "N", l : "L12発" },
     { ja : "上達|じょうたつ", en : "improving; advancing (skill, proficiency, etc.)", v : "VN", l : "L9会3" },
+    { ja : "小テスト|しょうテスト", en : "quiz; short test; mini test", v : "N", l : "" },
     { ja : "商人|しょうにん", en : "trader; merchant", v : "N", l : "L12読" },
     { ja : "少年|しょうねん", en : "young boy", v : "N", l : "L7読1" },
     { ja : "消費|しょうひ", en : "consumption; spending", v : "VN", l : "L5読" },
