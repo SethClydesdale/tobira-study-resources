@@ -422,6 +422,7 @@ Genki.jisho = {
     { ja : "エコベンダー", en : "eco-vendor", v : "N", l : "L10読" },
     { ja : "餌|えさ", en : "food (for animals); bait", v : "N", l : "L13会" },
     { ja : "エスエフ|SF", en : "science fiction", v : "N", l : "L7読1" },
+    { ja : "エッフェル塔|エッフェルとう", en : "Eiffel Tower", v : "N", l : "" },
     { ja : "江戸|えど", en : "Edo (the former name of Tokyo)", v : "N", l : "L11読(L5会2)" },
     { ja : "江戸時代|えどじだい", en : "the Edo period", v : "N", l : "L11読(L5会2)" },
     { ja : "絵の本|えのほん", en : "paint; coloring materials; colors", v : "N", l : "" },
