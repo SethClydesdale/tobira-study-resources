@@ -175,6 +175,7 @@ window.GenkiExercises = [
   'lesson-4/grammar-wb-10|基礎練習：問題10|p.49-50',
   'lesson-4/grammar-wb-11|基礎練習：問題11|p.50',
   'lesson-4/grammar-wb-12|基礎練習：問題12|p.50-51',
+  'lesson-4/grammar-wb-13|応用練習：問題1|p.51-52',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
