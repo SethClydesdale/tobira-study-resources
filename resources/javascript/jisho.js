@@ -2400,7 +2400,7 @@ Genki.jisho = {
     { ja : "対策をとる|たいさくをとる", en : "to take measures to meet the situation", v : "Phr", l : "L10読" },
     { ja : "大事(な)|だいじ(な)", en : "important", v : "ANa", l : "L3読" },
     { ja : "大丈夫(な)|だいじょうぶ(な)", en : "safe; all right", v : "ANa", l : "L3読" },
-    { ja : "大切にする|たいせつにする", en : "to value; trasure; think a great deal of", v : "Phr", l : "L2読" },
+    { ja : "大切にする|たいせつにする", en : "to value; treasure; think a great deal of", v : "Phr", l : "L2読" },
     { ja : "だいたい", en : "most; almost; nearly (all); approximate", v : "Adv", l : "L5会1" },
     { ja : "橙色|だいだいいろ", en : "orange color", v : "N", l : "L13読" },
     { ja : "態度|たいど", en : "attitude; manner", v : "N", l : "L14読" },
