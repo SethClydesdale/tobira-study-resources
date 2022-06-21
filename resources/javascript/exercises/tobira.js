@@ -181,6 +181,9 @@ window.GenkiExercises = [
   'lesson-4/grammar-wb-16|応用練習：問題4|p.55',
   'lesson-4/kanji-wb-1|漢字の練習：読み方|p.56-62',
   'lesson-4/kanji-wb-2|漢字の練習：意味|p.56-62',
+  'lesson-4/kanji-wb-3|漢字の練習：書き順|p.56-62',
+  'lesson-4/kanji-vocab-1|漢字の単語：現、組、勝、成|p.56',
+  'lesson-4/kanji-vocab-2|漢字の単語：負、絶、対、礼、向|p.57',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
