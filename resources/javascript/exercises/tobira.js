@@ -184,6 +184,8 @@ window.GenkiExercises = [
   'lesson-4/kanji-wb-3|漢字の練習：書き順|p.56-62',
   'lesson-4/kanji-vocab-1|漢字の単語：現、組、勝、成|p.56',
   'lesson-4/kanji-vocab-2|漢字の単語：負、絶、対、礼、向|p.57',
+  'lesson-4/kanji-vocab-3|漢字の単語：育、能、彼、与、係、速|p.58-59',
+  'lesson-4/kanji-vocab-4|漢字の単語：寄、種、類、健、康、互|p.59-60',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
