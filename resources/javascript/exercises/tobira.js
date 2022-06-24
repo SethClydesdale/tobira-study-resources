@@ -189,6 +189,8 @@ window.GenkiExercises = [
   'lesson-4/kanji-vocab-5|漢字の単語：尊、含、精、折、打、投|p.60-61',
   'lesson-4/kanji-vocab-6|漢字の単語：驚、席、迷、般、談、輩、具|p.61-62',
   'lesson-4/kanji-wb-4|漢字の練習：問題1|p.63',
+  'lesson-4/kanji-wb-5|漢字の練習：問題2|p.63',
+  'lesson-4/kanji-wb-6|漢字の練習：問題3|p.64',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
