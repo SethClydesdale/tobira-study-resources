@@ -200,10 +200,11 @@ window.GenkiExercises = [
   'lesson-4/kanji-wb-13|漢字の練習：問題10|p.67',
 
   // Lesson 5
+  'lesson-5/extra-1|練習：日本の食べ物|p.100; 1',
   'lesson-5/vocab-1|単語：読み物・その1|p.104',
   'lesson-5/vocab-2|単語：読み物・その2|p.104-105',
-  'lesson-5/vocab-3|単語：会話文|p.112',
-  'lesson-5/vocab-4|単語：カップヌードル|p.106-109',
+  'lesson-5/vocab-3|単語：カップヌードル|p.106-109',
+  'lesson-5/vocab-4|単語：会話文|p.112',
   'lesson-5/vocab-5|単語：言語・文化ノート|p.105 & 125',
   'lesson-5/kanji-1|漢字：読み方を書く・その1|p.124',
   'lesson-5/kanji-2|漢字：読み方を書く・その2|p.124',
@@ -212,6 +213,7 @@ window.GenkiExercises = [
   'lesson-5/grammar-wb-3|基礎練習：問題3|p.58',
   'lesson-5/grammar-wb-4|基礎練習：問題4|p.59',
   'lesson-5/grammar-wb-5|基礎練習：問題5|p.60',
+  'lesson-5/grammar-wb-6|基礎練習：問題6|p.61',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',

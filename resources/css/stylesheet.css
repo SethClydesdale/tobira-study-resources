@@ -1825,13 +1825,14 @@ ruby rt {
 .big-label { width:300px; }
 
 /* image list */
-.image-list span {
+.image-list > span {
   position:relative;
   display:inline-block;
   margin:0 25px 25px 0;
+  vertical-align:top;
 }
 
-.image-list span i {
+.image-list > span i {
   color:#333;
   font-size:13px;
   font-weight:bold;
