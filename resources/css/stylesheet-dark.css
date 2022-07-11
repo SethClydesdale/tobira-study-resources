@@ -77,7 +77,7 @@ input[type="text"]::placeholder, input[type="text"]:hover, input[type="number"]:
   border-color:#666;
 }
 
-.section-number, .ul-double:after {
+.section-number, .ul-single:after, .ul-double:after, .ul-double:before {
   border-color:#AAA;
 }
 

@@ -178,11 +178,11 @@ input[type="text"]:focus, input[type="number"]:focus, textarea:focus, select:foc
 .left { text-align:left; }
 
 .ul { text-decoration:underline; }
-.ul-double {
-  text-decoration:underline;
+.ul-single, .ul-double {
+  text-decoration:none;
   position:relative; 
 }
-.ul-double:after {
+.ul-single:after, .ul-double:after, .ul-double:before {
   content:"";
   position:absolute;
   left:0;
@@ -190,6 +190,7 @@ input[type="text"]:focus, input[type="number"]:focus, textarea:focus, select:foc
   bottom:2px;
   border-bottom:1px solid #333;
 }
+.ul-double:before { bottom:0px; }
 
 .inline { display:inline-block; }
 .t-valign-top { vertical-align:top; }
