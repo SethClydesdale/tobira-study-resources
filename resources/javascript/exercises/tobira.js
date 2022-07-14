@@ -227,6 +227,13 @@ window.GenkiExercises = [
   'lesson-5/kanji-wb-1|漢字の練習：読み方|p.68-75',
   'lesson-5/kanji-wb-2|漢字の練習：意味|p.68-75',
   'lesson-5/kanji-wb-3|漢字の練習：書き順|p.68-75',
+  'lesson-5/kanji-vocab-1|漢字の単語：億、続、在、米、以|p.68-69',
+  'lesson-5/kanji-vocab-2|漢字の単語：失、敗、功、数、増、信|p.69-70',
+  'lesson-5/kanji-vocab-3|漢字の単語：得、客、流、費、量、袋|p.70-71',
+  'lesson-5/kanji-vocab-4|漢字の単語：湯、値、段、暮、戦|p.71-72',
+  'lesson-5/kanji-vocab-5|漢字の単語：列、歳、商、品、競、争、境|p.72-73',
+  'lesson-5/kanji-vocab-6|漢字の単語：慣、統、混、座、皿、紹、介|p.74-75',
+  'lesson-5/kanji-wb-4|漢字の練習：問題1|p.76',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
