@@ -235,6 +235,7 @@ window.GenkiExercises = [
   'lesson-5/kanji-vocab-6|漢字の単語：慣、統、混、座、皿、紹、介|p.74-75',
   'lesson-5/kanji-wb-4|漢字の練習：問題1|p.76',
   'lesson-5/kanji-wb-5|漢字の練習：問題2|p.76',
+  'lesson-5/kanji-wb-6|漢字の練習：問題3|p.77',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
