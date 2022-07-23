@@ -251,6 +251,8 @@ window.GenkiExercises = [
   'lesson-6/vocab-5|単語：会話文|p.138',
   'lesson-6/kanji-1|漢字：読み方を書く・その1|p.148',
   'lesson-6/kanji-2|漢字：読み方を書く・その2|p.148',
+  'lesson-6/grammar-wb-1|基礎練習：問題1|p.71',
+  'lesson-6/grammar-wb-2|基礎練習：問題2|p.71',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
