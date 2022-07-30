@@ -259,6 +259,7 @@ window.GenkiExercises = [
   'lesson-6/grammar-wb-6|基礎練習：問題6|p.73',
   'lesson-6/grammar-wb-7|基礎練習：問題7|p.74',
   'lesson-6/grammar-wb-8|基礎練習：問題8|p.74-75; A &amp; B',
+  'lesson-6/grammar-wb-9|基礎練習：問題9|p.75',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
