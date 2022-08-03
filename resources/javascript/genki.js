@@ -1434,8 +1434,6 @@
         callback : function () {
           // increment default break time
           if (Genki.breakMultiplier < (Genki.breakTimer.length - 1)) {
-            Genki.breakMultiplier++;
-            
             // automatically hide furigana for the 3rd session (if time is set manually, this is ignored)
             if (Genki.breakMultiplier == 2 && !Genki.breakTimerCustom) {
               var f = document.getElementById('toggle-furigana');
@@ -1443,6 +1441,9 @@
                 f.click();
               }
             }
+            
+            
+            Genki.breakMultiplier++;
           }
           
           // request permission to show a notification when break time is up
