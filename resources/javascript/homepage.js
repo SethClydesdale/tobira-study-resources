@@ -133,10 +133,11 @@
   
   // # QUICK SEARCH #
   if (document.getElementById('quick-search')) {
-    var search = document.getElementById('quick-search'),
+    var grammarIndex = /grammar-index/.test(window.location.href),
+        search = document.getElementById('quick-search'),
         results = document.getElementById('quick-search-results'),
         hitsCounter = document.getElementById('quick-search-hits'),
-        li = document.querySelectorAll('.lesson-exercises li'),
+        li = document.querySelectorAll(grammarIndex ? '.workbook-title' : '.lesson-exercises li'),
         exLen = li.length;
 
     // search function
@@ -160,10 +161,16 @@
         if (value) {
           for (; i < exLen; i++) {
             if (li[i].innerText.toLowerCase().indexOf(value.toLowerCase()) != -1 && li[i].getElementsByTagName('A')[0]) {
-              clone = li[i].cloneNode(true); // clone the match for displaying in the results node
+              // clone the link (if on homepage) or create a new link (if on the grammar index)
+              if (grammarIndex) {
+                clone = document.createElement('LI');
+                clone.innerHTML = '<a href="#' + li[i].id + '">' + li[i].innerText + '</a>';
+              } else {
+                clone = li[i].cloneNode(true); // clone the match for displaying in the results node
+              }
 
-              // add lesson number to exercise
-              clone.dataset.lesson = clone.getElementsByTagName('A')[0].href.replace(/.*?\/(lesson-\d+).*|.*?\/(study-tools).*|.*?\/(appendix).*/, function (Match, $1, $2, $3) {
+              // add lesson number to exercise or grammar point
+              clone.dataset.lesson = grammarIndex ? 'L' + li[i].id.replace(/l(\d+)-p\d+/, '$1') : clone.getElementsByTagName('A')[0].href.replace(/.*?\/(lesson-\d+).*|.*?\/(study-tools).*|.*?\/(appendix).*/, function (Match, $1, $2, $3) {
                 if ($1) {
                   return $1.charAt(0).toUpperCase() + $1.split('-').pop();
 
@@ -192,7 +199,7 @@
           results.appendChild(frag);
 
         } else {
-          results.innerHTML = value ? '<li>No exercises found for "' + value + '".</li>' : '';
+          results.innerHTML = value ? '<li>No results found for "' + value + '".</li>' : '';
         }
 
         // update the hits counter and add a button to copy the search link
