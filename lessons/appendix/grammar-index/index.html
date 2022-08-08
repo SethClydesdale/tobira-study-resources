@@ -73,20 +73,30 @@
       <div id="appendix-tool" class="content-block">
         <h2 id="main-dict-title" class="title center" data-page="Tobira: p.399-401">巻末 - 文法索引</h2>
 
-        <p>Welcome to the Grammar Index! Here you can quickly find and review the grammar points taught in Tobira. Use the quick navigation to jump to a lesson's grammar or use CTRL+F to search for the point you want to read up on.</p>
+        <p>Welcome to the Grammar Index! Here you can quickly find and review the grammar points taught in Tobira. Use the quick navigation to jump to a lesson's grammar or use the quick search to find the grammar point you want to read up on.</p>
 
         <div id="check-answers" class="center"><button class="button" href="#genki-site-settings" onclick="GenkiSettings.manager(); return false;"><i class="fa">&#xf013;</i>Site Settings</button></div>
+        
+        <div id="quick-actions" class="columns-2 clear">
+          <div>
+            <h2 id="quick-nav">クイックナビゲーション</h2>
+            <ul id="quick-nav-list">
+              <li><a href="#lesson-grammar-1">第1課：日本の地理</a></li>
+              <li><a href="#lesson-grammar-2">第2課：日本語のスピーチスタイル</a></li>
+              <li><a href="#lesson-grammar-3">第3課：日本のテクノロジー</a></li>
+              <li><a href="#lesson-grammar-4">第4課：日本のスポーツ</a></li>
+              <li><a href="#lesson-grammar-5">第5課：日本の食べ物</a></li>
+              <li><a href="#lesson-grammar-6">第6課：日本人と宗教</a></li>
+            </ul>
+          </div>
 
-        <div id="quick-actions">
-          <h2 id="quick-nav">クイックナビゲーション</h2>
-          <ul id="quick-nav-list">
-            <li><a href="#lesson-grammar-1">第1課：日本の地理</a></li>
-            <li><a href="#lesson-grammar-2">第2課：日本語のスピーチスタイル</a></li>
-            <li><a href="#lesson-grammar-3">第3課：日本のテクノロジー</a></li>
-            <li><a href="#lesson-grammar-4">第4課：日本のスポーツ</a></li>
-            <li><a href="#lesson-grammar-5">第5課：日本の食べ物</a></li>
-            <li><a href="#lesson-grammar-6">第6課：日本人と宗教</a></li>
-          </ul>
+          <div>
+            <h2 id="quick-search-exercises">クイックサーチ <span id="quick-search-hits"></span></h2>
+            <div id="quick-search-wrapper">
+              <input id="quick-search" type="text" placeholder="文法を探す……">
+              <ul id="quick-search-results"></ul>
+            </div>
+          </div>
         </div>
 
         <h2 id="lesson-grammar-1" class="lesson-title">第1課：日本の地理 (Tobira: p.17-21)</h2>
