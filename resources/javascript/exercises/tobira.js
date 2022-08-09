@@ -272,8 +272,14 @@ window.GenkiExercises = [
   'lesson-6/grammar-wb-19|応用練習：問題4|p.83',
   'lesson-6/kanji-wb-1|漢字の練習：読み方|p.81-88',
   'lesson-6/kanji-wb-2|漢字の練習：意味|p.81-88',
-  /*'lesson-6/kanji-wb-3|漢字の練習：書き順|p.81-88',
-  'lesson-6/kanji-vocab-1|漢字の単語：|p.',*/
+  'lesson-6/kanji-wb-3|漢字の練習：書き順|p.81-88',
+  'lesson-6/kanji-vocab-1|漢字の単語：置、式、石、査、熱|p.81-82',
+  'lesson-6/kanji-vocab-2|漢字の単語：民、急、紀、倍、参、加|p.82-83',
+  'lesson-6/kanji-vocab-3|漢字の単語：個、反、賛、果、宗、仏、祈、幸|p.83-84',
+  'lesson-6/kanji-vocab-4|漢字の単語：福、交、換、祝、存、歴、史|p.85-86',
+  'lesson-6/kanji-vocab-5|漢字の単語：怒、恋、識、殺、岩、真|p.86-87',
+  'lesson-6/kanji-vocab-6|漢字の単語：戻、構、許、割|p.87-88',
+  'lesson-6/kanji-wb-4|漢字の練習：問題1|p.89',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
