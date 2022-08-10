@@ -280,6 +280,9 @@ window.GenkiExercises = [
   'lesson-6/kanji-vocab-5|漢字の単語：怒、恋、識、殺、岩、真|p.86-87',
   'lesson-6/kanji-vocab-6|漢字の単語：戻、構、許、割|p.87-88',
   'lesson-6/kanji-wb-4|漢字の練習：問題1|p.89',
+  'lesson-6/kanji-wb-5|漢字の練習：問題2|p.89',
+  'lesson-6/kanji-wb-6|漢字の練習：問題3|p.90',
+  'lesson-6/kanji-wb-7|漢字の練習：問題4|p.91',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
