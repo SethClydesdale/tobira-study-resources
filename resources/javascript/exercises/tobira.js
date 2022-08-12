@@ -285,6 +285,11 @@ window.GenkiExercises = [
   'lesson-6/kanji-wb-7|漢字の練習：問題4|p.91',
   'lesson-6/kanji-wb-8|漢字の練習：問題5|p.91',
   'lesson-6/kanji-wb-9|漢字の練習：問題6|p.92',
+  'lesson-6/kanji-wb-10|漢字の練習：問題7|p.92-93',
+  'lesson-6/kanji-wb-11|漢字の練習：問題8|p.93',
+
+  // Lesson 7
+  'lesson-7/vocab-1|単語：読み物1・その1|p.155',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
