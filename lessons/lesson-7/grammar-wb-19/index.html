@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8">
+    <title>応用練習：問題2 - 第7課 | Tobira Study Resources</title>
+    <meta name="title" content="応用練習：問題2 - 第7課 | Tobira Study Resources">
+    <meta name="twitter:title" content="応用練習：問題2 - 第7課 | Tobira Study Resources">
+    <meta property="og:title" content="応用練習：問題2 - 第7課 | Tobira Study Resources">
+    <meta name="description" content="Complete the following problems.">
+    <meta property="og:description" content="Complete the following problems.">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../resources/images/tobira.ico">
+
+    <meta name="keywords" content="Tobira, Grammar Power, page 96, japanese, quizzes, exercises" lang="en">
+    <meta name="language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:site_name" content="sethclydesdale.github.io">
+    <meta property="og:url" content="https://sethclydesdale.github.io/tobira-study-resources/lessons/lesson-7/grammar-wb-19/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sethclydesdale.github.io/tobira-study-resources/resources/images/tobira-thumb.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@SethC1995">
+
+    <link rel="stylesheet" href="../../../resources/css/stylesheet.min.css">
+    <script src="../../../resources/javascript/head.min.js"></script>
+    <script src="../../../resources/javascript/ga.js" async></script>
+  </head>
+
+  <body>
+    
+    <header>
+      <h1><a href="../../../" id="home-link">Tobira Study Resources</a></h1>
+      <a id="fork-me" href="https://github.com/SethClydesdale/tobira-study-resources">Fork Me</a>
+    </header>
+    
+    <div id="content">
+      <div id="exercise" class="content-block">
+        <div id="quiz-result"></div>
+        <div id="quiz-zone" class="clear"></div>
+        <div id="quiz-timer" class="center"></div>
+      </div>
+    </div>
+    
+    <footer class="clear">
+      <ul class="footer-left">
+        <li><a href="../../../" id="footer-home">Home</a></li>
+        <li><a href="../../../privacy/">Privacy</a></li>
+        <li><a href="../../../report/">Report a Bug</a></li>
+        <li><a href="../../../help/">Help</a></li>
+        <li><a href="../../../donate/">Donate</a></li>
+      </ul>
+      
+      <ul class="footer-right">
+        <li>Created by <a href="https://github.com/SethClydesdale">Seth Clydesdale</a> and the <a href="https://github.com/SethClydesdale/tobira-study-resources/graphs/contributors">GitHub Community</a></li>
+      </ul>
+    </footer>
+    
+    <script src="../../../resources/javascript/dragula.min.js"></script>
+    <script src="../../../resources/javascript/easytimer.min.js"></script>
+    <script src="../../../resources/javascript/exercises/tobira.min.js"></script>
+    <script src="../../../resources/javascript/genki.min.js"></script>
+    <script src="../../../resources/javascript/all.min.js"></script>
+    <script>Genki.generateQuiz({
+      type : 'fill',
+      info : 'Complete the following problems.',
+      
+      quizlet : 
+      '<p class="sectionDesc3rd"><span class="sectionNumber3rd fa">&#xf054;</span><ruby>箱<rt>はこ</rt></ruby>の<ruby>表現<rt>ひょうげん</rt></ruby>を全部使って質問に答えなさい。<br><small>Answer each question using all of the grammar items in the box.</small></p>'+
+        
+      '<div class="count-problems">'+
+        '<div class="example-problem">'+
+          '<div class="inner-problem">'+
+            '<div class="sub-section inline">　{!GRI|～と言われている|l1-p10}　　<a href="https://core6000.neocities.org/dojg/entries/114.html" target="_blank">～ので</a>　</div><br><br>'+
+            'Q：シカゴにはニックネームがありますか。<br><br>'+
+            'A：<u class="ul-single">シカゴは風が強いのでwindy cityと言われています。</u>'+
+          '</div>'+
+        '</div>'+
+        
+        '<div class="problem">'+
+          '<div class="inner-problem">'+
+            '<div class="sub-section inline">　{!GRI|それに|l3-p4}　　{!GRI|Nounが～する|l7-p12}　</div><br><br>'+
+            'Q：あなたは病気です。医者にあなたの<ruby>症状<rt>しょうじょう</rt></ruby><small>(symptoms)</small>を<ruby>説明<rt>せつめい</rt></ruby>して下さい。<br><br>'+
+            'A：<ruby>熱<rt>ねつ</rt></ruby>があって、せきが出ます。{それに、頭ががんがんします|それに、あたまががんがんします|' + Genki.getAlts('それに、{頭}ががんがん{します}', 'あたま|する') + 'answer;hint:My head is throbbing on top of that.;width:280}。'+
+          '</div>'+
+        '</div>'+
+        
+        '<div class="problem">'+
+          '<div class="inner-problem">'+
+            '<div class="sub-section inline">　{!GRI|～傾向が見られる|l7-p10}　　{!GRI|～わけではない|l7-p15}　</div><br><br>'+
+            'Q：この授業は<ruby>女性<rt>じょせい</rt></ruby>が多いみたいですね。毎年そうなんですか。<br><br>'+
+            'A：そうですね。{女性が多い傾向が見られます|じょせいがおおいけいこうがみられます|' + Genki.getAlts('{女性}が{多}い{傾向}が{見}られ{ます}', 'じょせい|おお|けいこう|み|る') + 'answer;hint:There tends to be many women}が、{毎年女性が多いわけではありません|まいとしじょせいがおおいわけではありません|' + Genki.getAlts('{毎年}{女性}が{多}いわけでは{ありません}', 'まいとし|じょせい|おお|ない') + 'answer;hint:it doesn\'t mean that there is a lot of women every year.;width:400}。'+
+          '</div>'+
+        '</div>'+
+        
+        '<div class="problem">'+
+          '<div class="inner-problem">'+
+            '<div class="sub-section inline">　{!GRI|もし～としたら|l7-p11}　　{!GRI|～とか|l1-p12}　</div><br><br>'+
+            'Q：来週で世界が終わることになったら、その前に何をしてみたいですか。<br><br>'+
+            'A：{もし来週で世界が終わるとしたら|もしらいしゅうでせかいがおわるとしたら|' + Genki.getAlts('{もし}{来週}で{世界}が{終}わるとしたら', '|らいしゅう|せかい|お') + 'answer;hint:If the world were to end next week}、{おいしいけど体によくない食べ物をたくさん食べるとか、スカイダイビングのような危ないことをするとかしてみたいです|おいしいけどからだによくないたべものをたくさんたべるとか、スカイダイビングのようなあぶないことをするとかしてみたいです|' + Genki.getAlts('おいしいけど{体}によくない{食べ物}をたくさん{食}べるとか、スカイダイビングのような{危}ないことをするとかしてみたい{です}', 'からだ|たべもの|た|あぶ|だ') + 'answer;hint:I\'d want to do dangerous things like sky diving or eating lots of food that\'s delicious but bad for your body.}。'+
+          '</div>'+
+        '</div>'+
+        
+        '<div class="problem">'+
+          '<div class="inner-problem">'+
+            '<div class="sub-section inline">　{!GRI|～向け|l7-p4}　　{!GRI|～と(同じで／違って)|l5-p12}　</div><br><br>'+
+            'Q：あなたの国にはビジネスマンのために書かれた<ruby>経済<rt>けいざい</rt></ruby>のマンガがありますか。<br><br>'+
+            'A：{いいえ、日本と違って、私の国にはビジネスマン向けのマンガはありません|いいえ、にほんとちがって、わたしのくににはビジネスマンむけのマンガはありません|' + Genki.getAlts('いいえ、{日本}と{違}って、{私}の{国}にはビジネスマン{向}けのマンガは{ありません}', 'にほん|ちが|わたし|くに|む|ない') + 'answer;hint:No, unlike Japan, my country doesn\'t have a manga made for businessmen.}。'+
+          '</div>'+
+        '</div>'+
+      '</div>'
+    });</script>
+  </body>
+</html>
