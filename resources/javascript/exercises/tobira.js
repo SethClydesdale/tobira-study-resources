@@ -322,8 +322,14 @@ window.GenkiExercises = [
   'lesson-7/grammar-wb-23|応用練習：問題6|p.100',
   'lesson-7/kanji-wb-1|漢字の練習：読み方|p.94-101',
   'lesson-7/kanji-wb-2|漢字の練習：意味|p.94-101',
-  /*'lesson-7/kanji-wb-3|漢字の練習：書き順|p.94-101',
-  'lesson-7/kanji-vocab-1|漢字の単語：|p.',*/
+  'lesson-7/kanji-wb-3|漢字の練習：書き順|p.94-101',
+  'lesson-7/kanji-vocab-1|漢字の単語：済、虫、丸、命、未、深|p.94-95',
+  'lesson-7/kanji-vocab-2|漢字の単語：閉、号、悲、静、払、影、響|p.95-96',
+  'lesson-7/kanji-vocab-3|漢字の単語：欧、版、第、亡、頃、鼻、躍|p.96-98',
+  'lesson-7/kanji-vocab-4|漢字の単語：放、芸、愛、情|p.98',
+  'lesson-7/kanji-vocab-5|漢字の単語：超、降、鳴、傾、挙|p.99-100',
+  'lesson-7/kanji-vocab-6|漢字の単語：機、適、状、況、血、液|p.100-101',
+  'lesson-7/kanji-wb-4|漢字の練習：問題1|p.102',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
