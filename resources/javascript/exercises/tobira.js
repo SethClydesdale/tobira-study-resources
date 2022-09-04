@@ -330,6 +330,8 @@ window.GenkiExercises = [
   'lesson-7/kanji-vocab-5|漢字の単語：超、降、鳴、傾、挙|p.99-100',
   'lesson-7/kanji-vocab-6|漢字の単語：機、適、状、況、血、液|p.100-101',
   'lesson-7/kanji-wb-4|漢字の練習：問題1|p.102',
+  'lesson-7/kanji-wb-5|漢字の練習：問題2|p.102',
+  'lesson-7/kanji-wb-6|漢字の練習：問題3|p.103',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
