@@ -340,7 +340,12 @@ window.GenkiExercises = [
   'lesson-7/kanji-wb-12|漢字の練習：しりとり|p.107',
 
   // Lesson 8
-  //'lesson-8/vocab-1|単語：読み物・その1|p.',
+  'lesson-8/vocab-1|単語：読み物・その1|p.182',
+  'lesson-8/vocab-2|単語：読み物・その2|p.182',
+  'lesson-8/vocab-3|単語：読み物・その3|p.182-183',
+  'lesson-8/vocab-4|単語：会話文|p.186',
+  'lesson-8/kanji-1|漢字：読み方を書く・その1|p.197',
+  'lesson-8/kanji-2|漢字：読み方を書く・その2|p.197',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
