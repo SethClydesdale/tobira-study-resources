@@ -274,7 +274,7 @@
     if (!list.innerHTML) {
       // gets all sub section titles and parses them into a list
       for (var sec = document.querySelectorAll('#exercises-' + lesson + ' h3'), i = 0, j = sec.length, str = ''; i < j; i++) {
-        str += '<li><a href="#' + sec[i].id + '">' + sec[i].innerText.replace(/\s\(.*\)$/, '') + '</a></li>';
+        str += '<li><a href="#' + sec[i].id + '">' + sec[i].innerText.replace(/\s\(.*\)$/, '').replace('', '') + '</a></li>';
       }
       
       // add the html to the list
