@@ -164,7 +164,7 @@
               // clone the link (if on homepage) or create a new link (if on the grammar index)
               if (grammarIndex) {
                 clone = document.createElement('LI');
-                clone.innerHTML = '<a href="#' + li[i].id + '">' + li[i].innerText + '</a>';
+                clone.innerHTML = '<a href="#' + li[i].id + '">' + li[i].innerText.replace('', '') + '</a>';
               } else {
                 clone = li[i].cloneNode(true); // clone the match for displaying in the results node
               }
@@ -181,9 +181,9 @@
                   return 'appendix'
                 }
               });
-
+              
               // add tooltip in case the text gets cut off
-              clone.title = li[i].innerText;
+              clone.title = clone.innerText;
 
               // add the clone to the fragment if it's valid
               if (!/^file|^http/.test(clone.dataset.lesson)) {
