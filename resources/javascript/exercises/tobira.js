@@ -367,9 +367,15 @@ window.GenkiExercises = [
   'lesson-8/grammar-wb-19|応用練習：問題4|p.115',
   'lesson-8/kanji-wb-1|漢字の練習：読み方|p.108-115',
   'lesson-8/kanji-wb-2|漢字の練習：意味|p.108-115',
-  /*'lesson-8/kanji-wb-3|漢字の練習：書き順|p.108-115',
-  'lesson-8/kanji-vocab-1|漢字の単語：|p.',
-  'lesson-8/kanji-wb-4|漢字の練習：問題1|p.',*/
+  'lesson-8/kanji-wb-3|漢字の練習：書き順|p.108-115',
+  'lesson-8/kanji-vocab-1|漢字の単語：効、科、減、完、登|p.108-109',
+  'lesson-8/kanji-vocab-2|漢字の単語：公、逆、低、点|p.109',
+  'lesson-8/kanji-vocab-3|漢字の単語：常、写、確、村、恥|p.110',
+  'lesson-8/kanji-vocab-4|漢字の単語：証、患、講、義、均、踊、劇|p.111-112',
+  'lesson-8/kanji-vocab-5|漢字の単語：普、途、偉、派、毒、甘、謝、破|p.112-113',
+  'lesson-8/kanji-vocab-6|漢字の単語：喜、追、逃、探、突、抜、怖|p.114-115',
+  'lesson-8/kanji-wb-4|漢字の練習：問題1|p.116',
+  'lesson-8/kanji-wb-5|漢字の練習：問題2|p.116',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
