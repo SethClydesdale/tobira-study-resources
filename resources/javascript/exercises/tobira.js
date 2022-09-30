@@ -385,6 +385,11 @@ window.GenkiExercises = [
 
   // Lesson 9
   'lesson-9/vocab-1|単語：読み物・その1|p.205',
+  'lesson-9/vocab-2|単語：読み物・その2|p.205-206',
+  'lesson-9/vocab-3|単語：読み物・その3|p.206',
+  'lesson-9/vocab-4|単語：会話文|p.209',
+  'lesson-9/kanji-1|漢字：読み方を書く・その1|p.220',
+  'lesson-9/kanji-2|漢字：読み方を書く・その2|p.220',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
