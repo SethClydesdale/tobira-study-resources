@@ -552,6 +552,7 @@ Genki.jisho = {
     { ja : "おつり", en : "change (money)", v : "N", l : "L10読" },
     { ja : "落とし物|おとしもの", en : "lost property; something dropped and left behind", v : "N", l : "Tobira: 漢字表" },
     { ja : "訪れる|おとずれる", en : "to visit; call (on a person, at a place)", v : "ru-Vi", l : "L10読(L6読2)" },
+    { ja : "音を立てる|おとをたてる", en : "to make a sound", v : "Phr", l : "Tobira: 文法ワークブック" },
     { ja : "踊り|おどり", en : "dance", v : "N", l : "L8読" },
     { ja : "踊る|おどる", en : "to dance", v : "ru-Vt", l : "L8読" },
     { ja : "驚かす|おどろかす", en : "to surprise; frighten", v : "u-Vt", l : "Tobira: 漢字表" },
