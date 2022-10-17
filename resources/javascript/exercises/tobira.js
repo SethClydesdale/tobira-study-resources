@@ -408,6 +408,7 @@ window.GenkiExercises = [
   'lesson-9/grammar-wb-16|応用練習：問題2|p.129',
   'lesson-9/grammar-wb-17|応用練習：問題3|p.129-130',
   'lesson-9/grammar-wb-18|応用練習：問題4|p.130-131',
+  'lesson-9/grammar-wb-19|応用練習：問題5|p.132',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
