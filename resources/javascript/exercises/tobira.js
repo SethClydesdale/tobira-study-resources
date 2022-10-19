@@ -411,9 +411,14 @@ window.GenkiExercises = [
   'lesson-9/grammar-wb-19|応用練習：問題5|p.132',
   'lesson-9/kanji-wb-1|漢字の練習：読み方|p.121-128',
   'lesson-9/kanji-wb-2|漢字の練習：意味|p.121-128',
-  /*'lesson-9/kanji-wb-3|漢字の練習：書き順|p.121-128',
-  'lesson-9/kanji-vocab-1|漢字の単語：|p.',*/
-
+  'lesson-9/kanji-wb-3|漢字の練習：書き順|p.121-128',
+  'lesson-9/kanji-vocab-1|漢字の単語：制、満、進、協、位|p.121-122',
+  'lesson-9/kanji-vocab-2|漢字の単語：可、原、因、求、容、算|p.122-123',
+  'lesson-9/kanji-vocab-3|漢字の単語：等、去、洋、務、率|p.123-124',
+  'lesson-9/kanji-vocab-4|漢字の単語：徒、希、望、指、厳、庭、環、境|p.124-125',
+  'lesson-9/kanji-vocab-5|漢字の単語：給、認、判、断、述、限|p.126',
+  'lesson-9/kanji-vocab-6|漢字の単語：基、堂、似、否、定|p.127-128',
+  
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
   'appendix/grammar-index|文法索引|p.399-401',
