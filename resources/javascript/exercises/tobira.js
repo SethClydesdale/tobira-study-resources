@@ -420,6 +420,8 @@ window.GenkiExercises = [
   'lesson-9/kanji-vocab-6|漢字の単語：基、堂、似、否、定|p.127-128',
   'lesson-9/kanji-wb-4|漢字の練習：問題1|p.129',
   'lesson-9/kanji-wb-5|漢字の練習：問題2|p.129-130',
+  'lesson-9/kanji-wb-6|漢字の練習：問題3|p.130',
+  'lesson-9/kanji-wb-7|漢字の練習：問題4|p.131',
   
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
