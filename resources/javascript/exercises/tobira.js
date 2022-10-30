@@ -434,6 +434,7 @@ window.GenkiExercises = [
   'lesson-10/vocab-4|単語：会話文|p.231',
   'lesson-10/kanji-1|漢字：読み方を書く・その1|p.241',
   'lesson-10/kanji-2|漢字：読み方を書く・その2|p.241',
+  'lesson-10/grammar-wb-1|基礎練習：問題1|p.135',
   
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
