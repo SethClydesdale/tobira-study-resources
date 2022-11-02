@@ -18,7 +18,7 @@
 // { ja : "|", en : "", l : "L会読討考発ス" },
 
 Genki.jisho = {
-  
+
   "あ" : [
     // Tobira
     { ja : "アーティスト", en : "artist", v : "", l : "Tobira: 漢字表" },
@@ -35,6 +35,7 @@ Genki.jisho = {
     { ja : "上がり下り|あがりおり", en : "going up and down", v : "VN", l : "L7会1" },
     { ja : "上がる|あがる", en : "to rise; go up", v : "u-Vi", l : "L8読" },
     { ja : "明るい|あかるい", en : "bright; cheerful (personality)", v : "A", l : "L7会2^" },
+    { ja : "空き缶|あきかん", en : "empty can", v : "N", l : "Tobira: 漢字表" },
     { ja : "悪循環|あくじゅんかん", en : "vicious circle", v : "N", l : "L9読" },
     { ja : "揚げ物|あげもの", en : "deep-fried food", v : "N", l : "L11読" },
     { ja : "挙げる|あげる", en : "to give", v : "ru-Vt", l : "L7読2" },
@@ -74,7 +75,7 @@ Genki.jisho = {
     { ja : "安定|あんてい", en : "stability; steadiness; composure", v : "VN", l : "Tobira: 漢字表" },
     { ja : "案内|あんない", en : "guidance; showing around; guide design", v : "VN", l : "L3考" },
     { ja : "案内係|あんないがかり", en : "information desk clerk", v : "N", l : "Tobira: 漢字表" },
-    
+
     // Genki
     { ja : '愛|あい', en : 'love; affection; care', l : 'Genki: ワークブック読L1' },
     { ja : '愛する|あいする', en : 'to love', l : 'Tobira: 漢字表' },
@@ -174,7 +175,7 @@ Genki.jisho = {
     { ja : '案内する|あんないする', en : 'to guide; to show (someone) around', v : 'VN', l : 'Genki: 読L9-II, 会L16' },
     { ja : 'あんなに', en : 'so; such', l : 'Genki: 読L20-II' }
   ],
-  
+
   "い" : [
     // Tobira
     { ja : "-位|-い", en : "rank", v : "Suf", l : "L7会2" },
@@ -242,7 +243,7 @@ Genki.jisho = {
     { ja : "引退|いんたい", en : "retirement (from office, etc.)", v : "VN", l : "L14読" },
     { ja : "インド", en : "India", v : "N", l : "L11読" },
     { ja : "インドネシア", en : "Indonesia", v : "N", l : "L5読" },
-    
+
     // Genki
     { ja : 'いい', en : 'good', l : 'Genki: 会L3' },
     { ja : 'いいえ', en : 'No.; Not at all.', l : 'Genki: 会G' },
@@ -343,7 +344,7 @@ Genki.jisho = {
     { ja : 'インターネット', en : 'Internet', l : 'Genki: 会L15' },
     { ja : 'インフルエンザ', en : 'influenza; flu', l : 'Genki: 会L12' }
   ],
-  
+
   "う" : [
     // Tobira
     { ja : "ウイルス", en : "virus", v : "N", l : "L8読" },
@@ -380,7 +381,7 @@ Genki.jisho = {
     { ja : "売れる|うれる", en : "to sell; be sold; be in demand", v : "ru-Vi", l : "L10会1" },
     { ja : "運転免許|うんてんめんきょ", en : "driver's license", v : "N", l : "L3会2" },
     { ja : "-運動|-うんどう", en : "campaign; move; exercise", v : "Suf", l : "L15読3" },
-    
+
     // Genki
     { ja : 'ううん', en : 'uh-uh; no', l : 'Genki: 会L8' },
     { ja : '上|うえ', en : 'above; on', l : 'Genki: 会L4' },
@@ -424,7 +425,7 @@ Genki.jisho = {
     { ja : '運動する|うんどうする', en : 'to do physical exercises', v : 'VN', l : 'Genki: 会L9' },
     { ja : '運命|うんめい', en : 'fate', l : 'Genki: 読L16-漢字表' }
   ],
-  
+
   "え" : [
     // Tobira
     { ja : "絵|え", en : "picture; painting; drawing", v : "N", l : "L1会1" },
@@ -472,7 +473,7 @@ Genki.jisho = {
     { ja : "遠足|えんそく", en : "excursion; outing; trip", v : "N", l : "Tobira: 漢字表" },
     { ja : "縁結び|えんむすび", en : "matchmaking", v : "N", l : "L6読1" },
     { ja : "遠慮|えんりょ", en : "hesitation; holding back", v : "VN", l : "Tobira: 漢字表" },
-    
+
     // Genki
     { ja : 'エアコン', en : 'air conditioner', l : 'Genki: 会L18' },
     { ja : '映画|えいが', en : 'movie', l : 'Genki: 会L3' },
@@ -501,7 +502,7 @@ Genki.jisho = {
     { ja : '鉛筆|えんぴつ', en : 'pencil', l : 'Genki: 会L2, 会L2(e)' },
     { ja : '遠慮する|えんりょする', en : 'to hold back for the time being; to refrain from', v : 'VN', l : 'Genki: 会L19' }
   ],
-  
+
   "お" : [
     // Tobira
     { ja : "追いかける|おいかける", en : "to run after; chase", v : "ru-Vt", l : "L8会" },
@@ -590,7 +591,7 @@ Genki.jisho = {
     { ja : "俺|おれ", en : "I [male]", v : "N", l : "L2読" },
     { ja : "終わり|おわり", en : "the end", v : "N", l : "L1読" },
     { ja : "音読み|おんよみ", en : "on reading; on'yomi; Chinese-derived reading of a kanji", v : "VN", l : "Tobira: 漢字表" },
-    
+
     // Genki
     { ja : 'お預け入れ|おあずけいれ', en : 'deposit', l : 'Genki: 会L13(e)' },
     { ja : '老い|おい', en : 'old; old age; old person', l : 'Genki: 会L10' },
@@ -730,7 +731,7 @@ Genki.jisho = {
     { ja : '女の子|おんなのこ', en : 'girl', l : 'Genki: 会L11' },
     { ja : '女の人|おんなのひと', en : 'woman', l : 'Genki: 会L7' }
   ],
-  
+
   "か" : [
     // Tobira
     { ja : "-家|-か", en : "specialist", v : "Suf", l : "L7読1" },
@@ -742,6 +743,7 @@ Genki.jisho = {
     { ja : "開会|かいかい", en : "opening of a meeting", v : "N", l : "Tobira: 漢字表" },
     { ja : "会議室|かいぎしつ", en : "conference room", v : "N", l : "L13会" },
     { ja : "解決|かいけつ", en : "solution; closure of problem", v : "VN", l : "L9読" },
+    { ja : "解決策|かいけつさく", en : "solution; solution strategy", v : "N", l : "Tobira: 漢字表" },
     { ja : "改札|かいさつ", en : "gate; ticket validation; ticket check-in", v : "N", l : "L10読" },
     { ja : "改札機|かいさつき", en : "automatic ticket gate", v : "N", l : "L10読" },
     { ja : "開始|かいし", en : "start", v : "VN", l : "L15読3" },
@@ -852,6 +854,8 @@ Genki.jisho = {
     { ja : "代わる|かわる", en : "to take the place of; replace", v : "u-Vi", l : "L14読" },
     { ja : "缶|かん", en : "can", v : "N", l : "L10読" },
     { ja : "缶入り(の)|かんいり(の)", en : "canned", v : "ANo", l : "L10読" },
+    { ja : "缶切り|かんきり", en : "can opener", v : "N", l : "Tobira: 漢字表" },
+    { ja : "缶詰|かんづめ", en : "canned food", v : "N", l : "Tobira: 漢字表" },
     { ja : "癌|がん", en : "cancer", v : "N", l : "L8読" },
     { ja : "感覚|かんかく", en : "sense; sensation; feeling; intuition", v : "VN", l : "Tobira: 漢字表" },
     { ja : "ガンガン", en : "sound of loud music", v : "Adv", l : "L7会1" },
@@ -890,7 +894,7 @@ Genki.jisho = {
     { ja : "願望|がんぼう", en : "desire; wish; aspiration", v : "VN", l : "Tobira: 漢字表" },
     { ja : "完了|かんりょう", en : "completion; conclusion", v : "VN", l : "Tobira: 漢字表" },
     { ja : "関連|かんれん", en : "relation; connection; relevance", v : "VN", l : "Tobira: 漢字表" },
-    
+
     // Genki
     { ja : '蚊|か', en : 'mosquito', l : 'Genki: 会L21' },
     { ja : '～か～', en : 'or', l : 'Genki: 会L10' },
@@ -1058,7 +1062,7 @@ Genki.jisho = {
     { ja : '漢方薬|かんぽうやく', en : 'Chinese herbal medicine', l : 'Genki: 読L19-漢字表' },
     { ja : '漢和辞典|かんわじてん', en : 'Kanji dictionary', l : 'Genki: 読L19-漢字表' }
   ],
-  
+
   "き" : [
     // Tobira
     { ja : "聞いたところによると|きいたところによると", en : "according to what I've heard", v : "Phr", l : "L10会1" },
@@ -1161,7 +1165,7 @@ Genki.jisho = {
     { ja : "近代化|きんだいか", en : "modernization", v : "VN", l : "L11読" },
     { ja : "近代的(な)|きんだいてき(な)", en : "modern", v : "ANa", l : "L11会1" },
     { ja : "勤勉(な)|きんべん(な)", en : "hard-working; diligent", v : "ANa", l : "L15読2" },
-    
+
     // Genki
     { ja : '木|き', en : 'tree', l : 'Genki: 会L22' },
     { ja : '黄色い|きいろい', en : 'yellow', l : 'Genki: 会L9(e)' },
@@ -1258,7 +1262,7 @@ Genki.jisho = {
     { ja : '銀メダル|ぎんメダル', en : 'silver medal', l : 'Genki: 読L22-漢字表' },
     { ja : '金曜日|きんようび', en : 'Friday', l : 'Genki: 会L4, 会L4(e)' }
   ],
-  
+
   "く" : [
     // Tobira
     { ja : "句|く", en : "haiku", v : "N", l : "L13読2" },
@@ -1302,7 +1306,7 @@ Genki.jisho = {
     { ja : "詳しい|くわしい", en : "detailed; full", v : "A", l : "L4会2" },
     { ja : "-君|-くん", en : "attached to the first or last name of male equal or a person whose status or rank is lower than the speaker's", v : "Suf", l : "L3会1" },
     { ja : "訓読み|くんよみ", en : "kun reading; kun'yomi; native Japanese reading of a Chinese character", v : "VN", l : "Tobira: 漢字表" },
-    
+
     // Genki
     { ja : 'クアラルンプール', en : 'Kuala Lumpur (Malaysia)', l : 'Genki: 読L2-I' },
     { ja : '空気|くうき', en : 'air', l : 'Genki: 会L8' },
@@ -1345,7 +1349,7 @@ Genki.jisho = {
     { ja : '黒い|くろい', en : 'black', l : 'Genki: 会L9, 会L9(e)' },
     { ja : '～君|～くん', en : 'Mr./Ms....(casual)', l : 'Genki: 会L14' }
   ],
-  
+
   "け" : [
     // Tobira
     { ja : "毛|け", en : "hair; down; fur", v : "N", l : "L3読" },
@@ -1423,7 +1427,7 @@ Genki.jisho = {
     { ja : "原爆ドーム|げんばくドーム", en : "the Atomic Bomb Memorial Dome", v : "N", l : "L1読" },
     { ja : "憲法|けんぽう", en : "constitution; rules; regulation", v : "N", l : "Tobira: 漢字表" },
     { ja : "原料|げんりょう", en : "raw materials", v : "N", l : "L12読" },
-    
+
     // Genki
     { ja : '経営学|けいえいがく', en : 'management studies', l : 'Genki: 読L21-漢字表' },
     { ja : '計画を立てる|けいかくをたてる', en : 'to make a plan', v : 'ru', l : 'Genki: 会L22' },
@@ -1469,7 +1473,7 @@ Genki.jisho = {
     { ja : '現代的|げんだいてき', en : 'modern', l : 'Genki: 読L18-漢字表' },
     { ja : '見物|けんぶつ', en : 'sightseeing', l : 'Genki: 読L5-漢字表' }
   ],
-  
+
   "こ" : [
     // Tobira
     { ja : "-後|-ご", en : "(hours, days, years, etc.) later", v : "Suf", l : "L5読" },
@@ -1580,7 +1584,7 @@ Genki.jisho = {
     { ja : "こんなふうに", en : "like this", v : "Adv", l : "L15読1" },
     { ja : "コンプレックス", en : "inferiority complex", v : "N", l : "L13読1" },
     { ja : "言偏|ごんべん", en : 'kanji "word" radical at left', v : "N", l : "Tobira: 漢字表" },
-    
+
     // Genki
     { ja : '～個|～こ', en : 'counter for smaller items', l : 'Genki: 会L14, 会L14(e)' },
     { ja : '～後|～ご', en : 'in...time; after...', l : 'Genki: 会L10' },
@@ -1703,7 +1707,7 @@ Genki.jisho = {
     { ja : '婚約者|こんやくしゃ', en : 'fiancée', l : 'Genki: 読L17-漢字表' },
     { ja : '混乱|こんらん', en : 'disorder; chaos; confusion', v : 'VN', l : 'Tobira: 漢字表' }
   ],
-  
+
   "さ" : [
     // Tobira
     { ja : "差|さ", en : "gap; difference", v : "N", l : "L1読" },
@@ -1766,7 +1770,7 @@ Genki.jisho = {
     { ja : "賛成|さんせい", en : "agreeing; approval", v : "VN", l : "L6会2" },
     { ja : "三段|さんだん", en : "third stage; third degree", v : "N", l : "Tobira: 漢字表" },
     { ja : "残念(な)|ざんねん(な)", en : "unfortunate; regrettable; disappointing", v : "ANa", l : "L3読" },
-    
+
     // Genki
     { ja : 'さあ', en : 'come; well; I am not sure,...', l : 'Genki: 会L20' },
     { ja : 'サービス業|サービスぎょう', en : 'service industry', l : 'Genki: 読L18-漢字表' },
@@ -1851,7 +1855,7 @@ Genki.jisho = {
     { ja : '散歩する|さんぽする', en : 'to take a walk', v : 'VN', l : 'Genki: 会L9' },
     { ja : '三両|さんりょう', en : 'three ryoo', l : 'Genki: 読L20-漢字表' }
   ],
-  
+
   "し" : [
     // Tobira
     { ja : "-氏|-し", en : "Mr./Ms.", v : "Suf", l : "L10読" },
@@ -2007,6 +2011,7 @@ Genki.jisho = {
     { ja : "少々|しょうしょう", en : "a little [formal]; a few seconds", v : "Adv", l : "L2会1" },
     { ja : "状態|じょうたい", en : "shape; state of things; condition", v : "N", l : "L12発" },
     { ja : "上達|じょうたつ", en : "improving; advancing (skill, proficiency, etc.)", v : "VN", l : "L9会3" },
+    { ja : "象徴|しょうちょう", en : "(abstract) symbol; emblem; representation", v : "N", l : "Tobira: 漢字表" },
     { ja : "商店街|しょうてんがい", en : "shopping district; shopping street", v : "N", l : "Tobira: 漢字表" },
     { ja : "小テスト|しょうテスト", en : "quiz; short test; mini test", v : "N", l : "Tobira: 漢字表" },
     { ja : "消毒|しょうどく", en : "disinfection; sterilization", v : "VN", l : "Tobira: 漢字表" },
@@ -2076,7 +2081,7 @@ Genki.jisho = {
     { ja : "森林|しんりん", en : "forest", v : "N", l : "L15読3" },
     { ja : "人類|じんるい", en : "mankind; human beings", v : "N", l : "L7読1" },
     { ja : "神話|しんわ", en : "myth; mythology", v : "N", l : "L6読1" },
-    
+
     // Genki
     { ja : '字|じ', en : 'letter; character', l : 'Genki: 会L20' },
     { ja : '～時|～じ', en : "o'clock", l : 'Genki: 会L1' },
@@ -2135,7 +2140,8 @@ Genki.jisho = {
     { ja : '支店|してん', en : 'branch office', l : 'Genki: 会L20' },
     { ja : '辞典|じてん', en : 'dictionary', v : 'N', l : 'Tobira: 漢字表' },
     { ja : '自転車|じてんしゃ', en : 'bicycle', l : 'Genki: 会L2' },
-    { ja : '指導|しどう', en : 'guidance; leadership', l : 'Tobira: 漢字表' },
+    { ja : '指導|しどう', en : 'guidance; leadership', v : 'VN', l : 'Tobira: 漢字表' },
+    { ja : '指導者|しどうしゃ', en : 'leader; guide; mentor', v : 'N', l : 'Tobira: 漢字表' },
     { ja : '自動|じどう', en : 'automatic', l : 'Genki: 読L13-III' },
     { ja : '自動車|じどうしゃ', en : 'automobile', l : 'Genki: 読L10-漢字表' },
     { ja : 'シドニー', en : 'Sidney; Sydney (Australia)', l : 'Genki: 会L1' },
@@ -2315,7 +2321,7 @@ Genki.jisho = {
     { ja : '親友|しんゆう', en : 'best friend', l : 'Genki: 読L22-II' },
     { ja : '人類学|じんるいがく', en : 'anthropology', l : 'Genki: 会L1' }
   ],
-  
+
   "す" : [
     // Tobira
     { ja : "図|ず", en : "figure; chart; drawing", v : "N", l : "L6会3" },
@@ -2345,7 +2351,7 @@ Genki.jisho = {
     { ja : "スミレ／すみれ", en : "fuji dawn [flower]", v : "N", l : "L12発" },
     { ja : "相撲|すもう", en : "sumo wrestling", v : "N", l : "L4読" },
     { ja : "すると", en : "then", v : "Conj", l : "L8読" },
-    
+
     // Genki
     { ja : '水泳|すいえい', en : 'swimming', l : 'Genki: 読L4-漢字表' },
     { ja : 'すいか', en : 'watermelon', l : 'Genki: 会L8(e)' },
@@ -2399,7 +2405,7 @@ Genki.jisho = {
     { ja : 'する', en : 'to do; to decide on (an item); to wear small items (necktie, watch, etc.); to cost', v : 'VN', l : 'Genki: 会L3, 会L15, 会L17, 読L20-II' },
     { ja : '座る|すわる', en : 'to sit down', v : 'u', l : 'Genki: 会L6' }
   ],
-  
+
   "せ" : [
     // Tobira
     { ja : "-製|-せい", en : "-made; -make; made in...", v : "Suf", l : "L10読" },
@@ -2470,6 +2476,7 @@ Genki.jisho = {
     { ja : "選挙|せんきょ", en : "election", v : "N", l : "L14読" },
     { ja : "選挙権|せんきょけん", en : "right to vote", v : "N", l : "L14討" },
     { ja : "選挙戦|せんきょせん", en : "election campaign/race", v : "N", l : "L14読" },
+    { ja : "宣言|せんげん", en : "declaration; proclamation; announcement", v : "N", l : "Tobira: 漢字表" },
     { ja : "戦後|せんご", en : "postwar", v : "N", l : "L5読" },
     { ja : "専攻|せんこう", en : "major", v : "VN", l : "L1会1" },
     { ja : "全国|ぜんこく", en : "the whole country", v : "N", l : "L5会1" },
@@ -2494,7 +2501,7 @@ Genki.jisho = {
     { ja : "専門学校|せんもんがっこう", en : "vocationl/technical school", v : "N", l : "L9読" },
     { ja : "専門店|せんもんてん", en : "specialty store", v : "N", l : "Tobira: 漢字表" },
     { ja : "川柳|せんりゅう", en : "comic haiku", v : "N", l : "L13会" },
-    
+
     // Genki
     { ja : '正解|せいかい', en : 'correct answer', l : 'Genki: 読L10-漢字表' },
     { ja : '政界|せいかい', en : 'political world', l : 'Genki: 読L16-漢字表' },
@@ -2546,7 +2553,7 @@ Genki.jisho = {
     { ja : '先発|せんぱつ', en : 'departing first', l : 'Genki: 会L10(e)' },
     { ja : '全部|ぜんぶ', en : 'all', l : 'Genki: 会L13' }
   ],
-  
+
   "そ" : [
     // Tobira
     { ja : "-ぞ", en : "express assertion (used mainly by men)", v : "Prt", l : "L8ス" },
@@ -2579,7 +2586,7 @@ Genki.jisho = {
     { ja : "存在|そんざい", en : "existence; being", v : "VN", l : "L6読1" },
     { ja : "尊重する|そんちょうする", en : "to respect (an idea)", v : "Irr", l : "Tobira: 漢字表" },
     { ja : "そんな", en : "such; like that", v : "DemA", l : "L1会1" },
-    
+
     // Genki
     { ja : '象|ぞう', en : 'elephant', l : 'Genki: 会L13' },
     { ja : 'そうか', en : 'I see. (casual)', l : 'Genki: 会L17' },
@@ -2629,7 +2636,7 @@ Genki.jisho = {
     { ja : 'そんな～', en : 'such...; that kind of...', l : 'Genki: 読L16-II, 会L23' },
     { ja : 'そんなこと(は)ない', en : "I don't think so.", l : 'Genki: 会L22' }
   ],
-  
+
   "た" : [
     // Tobira
     { ja : "-体|-たい", en : "style (of language use)", v : "Suf", l : "L2読" },
@@ -2722,7 +2729,7 @@ Genki.jisho = {
     { ja : "単に|たんに", en : "simply; merely; only; solely", v : "Adv", l : "Tobira: 漢字表" },
     { ja : "担任|たんにん", en : "homeroom teacher; person in charge", v : "N", l : "L13読1" },
     { ja : "段落|だんらく", en : "paragraph; stopping place", v : "N", l : "Tobira: 漢字表" },
-    
+
     // Genki
     { ja : '鯛|たい', en : 'sea bream; snapper', l : 'Genki: 会L18(c)' },
     { ja : 'タイ', en : 'Thailand', l : 'Genki: 読L2-I' },
@@ -2822,7 +2829,7 @@ Genki.jisho = {
     { ja : '田んぼ|たんぼ', en : 'rice field', l : 'Genki: 読L5-漢字表' },
     { ja : '蒲公英|たんぽぽ', en : 'dandelion', l : 'Genki: 読L1-I' }
   ],
-  
+
   "ち" : [
     // Tobira
     { ja : "血|ち", en : "blood", v : "N", l : "Tobira: 漢字表" },
@@ -2873,7 +2880,7 @@ Genki.jisho = {
     { ja : "著名|ちょめい", en : "well-known; noted; celebrated", v : "ANa", l : "Tobira: 漢字表" },
     { ja : "ちょっとよろしいでしょうか", en : "Do you have a moment?", v : "Phr", l : "L3会2" },
     { ja : "地理|ちり", en : "geography", v : "N", l : "L1読" },
-    
+
     // Genki
     { ja : '小さい|ちいさい', en : 'small', l : 'Genki: 会L5' },
     { ja : 'チーズ', en : 'cheese', l : 'Genki: ワークブック読L2' },
@@ -2930,7 +2937,7 @@ Genki.jisho = {
     { ja : 'ちょっと', en : 'a little', l : 'Genki: 会L3' },
     { ja : '賃貸マンション|ちんたいマンション', en : 'apartment for rent', l : 'Genki: 読L18-漢字表' }
   ],
-  
+
   "つ" : [
     // Tobira
     { ja : "追加|ついか", en : "addition", v : "VN", l : "L13会" },
@@ -2970,7 +2977,7 @@ Genki.jisho = {
     { ja : "梅雨|つゆ", en : "the rainy season in Japan", v : "N", l : "L1会2" },
     { ja : "鶴|つる", en : "crane", v : "N", l : "L12会" },
     { ja : "千羽鶴|せんばづる", en : "(string of) one-thousand paper cranes", v : "N", l : "L12会" },
-    
+
     // Genki
     { ja : 'ツアー', en : 'tour', l : 'Genki: 会L10' },
     { ja : '一日|ついたち', en : 'the first day of a month', l : 'Genki: 会L4(e)' },
@@ -3010,7 +3017,7 @@ Genki.jisho = {
     { ja : '連れて帰る|つれてかえる', en : 'to bring (a person) back', v : 'u', l : 'Genki: 読L12-II' },
     { ja : '連れて来る|つれてくる', en : 'to bring (a person)', v : 'VN', l : 'Genki: 会L6' }
   ],
-  
+
   "て" : [
     // Tobira
     { ja : "定員|ていいん", en : "fixed number (of people)", v : "N", l : "Tobira: 漢字表" },
@@ -3054,7 +3061,7 @@ Genki.jisho = {
     { ja : "天然|てんねん", en : "nature; spontaneity", v : "N", l : "Tobira: 漢字表" },
     { ja : "電報|でんぽう", en : "telegram", v : "N", l : "Tobira: 漢字表" },
     { ja : "電力|でんりょく", en : "electric power", v : "N", l : "L10読" },
-    
+
     // Genki
     { ja : '手|て', en : 'hand; arm', l : 'Genki: 会L7(e), 読L15-II' },
     { ja : '～で', en : 'by (means of transportation); with (a tool)', l : 'Genki: 会L10' },
@@ -3122,7 +3129,7 @@ Genki.jisho = {
     { ja : '電話番号|でんわばんごう', en : 'telephone number', l : 'Genki: 会L1' },
     { ja : '電話をかける|でんわをかける', en : 'to make a phone call', v : 'ru', l : 'Genki: 会L6' }
   ],
-  
+
   "と" : [
     // Tobira
     { ja : "都／道／府／県|と／どう／ふ／けん", en : "prefecture [the largest administrative unit in Japan]", v : "N", l : "L1読" },
@@ -3202,10 +3209,11 @@ Genki.jisho = {
     { ja : "とめる", en : "to hold on; fasten", v : "ru-Vt", l : "L12発" },
     { ja : "共に|ともに", en : "both", v : "Adv", l : "L6読1" },
     { ja : "取り入れる|とりいれる", en : "to adopt; take in", v : "ru-Vt", l : "L8読" },
+    { ja : "取り替える|とりかえる", en : "to exchange; swap; barter", v : "ru-Vt", l : "Tobira: 漢字表" },
     { ja : "取り戻す|とりもどす", en : "to regain; get back", v : "u-Vt", l : "L15読2" },
     { ja : "どんどん", en : "at first pace; one after another", v : "Adv", l : "L8会" },
     { ja : "丼もの|どんぶりもの", en : "bowl of rice with food on top", v : "N", l : "L5会1" },
-    
+
     // Genki
     { ja : '戸|と', en : 'door', l : 'Genki: 読L10-II' },
     { ja : '～と', en : 'together with (a person)', l : 'Genki: 会L4' },
@@ -3289,7 +3297,7 @@ Genki.jisho = {
     { ja : 'とんかつ', en : 'pork cutlet', l : 'Genki: 会L2' },
     { ja : 'どんな', en : 'what kind of...', l : 'Genki: 会L5' }
   ],
-  
+
   "な" : [
     // Tobira
     { ja : "-内|-ない", en : "within", v : "Suf", l : "L14討" },
@@ -3331,7 +3339,7 @@ Genki.jisho = {
     { ja : "南米|なんべい", en : "South America", v : "N", l : "L5読" },
     { ja : "南北|なんぼく", en : "north and south", v : "N", l : "L1読" },
     { ja : "難問|なんもん", en : "perplexity; difficult question; difficult problem", v : "VN", l : "Tobira: 漢字表" },
-    
+
     // Genki
     { ja : '無い|ない', en : 'nonexistent; there is no...', l : 'Genki: 読L20-漢字表' },
     { ja : '内科|ないか', en : 'physician; internal medicine', l : 'Genki: 会L12(e), 読L22-漢字表' },
@@ -3380,7 +3388,7 @@ Genki.jisho = {
     { ja : '何度も|なんども', en : 'many times', l : 'Genki: 読L17-II, 会L22' },
     { ja : '何人|なんにん', en : 'how many people', l : 'Genki: 読L8-漢字表' }
   ],
-  
+
   "に" : [
     // Tobira
     { ja : "-似|-に", en : "to resemble (someone)", v : "Suf", l : "L13会" },
@@ -3411,7 +3419,7 @@ Genki.jisho = {
     { ja : "人間|にんげん", en : "human", v : "N", l : "L3読" },
     { ja : "人数|にんすう", en : "the number of people; many people", v : "N", l : "Tobira: 漢字表" },
     { ja : "忍耐強い|にんたいづよい", en : "persevering; very patient", v : "A", l : "L11会2" },
-    
+
     // Genki
     { ja : '二|に', en : 'two', l : 'Genki: 読L3-漢字表' },
     { ja : '二か月前|にかげつまえ', en : 'two months ago', l : 'Genki: 会L4(e)' },
@@ -3471,13 +3479,13 @@ Genki.jisho = {
     { ja : '忍者|にんじゃ', en : 'ninja', l : 'Genki: 読L14-漢字表' },
     { ja : 'にんじん', en : 'carrot', l : 'Genki: 会L8(e)' }
   ],
-  
+
   "ぬ" : [
     // Tobira
     { ja : "抜く|ぬく", en : "to pull out", v : "u-Vt", l : "L8ス" },
     { ja : "抜ける|ぬける", en : "to come out", v : "ru-Vi", l : "Tobira: 漢字表" },
     { ja : "濡れる|ぬれる", en : "to get wet", v : "ru-Vi", l : "L12読" },
-    
+
     // Genki
     { ja : 'ぬいぐるみ', en : 'stuffed animal (e.g. teddy bear)', l : 'Genki: 会L14' },
     { ja : '脱ぐ|ぬぐ', en : 'to take off (clothes)', v : 'u', l : 'Genki: 会L17' },
@@ -3485,7 +3493,7 @@ Genki.jisho = {
     { ja : '盗む|ぬすむ', en : 'to steal; to rob', v : 'u', l : 'Genki: 会L21' },
     { ja : '布|ぬの', en : 'cloth', l : 'Genki: ワークブック読L1' }
   ],
-  
+
   "ね" : [
     // Tobira
     { ja : "ネイルアート", en : "(finger) nail art", v : "N", l : "L10読" },
@@ -3509,7 +3517,7 @@ Genki.jisho = {
     { ja : "-年代|-ねんだい", en : "suffix indicating a period in time (e.g. the 1960s)", v : "Suf", l : "L7読1" },
     { ja : "年代|ねんだい", en : "age; period; era", v : "N", l : "L3会2" },
     { ja : "年中行事|ねんちゅうぎょうじ", en : "yearly event", v : "N", l : "L6会2" },
-    
+
     // Genki
     { ja : '願い|ねがい', en : 'wish', l : 'Genki: 読L12-II' },
     { ja : 'ネクタイ', en : 'necktie', l : 'Genki: 会L14' },
@@ -3526,7 +3534,7 @@ Genki.jisho = {
     { ja : '粘土|ねんど', en : 'clay', l : 'Genki: 読L4-漢字表' },
     { ja : '年末|ねんまつ', en : 'year-end', l : 'Genki: 読L22-漢字表' }
   ],
-  
+
   "の" : [
     // Tobira
     { ja : "能|のう", en : "Japanese lyrical Noh drama", v : "N", l : "L11会" },
@@ -3548,7 +3556,7 @@ Genki.jisho = {
     { ja : "のり", en : "glue", v : "N", l : "L12発" },
     { ja : "載る|のる", en : "to appear (in a magazine, etc.)", v : "u-Vi", l : "L3読" },
     { ja : "(～の上に～が)のる|(～のうえに～が)のる", en : "to be put (on top of something)", v : "u-Vi", l : "L5会1" },
-    
+
     // Genki
     { ja : '～の後|～のあと', en : 'after...', l : 'Genki: 読L9-漢字表' },
     { ja : 'ノート', en : 'notebook', l : 'Genki: 会L2' },
@@ -3574,7 +3582,7 @@ Genki.jisho = {
     { ja : '乗り物|のりもの', en : 'vehicle', l : 'Genki: 読L14-漢字表' },
     { ja : '乗る|のる', en : 'to ride; to board', v : 'u', l : 'Genki: 会L5' }
   ],
-  
+
   "は" : [
     // Tobira
     { ja : "葉|は", en : "leaf", v : "N", l : "L12発" },
@@ -3663,7 +3671,7 @@ Genki.jisho = {
     { ja : "反応|はんのう", en : "reaction; response", v : "VN", l : "Tobira: 漢字表" },
     { ja : "販売|はんばい", en : "selling; sale", v : "VN", l : "L10読" },
     { ja : "反論|はんろん", en : "objection; rebuttal; counterargument", v : "VN", l : "Tobira: 漢字表" },
-    
+
     // Genki
     { ja : '歯|は', en : 'tooth', l : 'Genki: 会L7(e), 会L12' },
     { ja : 'パーティー', en : 'party', l : 'Genki: 会L8' },
@@ -3775,7 +3783,7 @@ Genki.jisho = {
     { ja : 'ハンバーガー', en : 'hamburger', l : 'Genki: 会L3' },
     { ja : '半分|はんぶん', en : 'half', l : 'Genki: 読L4-漢字表' }
   ],
-  
+
   "ひ" : [
     // Tobira
     { ja : "日|ひ", en : "day", v : "N", l : "L1読" },
@@ -3808,6 +3816,7 @@ Genki.jisho = {
     { ja : "一人一人|ひとりひとり", en : "each and every person", v : "N", l : "L14読" },
     { ja : "被爆|ひばく", en : "suffering from the bombing", v : "VN", l : "L12会" },
     { ja : "批判|ひはん", en : "criticism", v : "VN", l : "L10読" },
+    { ja : "批判的|ひはんてき", en : "critical; judgmental", v : "ANa", l : "Tobira: 漢字表" },
     { ja : "響き|ひびき", en : "echo; reverberation", v : "N", l : "Tobira: 漢字表" },
     { ja : "響く|ひびく", en : "to resound; reverberate", v : "u-Vi", l : "Tobira: 漢字表" },
     { ja : "冷やす|ひやす", en : "to cool; refrigerate; chill", v : "u-Vt", l : "L10読" },
@@ -3828,7 +3837,7 @@ Genki.jisho = {
     { ja : "広まる|ひろまる", en : "to spread widely; get around", v : "u-Vi", l : "L7読1" },
     { ja : "広める|ひろめる", en : "to propagate; spread; promote", v : "ru-Vt", l : "L15読3" },
     { ja : "貧困|ひんこん", en : "poverty", v : "N", l : "L14読" },
-    
+
     // Genki
     { ja : '火|ひ', en : 'fire', l : 'Genki: 読L4-漢字表' },
     { ja : 'ピアノ', en : 'piano', l : 'Genki: 会L9' },
@@ -3906,7 +3915,7 @@ Genki.jisho = {
     { ja : 'ピンク', en : 'pink', l : 'Genki: 会L9(e)' },
     { ja : '貧乏|びんぼう（な）', en : 'poor', l : 'Genki: 会L22' }
   ],
-  
+
   "ふ" : [
     // Tobira
     { ja : "-部|-ぶ", en : "club; division; department", v : "Suf", l : "L4会1" },
@@ -3925,6 +3934,7 @@ Genki.jisho = {
     { ja : "不可能|ふかのう", en : "impossible", v : "N", l : "Tobira: 漢字表" },
     { ja : "深まる|ふかまる", en : "to deepen; heighten; intensify", v : "u-Vi", l : "Tobira: 漢字表" },
     { ja : "深める|ふかめる", en : "to deepen; heighten; intensify", v : "u-Vi", l : "Tobira: 漢字表" },
+    { ja : "不規則|ふきそく", en : "irregularity; unsteadiness; disorderly", v : "ANa", l : "Tobira: 漢字表" },
     { ja : "普及|ふきゅう", en : "spread; popularization", v : "VN", l : "L10読" },
     { ja : "普及率|ふきゅうりつ", en : "diffusion rate; rate of spread", v : "N", l : "Tobira: 漢字表" },
     { ja : "布教|ふきょう", en : "propagation", v : "VN", l : "L11読" },
@@ -3981,7 +3991,7 @@ Genki.jisho = {
     { ja : "文末|ぶんまつ", en : "the end of a sentence", v : "N", l : "L2読" },
     { ja : "分野|ぶんや", en : "field; area", v : "N", l : "L15読3" },
     { ja : "分類|ぶんるい", en : "classification; grouping", v : "VN", l : "L13読2" },
-    
+
     // Genki
     { ja : 'ファイル', en : 'file; portfolio', l : 'Genki: 会L16' },
     { ja : 'ファッション', en : 'fashion', l : 'Genki: 読L15-II' },
@@ -4045,7 +4055,7 @@ Genki.jisho = {
     { ja : '文明|ぶんめい', en : 'civilization', l : 'Genki: 読L11-漢字表' },
     { ja : '文楽|ぶんらく', en : 'Japanese puppet theater; bunraku', l : 'Genki: 会L9(c)' }
   ],
-  
+
   "へ" : [
     // Tobira
     { ja : "閉会|へいかい", en : "closure (of a ceremony, event, meeting, etc.)", v : "N", l : "Tobira: 漢字表" },
@@ -4074,7 +4084,7 @@ Genki.jisho = {
     { ja : "偏差値|へんさち", en : "deviation score indicating the degree of dificulty of each school's entrance exam", v : "N", l : "L9読" },
     { ja : "返事|へんじ", en : "reply; answer", v : "VN", l : "L9会4" },
     { ja : "編集|へんしゅう", en : "editing; compilation", v : "N", l : "Tobira: 漢字表" },
-    
+
     // Genki
     { ja : '平日|へいじつ', en : 'weekday', l : 'Genki: 読L11-II' },
     { ja : '平和記念資料館|へいわきねんしりょうかん', en : 'Peace Memorial Museum', l : 'Genki: 読L15-II' },
@@ -4097,7 +4107,7 @@ Genki.jisho = {
     { ja : '返品する|へんぴんする', en : 'to return (merchandise)', v : 'VN', l : 'Genki: 会L20' },
     { ja : '便利|べんり（な）', en : 'convenient', l : 'Genki: 会L7' }
   ],
-  
+
   "ほ" : [
     // Tobira
     { ja : "保証|ほしょう", en : "guarantee; security", v : "VN", l : "Tobira: 漢字表" },
@@ -4140,7 +4150,7 @@ Genki.jisho = {
     { ja : "本名|ほんみょう", en : "one's real name", v : "N", l : "L7読1" },
     { ja : "翻訳|ほんやく", en : "written translation", v : "VN", l : "L7読1" },
     { ja : "本来|ほんらい", en : "by nature; originally", v : "Adv", l : "L13読2" },
-    
+
     // Genki
     { ja : '方言|ほうげん', en : 'dialect', l : 'Genki: 会L11(e)' },
     { ja : '帽子|ぼうし', en : 'hat; cap', l : 'Genki: 会L2' },
@@ -4194,7 +4204,7 @@ Genki.jisho = {
     { ja : '本屋|ほんや', en : 'bookstore', l : 'Genki: 会L4' },
     { ja : '翻訳する|ほんやくする', en : 'to translate', v : 'VN', l : 'Genki: 会L22' }
   ],
-  
+
   "ま" : [
     // Tobira
     { ja : "間|ま", en : "room", v : "N", l : "L1読" },
@@ -4240,7 +4250,7 @@ Genki.jisho = {
     { ja : "満点|まんてん", en : "perfect score; full marks", v : "N", l : "Tobira: 漢字表" },
     { ja : "マント", en : "mantle; cloak", v : "N", l : "L11読" },
     { ja : "真ん中|まんなか", en : "center; middle", v : "N", l : "L12会" },
-    
+
     // Genki
     { ja : 'マーク', en : 'mark', l : 'Genki: 読L23-II' },
     { ja : 'まあまあ', en : 'okay; so-so', l : 'Genki: 会L11' },
@@ -4298,7 +4308,7 @@ Genki.jisho = {
     { ja : 'まんじゅう', en : 'sweet bun', l : 'Genki: 読L4-III' },
     { ja : 'マンション', en : 'multi-story apartment building; condominium', l : 'Genki: 会L14' }
   ],
-  
+
   "み" : [
     // Tobira
     { ja : "見える|みえる", en : "to appear; seem; be visible", v : "ru-Vi", l : "L12会" },
@@ -4326,7 +4336,7 @@ Genki.jisho = {
     { ja : "議会|ぎかい", en : "congress; parliament; diet; legislative assembly", v : "N", l : "Tobira: 漢字表" },
     { ja : "議会制民主主義|ぎかいせいみんしゅしゅぎ", en : "parliamentary democracy", v : "N", l : "L14読" },
     { ja : "議長|ぎちょう", en : "chairman; speaker (of an assembly); president (of a council, senate, etc.)", v : "N", l : "Tobira: 漢字表" },
-    
+
     // Genki
     { ja : '磨く|みがく', en : 'to brush (teeth); to polish', v : 'u', l : 'Genki: 会L13' },
     { ja : 'みかん', en : 'mandarin orange', l : 'Genki: 会L14' },
@@ -4367,7 +4377,7 @@ Genki.jisho = {
     { ja : 'みんな', en : 'all', l : 'Genki: 読L7-II, 会L9' },
     { ja : 'みんなで', en : 'all (of the people) together', l : 'Genki: 会L8' }
   ],
-  
+
   "む" : [
     // Tobira
     { ja : "無意味（な）|むいみ（な）", en : "meaningless", v : "ANa", l : "L7読1" },
@@ -4397,7 +4407,7 @@ Genki.jisho = {
     { ja : "無力|むりょく", en : "powerless", v : "N", l : "L8読" },
     { ja : "無理をする|むりをする", en : "to work too hard; try too hard; go too far", v : "Phr", l : "L2会2" },
     { ja : "無理(な)|むり(な)", en : "unreasonable; impossible", v : "ANa", l : "L2会2" },
-    
+
     // Genki
     { ja : '六日|むいか', en : 'the sixth day of a month; six days', l : 'Genki: 会L4(e), 会L13' },
     { ja : 'ムード', en : 'mood', l : 'Genki: ワークブック読L2' },
@@ -4415,7 +4425,7 @@ Genki.jisho = {
     { ja : '紫|むらさき', en : 'purple', l : 'Genki: 会L9(e)' },
     { ja : '無理|むり（な）', en : 'impossible', l : 'Genki: 読L20-II' },
   ],
-  
+
   "め" : [
     // Tobira
     { ja : "名医|めいい", en : "noted doctor; excellent physician", v : "N", l : "Tobira: 漢字表" },
@@ -4438,7 +4448,7 @@ Genki.jisho = {
     { ja : "目に入る|めにはいる", en : "to come into view", v : "Phr", l : "L10読" },
     { ja : "目の前で|めのまえで", en : "right in front of you", v : "Phr", l : "L5会2" },
     { ja : "面積|めんせき", en : "area (measurement); square measure; floor space", v : "N", l : "Tobira: 漢字表" },
-    
+
     // Genki
     { ja : '目|め', en : 'eye', l : 'Genki: 会L7, 会L7(e)' },
     { ja : '～目|～め', en : '-th', l : 'Genki: 会L15' },
@@ -4463,7 +4473,7 @@ Genki.jisho = {
     { ja : '面接|めんせつ', en : 'interview', l : 'Genki: 会L23' },
     { ja : 'メンバー', en : 'member; participant; attendee', l : 'Genki: 読L17-II' }
   ],
-  
+
   "も" : [
     // Tobira
     { ja : "もうちょっと", en : "a bit more; a bit longer", v : "Phr", l : "Tobira: 漢字表" },
@@ -4489,7 +4499,7 @@ Genki.jisho = {
     { ja : "問題点|もんだいてん", en : "the point at issue", v : "N", l : "L9読" },
     { ja : "文部科学省／文科省|もんぶかがくしょう／もんかしょう", en : "Ministry of Education, Culture, Sports, Science and Technology [often shortend to 文科省]", v : "N", l : "L9読" },
     { ja : "もんぺ", en : "women's (traditional) work pants", v : "N", l : "L13読1" },
-    
+
     // Genki
     { ja : 'もう', en : 'already', l : 'Genki: 会L9' },
     { ja : 'もう一度|もういちど', en : 'one more time', l : 'Genki: 会L15' },
@@ -4527,7 +4537,7 @@ Genki.jisho = {
     { ja : '文句を言う|もんくをいう', en : 'to complain', v : 'u', l : 'Genki: 会L21' },
     { ja : 'モンゴル', en : 'Mongolia', l : 'Genki: ワークブックL13' }
   ],
-  
+
   "や" : [
     // Tobira
     { ja : "約-|やく-", en : "about; approximately", v : "Pref", l : "L5読" },
@@ -4553,7 +4563,7 @@ Genki.jisho = {
     { ja : "辞める|やめる", en : "to resign; retire; quit", v : "ru-Vt", l : "Tobira: 漢字表" },
     { ja : "山伏|やまぶし", en : "itinerant Buddhist monk", v : "N", l : "L8読" },
     { ja : "柔らかい|やわらかい", en : "soft; tender", v : "A", l : "L12読" },
-    
+
     // Genki
     { ja : '～屋|～や', en : '...shop', l : 'Genki: 会L20' },
     { ja : '焼き魚|やきざかな', en : 'grilled fish; broiled fish', l : 'Genki: 会L8(c)' },
@@ -4583,7 +4593,7 @@ Genki.jisho = {
     { ja : 'やめる', en : 'to quit', v  : 'ru', l : 'Genki: 会L11' },
     { ja : 'やる', en : 'to do; to perform; to give (to pets, plants, siblings, etc.)', v : 'u', l : 'Genki: 会L5, 会L21' }
   ],
-  
+
   "ゆ" : [
     // Tobira
     { ja : "唯一（の）|ゆいいつ（の）", en : "only; sole", v : "ANo", l : "L13会" },
@@ -4608,7 +4618,7 @@ Genki.jisho = {
     { ja : "夢|ゆめ", en : "dream", v : "N", l : "L13読1" },
     { ja : "夢見る|ゆめみる", en : "to dream", v : "ru-Vt", l : "L7読1" },
     { ja : "許す|ゆるす", en : "to allow; permit", v : "u-Vt", l : "L6会1" },
-    
+
     // Genki
     { ja : '夕刊|ゆうかん', en : 'evening newspaper', l : 'Genki: 読L22-漢字表' },
     { ja : '勇気|ゆうき', en : 'courage', l : 'Genki: 読L22-II' },
@@ -4629,7 +4639,7 @@ Genki.jisho = {
     { ja : '指|ゆび', en : 'finger', l : 'Genki: 会L7(e)' },
     { ja : '指輪|ゆびわ', en : 'ring', l : 'Genki: 会L14' }
   ],
-  
+
   "よ" : [
     // Tobira
     { ja : "宵|よい", en : "early; evening", v : "N", l : "L13読2" },
@@ -4662,7 +4672,7 @@ Genki.jisho = {
     { ja : "詠む|よむ", en : "to compose (haiku and tanka)", v : "u-Vt", l : "L13読2" },
     { ja : "喜ぶ|よろこぶ", en : "to be delighted (about ～); be glad", v : "u-Vt", l : "L9会1" },
     { ja : "喜び|よろこび", en : "joy; delight", v : "N", l : "L9会1" },
-    
+
     // Genki
     { ja : '夜明け|よあけ', en : 'dawn', l : 'Genki: 読L10-漢字表' },
     { ja : '用意する|よういする', en : 'to prepare', l : 'Genki: 読L15-漢字表' },
@@ -4705,7 +4715,7 @@ Genki.jisho = {
     { ja : '四歳|よんさい', en : 'four years old', l : 'Genki: 会L1(e)' },
     { ja : '四分|よんぷん', en : 'four minutes', l : 'Genki: 会L1(e)' }
   ],
-  
+
   "ら" : [
     // Tobira
     { ja : "来日|らいにち", en : "visit to Japan; arrival in Japan", v : "VN", l : "L15読3" },
@@ -4713,7 +4723,7 @@ Genki.jisho = {
     { ja : "楽天的(な)|らくてんてき(な)", en : "optimistic", v : "ANa", l : "L7会2" },
     { ja : "拉致|らち", en : "abduction", v : "VN", l : "L15読1" },
     { ja : "乱暴(な)|らんぼう(な)", en : "violent; rough; rude", v : "ANa", l : "L6読2" },
-    
+
     // Genki
     { ja : 'ラーメン', en : 'ramen', l : 'Genki: ワークブック読L2' },
     { ja : '来学期|らいがっき', en : 'next semester', l : 'Genki: 会L10' },
@@ -4729,7 +4739,7 @@ Genki.jisho = {
     { ja : 'ラジオ', en : 'radio', l : 'Genki: 会L14' },
     { ja : 'ラッシュ', en : 'the rush hour', l : 'Genki: 読L13-III' }
   ],
-  
+
   "り" : [
     // Tobira
     { ja : "リアルタイム", en : "real time", v : "N", l : "L4読" },
@@ -4749,7 +4759,7 @@ Genki.jisho = {
     { ja : "両方|りょうほう", en : "both; both sides", v : "N", l : "L6読1" },
     { ja : "リラックス", en : "relax", v : "VN", l : "L1読" },
     { ja : "理論|りろん", en : "theory", v : "N", l : "L7読1" },
-    
+
     // Genki
     { ja : 'リオデジャネイロ', en : 'Rio de Janeiro (Brazil)', l : 'Genki: 会L1' },
     { ja : '離婚|りこん', en : 'divorce', l : 'Genki: 読L17-漢字表' },
@@ -4775,12 +4785,12 @@ Genki.jisho = {
     { ja : '履歴書|りれきしょ', en : 'resume; résumé', l : 'Genki: 会L14' },
     { ja : 'りんご', en : 'apple', l : 'Genki: 会L10' }
   ],
-  
+
   "る" : [
     // Tobira
     { ja : "留守|るす", en : "being away from home; absence", v : "N", l : "L8読" },
     { ja : "留守番をする|るすばんをする", en : "to house-sit (during a person's absence)", v : "Phr", l : "L3読" },
-    
+
     // Genki
     { ja : 'ルームメート／ルームメイト', en : 'roommate', l : 'Genki: 会L11' },
     { ja : 'ルーレット', en : 'roulette', l : 'Genki: ワークブック読L2' },
@@ -4788,7 +4798,7 @@ Genki.jisho = {
     { ja : '留守番電話|るすばんでんわ', en : 'answering machine', l : 'Genki: 会L18' },
     { ja : 'ルワンダ', en : 'Rwanda', l : 'Genki: 読L2-I' }
   ],
-  
+
   "れ" : [
     // Tobira
     { ja : "例|れい", en : "example", v : "N", l : "L2読" },
@@ -4814,7 +4824,7 @@ Genki.jisho = {
     { ja : "恋愛小説|れんあいしょうせつ", en : "love story", v : "N", l : "L11読" },
     { ja : "連続|れんぞく", en : "continuation; succession; series", v : "VN", l : "Tobira: 漢字表" },
     { ja : "連絡|れんらく", en : "contact; communication", v : "VN", l : "L2読" },
-    
+
     // Genki
     { ja : '冷蔵庫|れいぞうこ', en : 'refrigerator', l : 'Genki: 会L18' },
     { ja : '歴史|れきし', en : 'history', l : 'Genki: 会L1, 会L2' },
@@ -4830,7 +4840,7 @@ Genki.jisho = {
     { ja : 'レントゲン', en : 'X-ray', l : 'Genki: 会L12(e)' },
     { ja : '連絡する|れんらくする', en : 'to contact', v : 'VN', l : 'Genki: 会L21' }
   ],
-  
+
   "ろ" : [
     // Tobira
     { ja : "老後|ろうご", en : "post-retirement years", v : "N", l : "L15読2" },
@@ -4841,7 +4851,7 @@ Genki.jisho = {
     { ja : "ロサンジェルス", en : "Los Angeles", v : "N", l : "L4読" },
     { ja : "論争|ろんそう", en : "dispute; controversy; argument", v : "VN", l : "Tobira: 漢字表" },
     { ja : "論文|ろんぶん", en : "essay; thesis; dissertation", v : "N", l : "L2読" },
-    
+
     // Genki
     { ja : 'ろうそく', en : 'candle', l : 'Genki: 会L18' },
     { ja : '六|ろく', en : 'six', l : 'Genki: 読L3-漢字表' },
@@ -4858,7 +4868,7 @@ Genki.jisho = {
     { ja : 'ロボット', en : 'robot', l : 'Genki: 読L16-II' },
     { ja : 'ロンドン', en : 'London', l : 'Genki: ワークブックL1' }
   ],
-  
+
   "わ" : [
     // Tobira
     { ja : "-羽|-わ", en : "counter for birds/rabbits", v : "Count", l : "L12会" },
@@ -4881,7 +4891,7 @@ Genki.jisho = {
     { ja : "割合|わりあい", en : "ratio; percentage", v : "N", l : "L6会3" },
     { ja : "割れる|われる", en : "to break; to be smashed", v : "u-Vi", l : "Tobira: 漢字表" },
     { ja : "割る|わる", en : "to break (a glass, window, plate, etc.)", v : "u-Vt", l : "L8読" },
-    
+
     // Genki
     { ja : 'ワイン', en : 'wine', l : 'Genki: 読L6-III' },
     { ja : '若い|わかい', en : 'young', l : 'Genki: 会L9' },
@@ -4908,10 +4918,10 @@ Genki.jisho = {
     { ja : '悪口を言う|わるぐちをいう', en : "to talk behind someone's back", v : 'u', l : 'Genki: 会L23' },
     { ja : 'ワンルームマンション', en : 'one-room apartment; a studio', l : 'Genki: 読L18-III' }
   ],
-  
+
   "を" : [
     { ja : "～を機会に|～をきかいに", en : "taking this opportunity", v : "Phr", l : "L9読" },
     { ja : "～を通して|～をとおして", en : "through", v : "Phr", l : "L11読(L4読)" }
   ]
-  
+
 };
