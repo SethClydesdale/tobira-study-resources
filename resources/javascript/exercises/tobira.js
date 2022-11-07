@@ -440,11 +440,12 @@ window.GenkiExercises = [
   'lesson-10/grammar-wb-4|基礎練習：問題4|p.137',
   'lesson-10/grammar-wb-5|基礎練習：問題5|p.138; A &amp; B',
   'lesson-10/grammar-wb-6|基礎練習：問題6|p.139',
-  'lesson-10/grammar-wb-7|基礎練習：問題7|p.139-140; A &amp; B',
-  'lesson-10/grammar-wb-8|基礎練習：問題8|p.140-141; A &amp; B',
+  'lesson-10/grammar-wb-7|基礎練習：問題7|p.139-140; A & B',
+  'lesson-10/grammar-wb-8|基礎練習：問題8|p.140-141; A & B',
   'lesson-10/grammar-wb-9|基礎練習：問題9|p.141-142; A, B, & C',
   'lesson-10/grammar-wb-10|基礎練習：問題10|p.142-143',
   'lesson-10/grammar-wb-11|基礎練習：問題11|p.143',
+  'lesson-10/grammar-wb-12|基礎練習：問題12|p.143-144; A & B',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
