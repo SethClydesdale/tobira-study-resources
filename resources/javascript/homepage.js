@@ -164,7 +164,7 @@
               // clone the link (if on homepage) or create a new link (if on the grammar index)
               if (grammarIndex) {
                 clone = document.createElement('LI');
-                clone.innerHTML = '<a href="#' + li[i].id + '">' + li[i].innerText.replace('', '') + '</a>';
+                clone.innerHTML = '<a href="#' + li[i].id + '">' + li[i].innerText.replace(/|/g, '') + '</a>';
               } else {
                 clone = li[i].cloneNode(true); // clone the match for displaying in the results node
               }
@@ -274,7 +274,7 @@
     if (!list.innerHTML) {
       // gets all sub section titles and parses them into a list
       for (var sec = document.querySelectorAll('#exercises-' + lesson + ' h3'), i = 0, j = sec.length, str = ''; i < j; i++) {
-        str += '<li><a href="#' + sec[i].id + '">' + sec[i].innerText.replace(/\s\(.*\)$/, '').replace('', '') + '</a></li>';
+        str += '<li><a href="#' + sec[i].id + '">' + sec[i].innerText.replace(/\s\(.*\)$/, '').replace(/|/g, '') + '</a></li>';
       }
       
       // add the html to the list

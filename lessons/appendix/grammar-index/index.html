@@ -56,13 +56,17 @@
         margin:0;
         padding-left:30px;
       }
+      
+      .lesson-exercises { display:none; }
+      .grammar-toggler { margin-bottom:10px; }
     </style>
     <script src="../../../resources/javascript/head.min.js"></script>
     <script src="../../../resources/javascript/ga.js" async></script>
   </head>
 
   <body id="quiz-zone">
-    <script>document.body.className = 'helper-' + ((storageOK && localStorage.furiganaVisible == 'false') ? 'hidden' : 'present');</script>
+    <noscript><style>.lesson-exercises {display:block}.grammar-toggler{display:none}</style></noscript>
+    <script src="../../../resources/javascript/grammar-index.min.js"></script>
 
     <header>
       <h1><a href="../../../" id="home-link">Tobira Study Resources</a></h1>
@@ -75,7 +79,7 @@
 
         <p>Welcome to the Grammar Index! Here you can quickly find and review the grammar points taught in Tobira. Use the quick navigation to jump to a lesson's grammar or use the quick search to find the grammar point you want to read up on.</p>
 
-        <div id="check-answers" class="center"><button class="button" href="#genki-site-settings" onclick="GenkiSettings.manager(); return false;"><i class="fa">&#xf013;</i>Site Settings</button></div>
+        <div id="check-answers" class="center"><button class="button" href="#genki-site-settings" onclick="GenkiSettings.manager(); return false;"><i class="fa">&#xf013;</i>Site Settings</button><button class="button" onclick="TobiraGRIndex.toggleAll(this);"><i class="fa">&#xf07c;</i>Show All Grammar Points</button></div>
 
         <div id="quick-actions" class="columns-2 clear">
           <div>
@@ -104,6 +108,8 @@
         </div>
 
         <h2 id="lesson-grammar-1" class="lesson-title">第1課：日本の地理 (Tobira: p.17-21)</h2>
+        
+        <div class="center"><button id="toggler-1" class="button grammar-toggler" onclick="TobiraGRIndex.toggle(this, 1);"><i class="fa">&#xf07c;</i>Show Grammar Points</button></div>
         <div id="exercises-1" class="lesson-exercises">
           <h3 id="l1-p1" class="workbook-title">1. Noun{で／から}できる</h3>
           <table class="table grammar-table">
@@ -802,8 +808,9 @@
 
         </div>
 
-
         <h2 id="lesson-grammar-2" class="lesson-title">第2課：日本語のスピーチスタイル (Tobira: p.43-48)</h2>
+        
+        <div class="center"><button id="toggler-2" class="button grammar-toggler" onclick="TobiraGRIndex.toggle(this, 2);"><i class="fa">&#xf07c;</i>Show Grammar Points</button></div>
         <div id="exercises-2" class="lesson-exercises">
 
           <h3 id="l2-p1" class="workbook-title">1. ～なければ{いけない／ならない}；～なくては{いけない／ならない}</h3>
@@ -1548,8 +1555,9 @@
 
         </div>
 
-
         <h2 id="lesson-grammar-3" class="lesson-title">第3課：日本のテクノロジー (Tobira: p.68-73)</h2>
+      
+        <div class="center"><button id="toggler-3" class="button grammar-toggler" onclick="TobiraGRIndex.toggle(this, 3);"><i class="fa">&#xf07c;</i>Show Grammar Points</button></div>
         <div id="exercises-3" class="lesson-exercises">
 
           <h3 id="l3-p1" class="workbook-title">1. ～他に(も); ～他(に)は</h3>
@@ -2313,6 +2321,8 @@
         </div>
 
         <h2 id="lesson-grammar-4" class="lesson-title">第4課：日本のスポーツ (Tobira: p.90-95)</h2>
+      
+        <div class="center"><button id="toggler-4" class="button grammar-toggler" onclick="TobiraGRIndex.toggle(this, 4);"><i class="fa">&#xf07c;</i>Show Grammar Points</button></div>
         <div id="exercises-4" class="lesson-exercises">
 
           <h3 id="l4-p1" class="workbook-title">1. 毎～のように</h3>
@@ -3090,6 +3100,8 @@
         </div>
 
         <h2 id="lesson-grammar-5" class="lesson-title">第5課：日本の食べ物 (Tobira: p.118-123)</h2>
+      
+        <div class="center"><button id="toggler-5" class="button grammar-toggler" onclick="TobiraGRIndex.toggle(this, 5);"><i class="fa">&#xf07c;</i>Show Grammar Points</button></div>
         <div id="exercises-5" class="lesson-exercises">
 
           <h3 id="l5-p1" class="workbook-title">1. Number+Counter当たり</h3>
@@ -3893,6 +3905,8 @@
         </div>
 
         <h2 id="lesson-grammar-6" class="lesson-title">第6課：日本人と宗教 (Tobira: p.142-147)</h2>
+      
+        <div class="center"><button id="toggler-6" class="button grammar-toggler" onclick="TobiraGRIndex.toggle(this, 6);"><i class="fa">&#xf07c;</i>Show Grammar Points</button></div>
         <div id="exercises-6" class="lesson-exercises">
 
           <h3 id="l6-p1" class="workbook-title">1. ～に気がつく</h3>
@@ -4639,6 +4653,8 @@
         </div>
 
         <h2 id="lesson-grammar-7" class="lesson-title">第7課：日本のポップカルチャー (Tobira: p.170-174)</h2>
+      
+        <div class="center"><button id="toggler-7" class="button grammar-toggler" onclick="TobiraGRIndex.toggle(this, 7);"><i class="fa">&#xf07c;</i>Show Grammar Points</button></div>
         <div id="exercises-7" class="lesson-exercises">
 
           <h3 id="l7-p1" class="workbook-title">1. Sentence。{では／それでは／じゃ}、Sentence。</h3>
@@ -5320,6 +5336,8 @@
         </div>
 
         <h2 id="lesson-grammar-8" class="lesson-title">第8課：日本の伝統芸能： (Tobira: p.191-196)</h2>
+      
+        <div class="center"><button id="toggler-8" class="button grammar-toggler" onclick="TobiraGRIndex.toggle(this, 8);"><i class="fa">&#xf07c;</i>Show Grammar Points</button></div>
         <div id="exercises-8" class="lesson-exercises">
 
           <h3 id="l8-p1" class="workbook-title">1. NounはNoun{と／に}関係がある</h3>
@@ -6111,6 +6129,8 @@
         </div>
 
         <h2 id="lesson-grammar-9" class="lesson-title">第9課：日本の教育 (Tobira: p.214-219)</h2>
+      
+        <div class="center"><button id="toggler-9" class="button grammar-toggler" onclick="TobiraGRIndex.toggle(this, 9);"><i class="fa">&#xf07c;</i>Show Grammar Points</button></div>
         <div id="exercises-9" class="lesson-exercises">
 
           <h3 id="l9-p1" class="workbook-title">1. ～ても～なくても</h3>
@@ -6938,6 +6958,8 @@
         </div>
 
         <h2 id="lesson-grammar-10" class="lesson-title">第10課：日本の便利な店 (Tobira: p.236-240)</h2>
+      
+        <div class="center"><button id="toggler-10" class="button grammar-toggler" onclick="TobiraGRIndex.toggle(this, 10);"><i class="fa">&#xf07c;</i>Show Grammar Points</button></div>
         <div id="exercises-10" class="lesson-exercises">
 
           <h3 id="l10-p1" class="workbook-title">1. ～ほど～</h3>
@@ -7687,6 +7709,8 @@
 
         <!--
         <h2 id="lesson-grammar-" class="lesson-title">第課： (Tobira: p.)</h2>
+
+        <div class="center"><button id="toggler-" class="button grammar-toggler" onclick="TobiraGRIndex.toggle(this, );"><i class="fa">&#xf07c;</i>Show Grammar Points</button></div>
         <div id="exercises-" class="lesson-exercises">
           <h3 id="placeholder" class="workbook-title"><em>More coming soon...</em></h3>
         </div>
@@ -7766,6 +7790,7 @@
       AddJumpArrowsTo('.workbook-title', 'quick-nav', 'Jump to Quick Navigation');
       document.getElementById('check-answers').innerHTML += Genki.lang.toggle_furigana;
       Genki.quickJisho.create();
+      window.setTimeout(TobiraGRIndex.jump, 25);
     </script>
   </body>
 </html>
