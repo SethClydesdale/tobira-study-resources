@@ -71,7 +71,7 @@
   // jumps to the clicked grammar point
   document.addEventListener('click', function (e) {
     if (e.target && e.target.href && /l\d+-p\d+/.test(e.target.href)) {
-      window.setTimeout(TobiraGRIndex.jump, 25); // slight delay before the hash is changed
+      window.setTimeout(TobiraGRIndex.jump, 50); // slight delay before the hash is changed
     }
   });
   
