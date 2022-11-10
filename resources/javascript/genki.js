@@ -709,7 +709,7 @@
             return Genki.parse.image(data);
             
           } else if (data[0] == '!GRI') { // Grammar Index links
-            return '<a href="' + getPaths() + 'lessons/appendix/grammar-index/index.html#' + data[2] + '" target="_blank">' + data[1] + '</a>';
+            return '<a href="' + getPaths() + 'lessons/appendix/grammar-index/' + Genki.local + '#' + data[2] + '" target="_blank"' + (Genki.local ? '' : ' onclick="Genki.getGrammarPoint(this, \'' + data[2] + '\'); return false;"') + '>' + data[1] + '</a>';
             
           } else if (data[0] == '!AUDIO') { // audio tracks
             return '<div class="audio-block center">'+
@@ -2479,6 +2479,32 @@
       }
 
       return arrayOnly ? results : '%(' + results.join('/') + ')|';
+    },
+    
+    
+    // returns the specified grammar point
+    getGrammarPoint : function (caller, id) {
+      GenkiModal.open({
+        title : 'Quick Grammar Review',
+        content : '<div id="appendix-tool" class="loading"></div>',
+        customButton : '<a href="' + caller.href + '" class="button" target="_blank"><i class="fa">&#xf08e;</i>View in Grammar Index</a>'
+      });
+      
+      Get(caller.href, function (data) {
+        var zone = document.getElementById('appendix-tool'),
+            grammar = data.match(new RegExp('(<h3 id="' + id + '"[\\s\\S]*?<\/table>)', 'gm')),
+            style = data.match(new RegExp('(<style>[\\s\\S]*?</style>)', 'gm'));
+        
+        if (grammar && grammar[0] && style && style[0]) {
+          if (zone) {
+            zone.innerHTML = style[0] + grammar[0].replace(/\d+\. /, '');
+            zone.className = '';
+          }
+        } else if (zone) {
+          zone.innerHTML = '<br><b>Failed to retrieve grammar point. Click "View in Grammar Index" to try viewing the grammar point directly.</b>';
+          zone.className = 'center';
+        }
+      });
     },
     
     
