@@ -2487,7 +2487,13 @@
       GenkiModal.open({
         title : 'Quick Grammar Review',
         content : '<div id="appendix-tool" class="loading"></div>',
-        customButton : '<a href="' + caller.href + '" class="button" target="_blank"><i class="fa">&#xf08e;</i>View in Grammar Index</a>'
+        customButton : '<a href="' + caller.href + '" class="button" target="_blank"><i class="fa">&#xf08e;</i>View in Grammar Index</a>',
+        customSize : {
+          top : '10%',
+          left : '25%',
+          bottom : '10%',
+          right : '25%'
+        }
       });
       
       Get(caller.href, function (data) {
