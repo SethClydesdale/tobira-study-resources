@@ -709,7 +709,7 @@
             return Genki.parse.image(data);
             
           } else if (data[0] == '!GRI') { // Grammar Index links
-            return '<a href="' + getPaths() + 'lessons/appendix/grammar-index/' + Genki.local + '#' + data[2] + '" target="_blank"' + (Genki.local ? '' : ' onclick="Genki.getGrammarPoint(this, \'' + data[2] + '\'); return false;"') + '>' + data[1] + '</a>';
+            return '<a href="' + getPaths() + 'lessons/appendix/grammar-index/' + Genki.local + '#' + data[2] + '" target="_blank"' + ((Genki.local && !Genki.debug) ? '' : ' onclick="Genki.getGrammarPoint(this, \'' + data[2] + '\'); return false;"') + '>' + data[1] + '</a>';
             
           } else if (data[0] == '!AUDIO') { // audio tracks
             return '<div class="audio-block center">'+
@@ -2482,7 +2482,7 @@
     },
     
     
-    // returns the specified grammar point
+    // returns the specified grammar point in a popup window
     getGrammarPoint : function (caller, id) {
       GenkiModal.open({
         title : 'Quick Grammar Review',
@@ -2490,20 +2490,22 @@
         customButton : '<a href="' + caller.href + '" class="button" target="_blank"><i class="fa">&#xf08e;</i>View in Grammar Index</a>',
         customSize : {
           top : '10%',
-          left : '25%',
+          left : '20%',
           bottom : '10%',
-          right : '25%'
+          right : '20%'
         }
       });
       
       Get(caller.href, function (data) {
         var zone = document.getElementById('appendix-tool'),
-            grammar = data.match(new RegExp('(<h3 id="' + id + '"[\\s\\S]*?<\/table>)', 'gm')),
-            style = data.match(new RegExp('(<style>[\\s\\S]*?</style>)', 'gm'));
+            grammar = data.match(new RegExp('(<h3 id="' + id + '"[\\s\\S]*?<\/table>)', 'm')), // should return h3 title and table right below it
+            style = data.match(new RegExp('(<style>[\\s\\S]*?</style>)', 'm')), // grammar index specific styles
+            url = caller.href.replace(/#.*$/, ''); // clean grammar index url for use in anchor links
         
         if (grammar && grammar[0] && style && style[0]) {
           if (zone) {
-            zone.innerHTML = style[0] + grammar[0].replace(/\d+\. /, '');
+            // trim out grammar point number and format anchor links for use with the quick grammar review modal
+            zone.innerHTML = style[0] + grammar[0].replace(/\d+\. /, '').replace(/href="#(.*?)"/g, 'onclick="Genki.getGrammarPoint(this, \'$1\'); return false;" target="_blank" href="' + url + '#$1"');
             zone.className = '';
           }
         } else if (zone) {

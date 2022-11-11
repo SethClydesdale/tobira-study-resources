@@ -450,6 +450,10 @@ window.GenkiExercises = [
   'lesson-10/grammar-wb-14|応用練習：問題2|p.146',
   'lesson-10/grammar-wb-15|応用練習：問題3|p.146-147',
   'lesson-10/grammar-wb-16|応用練習：問題4|p.148',
+  'lesson-10/kanji-wb-1|漢字の練習：読み方|p.135-141',
+  'lesson-10/kanji-wb-2|漢字の練習：意味|p.135-141',
+  /*'lesson-10/kanji-wb-3|漢字の練習：書き順|p.135-141',
+  'lesson-10/kanji-vocab-1|漢字の単語：|p.',*/
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',

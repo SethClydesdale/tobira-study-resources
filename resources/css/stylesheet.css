@@ -2840,9 +2840,9 @@ input:checked + .genki_pseudo_checkbox:after { font-size:14px; }
   #genki-modal-header { font-size:16px; }
   #genki-modal-content { font-size:14px; }
   #genki-modal-body {
-    left:10%;
-    right:10%;
-    bottom:20%;
+    left:5% !important;
+    right:5% !important;
+    bottom:10% !important;
   }
 }
 
