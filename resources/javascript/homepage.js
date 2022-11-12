@@ -133,93 +133,97 @@
   
   // # QUICK SEARCH #
   if (document.getElementById('quick-search')) {
-    var grammarIndex = /grammar-index/.test(window.location.href),
-        search = document.getElementById('quick-search'),
-        results = document.getElementById('quick-search-results'),
-        hitsCounter = document.getElementById('quick-search-hits'),
-        li = document.querySelectorAll(grammarIndex ? '.workbook-title' : '.lesson-exercises li'),
-        exLen = li.length;
+    window.QuickSearch = {
+      grammarIndex : /grammar-index/.test(window.location.href),
+      search : document.getElementById('quick-search'),
+      results : document.getElementById('quick-search-results'),
+      hitsCounter : document.getElementById('quick-search-hits'),
+      li : document.querySelectorAll(/grammar-index/.test(window.location.href) ? '.workbook-title' : '.lesson-exercises li'),
+      exLen : null, // set after definition
+      
+      // search for the specified value
+      query : function (value) {
+        // clear existing timeout
+        if (window.GenkiSearchTimeout) {
+          window.clearTimeout(GenkiSearchTimeout);
+        }
 
-    // search function
-    function quickSearch (value) {
-      // clear existing timeout
-      if (window.GenkiSearchTimeout) {
-        window.clearTimeout(GenkiSearchTimeout);
-      }
+        // wait 300ms before submitting search, just in case the user is still typing
+        window.GenkiSearchTimeout = window.setTimeout(function() {
+          var frag = document.createDocumentFragment(),
+              hits = 0,
+              i = 0,
+              clone;
 
-      // wait 300ms before submitting search, just in case the user is still typing
-      window.GenkiSearchTimeout = window.setTimeout(function() {
-        var frag = document.createDocumentFragment(),
-            hits = 0,
-            i = 0,
-            clone;
+          // clear prior searches
+          QuickSearch.results.innerHTML = '';
 
-        // clear prior searches
-        results.innerHTML = '';
-
-        // loop over the exercises if a value is present
-        if (value) {
-          for (; i < exLen; i++) {
-            if (li[i].innerText.toLowerCase().indexOf(value.toLowerCase()) != -1 && li[i].getElementsByTagName('A')[0]) {
-              // clone the link (if on homepage) or create a new link (if on the grammar index)
-              if (grammarIndex) {
-                clone = document.createElement('LI');
-                clone.innerHTML = '<a href="#' + li[i].id + '">' + li[i].innerText.replace(/|/g, '') + '</a>';
-              } else {
-                clone = li[i].cloneNode(true); // clone the match for displaying in the results node
-              }
-
-              // add lesson number to exercise or grammar point
-              clone.dataset.lesson = grammarIndex ? 'L' + li[i].id.replace(/l(\d+)-p\d+/, '$1') : clone.getElementsByTagName('A')[0].href.replace(/.*?\/(lesson-\d+).*|.*?\/(study-tools).*|.*?\/(appendix).*/, function (Match, $1, $2, $3) {
-                if ($1) {
-                  return $1.charAt(0).toUpperCase() + $1.split('-').pop();
-
-                } else if ($2) {
-                  return 'tool'
-
-                } else if ($3) {
-                  return 'appendix'
+          // loop over the exercises if a value is present
+          if (value) {
+            for (; i < QuickSearch.exLen; i++) {
+              if (QuickSearch.li[i].innerText.toLowerCase().indexOf(value.toLowerCase()) != -1 && QuickSearch.li[i].getElementsByTagName('A')[0]) {
+                // clone the link (if on homepage) or create a new link (if on the grammar index)
+                if (QuickSearch.grammarIndex) {
+                  clone = document.createElement('LI');
+                  clone.innerHTML = '<a href="#' + QuickSearch.li[i].id + '">' + QuickSearch.li[i].innerText.replace(/|/g, '') + '</a>';
+                } else {
+                  clone = QuickSearch.li[i].cloneNode(true); // clone the match for displaying in the results node
                 }
-              });
-              
-              // add tooltip in case the text gets cut off
-              clone.title = clone.innerText;
 
-              // add the clone to the fragment if it's valid
-              if (!/^file|^http/.test(clone.dataset.lesson)) {
-                frag.appendChild(clone);
-                hits++; // increment hits
+                // add lesson number to exercise or grammar point
+                clone.dataset.lesson = QuickSearch.grammarIndex ? 'L' + QuickSearch.li[i].id.replace(/l(\d+)-p\d+/, '$1') : clone.getElementsByTagName('A')[0].href.replace(/.*?\/(lesson-\d+).*|.*?\/(study-tools).*|.*?\/(appendix).*/, function (Match, $1, $2, $3) {
+                  if ($1) {
+                    return $1.charAt(0).toUpperCase() + $1.split('-').pop();
+
+                  } else if ($2) {
+                    return 'tool'
+
+                  } else if ($3) {
+                    return 'appendix'
+                  }
+                });
+
+                // add tooltip in case the text gets cut off
+                clone.title = clone.innerText;
+
+                // add the clone to the fragment if it's valid
+                if (!/^file|^http/.test(clone.dataset.lesson)) {
+                  frag.appendChild(clone);
+                  hits++; // increment hits
+                }
               }
             }
           }
-        }
 
-        // append the matched exercises or display an error message/hide the search results
-        if (frag.childNodes.length) {
-          results.appendChild(frag);
+          // append the matched exercises or display an error message/hide the search results
+          if (frag.childNodes.length) {
+            QuickSearch.results.appendChild(frag);
 
-        } else {
-          results.innerHTML = value ? '<li>No results found for "' + value + '".</li>' : '';
-        }
+          } else {
+            QuickSearch.results.innerHTML = value ? '<li>No results found for "' + value + '".</li>' : '';
+          }
 
-        // update the hits counter and add a button to copy the search link
-        hitsCounter.innerHTML = hits ? '(' + hits + ') '+
-          '<a '+
-            'class="fa" '+
-            'style="color:#17A;" '+
-            'href="#copy-search-link" '+
-            'title="Copy the search link" '+
-            'onclick="GenkiModal.open({'+
-              'title : \'Copy Search Link\','+
-              'content : \'<div class=&quot;center&quot;><p>You can copy the direct search link from the box below.</p>'+
-              '<textarea id=&quot;copied-search-link&quot; onfocus=&quot;this.select();&quot; style=&quot;width:80%;height:100px;&quot;>' + (window.location.protocol + '//' + window.location.host + window.location.pathname) + '?search=' + encodeURIComponent(value) + '#quick-search-exercises</textarea></div>\','+
-              'focus : \'#copied-search-link\''+
-            '}); return false;"'+
-          '>&#xf0ea;</a>' : '';
+          // update the hits counter and add a button to copy the search link
+          QuickSearch.hitsCounter.innerHTML = hits ? '(' + hits + ') '+
+            '<a '+
+              'class="fa" '+
+              'style="color:#17A;" '+
+              'href="#copy-search-link" '+
+              'title="Copy the search link" '+
+              'onclick="GenkiModal.open({'+
+                'title : \'Copy Search Link\','+
+                'content : \'<div class=&quot;center&quot;><p>You can copy the direct search link from the box below.</p>'+
+                '<textarea id=&quot;copied-search-link&quot; onfocus=&quot;this.select();&quot; style=&quot;width:80%;height:100px;&quot;>' + (window.location.protocol + '//' + window.location.host + window.location.pathname) + '?search=' + encodeURIComponent(value) + '#quick-search-exercises</textarea></div>\','+
+                'focus : \'#copied-search-link\''+
+              '}); return false;"'+
+            '>&#xf0ea;</a>' : '';
 
-        delete window.GenkiSearchTimeout;
-      }, 300);
+          delete window.GenkiSearchTimeout;
+        }, 300);
+      }
     };
+    
+    QuickSearch.exLen = QuickSearch.li.length;
 
 
     // set the value of the search field via the url (e.g. ?search=kanji)
@@ -233,20 +237,20 @@
         keyVal = query[i].split('=');
 
         if (/^search$/i.test(keyVal[0])) {
-          search.value = decodeURIComponent(keyVal[1]);
+          QuickSearch.search.value = decodeURIComponent(keyVal[1]);
           break;
         }
       }
     }
 
     // search for exercises when the user inputs text
-    search.oninput = function () {
-      quickSearch(this.value);
+    QuickSearch.search.oninput = function () {
+      QuickSearch.query(this.value);
     };
 
     // resume previous searches (in the event the user goes back in history) or those initiated by ?search=query
-    if (search.value) {
-      quickSearch(search.value);
+    if (QuickSearch.search.value) {
+      QuickSearch.query(QuickSearch.search.value);
     }
   }
   
