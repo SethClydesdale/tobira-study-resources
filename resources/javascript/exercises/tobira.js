@@ -452,8 +452,14 @@ window.GenkiExercises = [
   'lesson-10/grammar-wb-16|応用練習：問題4|p.148',
   'lesson-10/kanji-wb-1|漢字の練習：読み方|p.135-141',
   'lesson-10/kanji-wb-2|漢字の練習：意味|p.135-141',
-  /*'lesson-10/kanji-wb-3|漢字の練習：書き順|p.135-141',
-  'lesson-10/kanji-vocab-1|漢字の単語：|p.',*/
+  'lesson-10/kanji-wb-3|漢字の練習：書き順|p.135-141',
+  'lesson-10/kanji-vocab-1|漢字の単語：訪、景、冷、区、危、険|p.135-136',
+  'lesson-10/kanji-vocab-2|漢字の単語：役、省、報、独|p.136-137',
+  'lesson-10/kanji-vocab-3|漢字の単語：遠、並、販、街、及、凍、犯|p.137-138',
+  'lesson-10/kanji-vocab-4|漢字の単語：罪、盗、壊、著、氏、製、械|p.138-139',
+  'lesson-10/kanji-vocab-5|漢字の単語：宣、徴、批、策、缶、導、規、替|p.140-141',
+  'lesson-10/kanji-wb-4|漢字の練習：問題1|p.142',
+  'lesson-10/kanji-wb-5|漢字の練習：問題2|p.142-143',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
