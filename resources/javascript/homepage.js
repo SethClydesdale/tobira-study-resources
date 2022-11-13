@@ -133,13 +133,15 @@
   
   // # QUICK SEARCH #
   if (document.getElementById('quick-search')) {
-    window.QuickSearch = {
+    window.QuickSearcher = {
       grammarIndex : /grammar-index/.test(window.location.href),
       search : document.getElementById('quick-search'),
       results : document.getElementById('quick-search-results'),
       hitsCounter : document.getElementById('quick-search-hits'),
-      li : document.querySelectorAll(/grammar-index/.test(window.location.href) ? '.workbook-title' : '.lesson-exercises li'),
-      exLen : null, // set after definition
+      
+      // set after definition
+      li : null,
+      exLen : null,
       
       // search for the specified value
       query : function (value) {
@@ -156,22 +158,22 @@
               clone;
 
           // clear prior searches
-          QuickSearch.results.innerHTML = '';
+          QuickSearcher.results.innerHTML = '';
 
           // loop over the exercises if a value is present
           if (value) {
-            for (; i < QuickSearch.exLen; i++) {
-              if (QuickSearch.li[i].innerText.toLowerCase().indexOf(value.toLowerCase()) != -1 && QuickSearch.li[i].getElementsByTagName('A')[0]) {
+            for (; i < QuickSearcher.exLen; i++) {
+              if (QuickSearcher.li[i].innerText.toLowerCase().indexOf(value.toLowerCase()) != -1 && QuickSearcher.li[i].getElementsByTagName('A')[0]) {
                 // clone the link (if on homepage) or create a new link (if on the grammar index)
-                if (QuickSearch.grammarIndex) {
+                if (QuickSearcher.grammarIndex) {
                   clone = document.createElement('LI');
-                  clone.innerHTML = '<a href="#' + QuickSearch.li[i].id + '">' + QuickSearch.li[i].innerText.replace(/|/g, '') + '</a>';
+                  clone.innerHTML = '<a href="#' + QuickSearcher.li[i].id + '">' + QuickSearcher.li[i].innerText.replace(/|/g, '') + '</a>';
                 } else {
-                  clone = QuickSearch.li[i].cloneNode(true); // clone the match for displaying in the results node
+                  clone = QuickSearcher.li[i].cloneNode(true); // clone the match for displaying in the results node
                 }
 
                 // add lesson number to exercise or grammar point
-                clone.dataset.lesson = QuickSearch.grammarIndex ? 'L' + QuickSearch.li[i].id.replace(/l(\d+)-p\d+/, '$1') : clone.getElementsByTagName('A')[0].href.replace(/.*?\/(lesson-\d+).*|.*?\/(study-tools).*|.*?\/(appendix).*/, function (Match, $1, $2, $3) {
+                clone.dataset.lesson = QuickSearcher.grammarIndex ? 'L' + QuickSearcher.li[i].id.replace(/l(\d+)-p\d+/, '$1') : clone.getElementsByTagName('A')[0].href.replace(/.*?\/(lesson-\d+).*|.*?\/(study-tools).*|.*?\/(appendix).*/, function (Match, $1, $2, $3) {
                   if ($1) {
                     return $1.charAt(0).toUpperCase() + $1.split('-').pop();
 
@@ -197,14 +199,14 @@
 
           // append the matched exercises or display an error message/hide the search results
           if (frag.childNodes.length) {
-            QuickSearch.results.appendChild(frag);
+            QuickSearcher.results.appendChild(frag);
 
           } else {
-            QuickSearch.results.innerHTML = value ? '<li>No results found for "' + value + '".</li>' : '';
+            QuickSearcher.results.innerHTML = value ? '<li>No results found for "' + value + '".</li>' : '';
           }
 
           // update the hits counter and add a button to copy the search link
-          QuickSearch.hitsCounter.innerHTML = hits ? '(' + hits + ') '+
+          QuickSearcher.hitsCounter.innerHTML = hits ? '(' + hits + ') '+
             '<a '+
               'class="fa" '+
               'style="color:#17A;" '+
@@ -223,7 +225,9 @@
       }
     };
     
-    QuickSearch.exLen = QuickSearch.li.length;
+    // set remaining data for search functionality
+    QuickSearcher.li = QuickSearcher.grammarIndex ? document.querySelectorAll('.workbook-title') : document.querySelectorAll('.lesson-exercises li');
+    QuickSearcher.exLen = QuickSearcher.li.length;
 
 
     // set the value of the search field via the url (e.g. ?search=kanji)
@@ -237,20 +241,20 @@
         keyVal = query[i].split('=');
 
         if (/^search$/i.test(keyVal[0])) {
-          QuickSearch.search.value = decodeURIComponent(keyVal[1]);
+          QuickSearcher.search.value = decodeURIComponent(keyVal[1]);
           break;
         }
       }
     }
 
     // search for exercises when the user inputs text
-    QuickSearch.search.oninput = function () {
-      QuickSearch.query(this.value);
+    QuickSearcher.search.oninput = function () {
+      QuickSearcher.query(this.value);
     };
 
     // resume previous searches (in the event the user goes back in history) or those initiated by ?search=query
-    if (QuickSearch.search.value) {
-      QuickSearch.query(QuickSearch.search.value);
+    if (QuickSearcher.search.value) {
+      QuickSearcher.query(QuickSearcher.search.value);
     }
   }
   

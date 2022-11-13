@@ -460,6 +460,7 @@ window.GenkiExercises = [
   'lesson-10/kanji-vocab-5|漢字の単語：宣、徴、批、策、缶、導、規、替|p.140-141',
   'lesson-10/kanji-wb-4|漢字の練習：問題1|p.142',
   'lesson-10/kanji-wb-5|漢字の練習：問題2|p.142-143',
+  'lesson-10/kanji-wb-6|漢字の練習：問題3|p.143',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
