@@ -226,7 +226,7 @@
     };
     
     // set remaining data for search functionality
-    QuickSearcher.li = QuickSearcher.grammarIndex ? document.querySelectorAll('.workbook-title') : document.querySelectorAll('.lesson-exercises li');
+    QuickSearcher.li = document.querySelectorAll(QuickSearcher.grammarIndex ?  '.workbook-title' : '.lesson-exercises li');
     QuickSearcher.exLen = QuickSearcher.li.length;
 
 
