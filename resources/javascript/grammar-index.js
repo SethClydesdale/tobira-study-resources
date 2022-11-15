@@ -47,8 +47,9 @@
     
     // jumps to the specified grammar point in the URL
     jump : function () {
-      if (/l\d+-p\d+/.test(window.location.hash)) {
-        var l = window.location.hash.replace(/.*?l(\d+)-p\d+.*?/, '$1'),
+      if (/l\d+-p\d+|lesson-grammar-\d+/.test(window.location.hash)) {
+        var head = /lesson-grammar-\d+/.test(window.location.hash),
+            l = head ? window.location.hash.replace(/.*?lesson-grammar-(\d+).*?/, '$1') : window.location.hash.replace(/.*?l(\d+)-p\d+.*?/, '$1'),
             p = window.location.hash.replace(/.*?l\d+-p(\d+).*?/, '$1'),
             button = document.getElementById('toggler-' + l);
         
@@ -57,11 +58,11 @@
           button.click();
           
           try {
-            document.getElementById('l' + l + '-p' + p).scrollIntoView();
+            document.getElementById(head ? 'lesson-grammar-' + l : 'l' + l + '-p' + p).scrollIntoView();
             
           } catch (error) { // fallback for the ancients
             window.location.hash = '#';
-            window.location.hash = '#l' + l + '-p' + p;
+            window.location.hash = head ? '#lesson-grammar-' + l : '#l' + l + '-p' + p;
           }
         }
       }
@@ -70,7 +71,7 @@
   
   // jumps to the clicked grammar point
   document.addEventListener('click', function (e) {
-    if (e.target && e.target.href && /l\d+-p\d+/.test(e.target.href)) {
+    if (e.target && e.target.href && /l\d+-p\d+|lesson-grammar-\d+/.test(e.target.href)) {
       window.setTimeout(TobiraGRIndex.jump, 50); // slight delay before the hash is changed
     }
   });
