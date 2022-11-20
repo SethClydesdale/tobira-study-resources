@@ -475,6 +475,7 @@ window.GenkiExercises = [
   'lesson-11/kanji-1|漢字：読み方を書く・その1|p.263',
   'lesson-11/kanji-2|漢字：読み方を書く・その2|p.263',
   'lesson-11/grammar-wb-1|基礎練習：問題1|p.151',
+  'lesson-11/grammar-wb-2|基礎練習：問題2|p.151-152; A & B',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
