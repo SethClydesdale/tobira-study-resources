@@ -1180,6 +1180,7 @@ Genki.jisho = {
     { ja : "近代化|きんだいか", en : "modernization", v : "VN", l : "L11読" },
     { ja : "近代的(な)|きんだいてき(な)", en : "modern", v : "ANa", l : "L11会1" },
     { ja : "勤勉(な)|きんべん(な)", en : "hard-working; diligent", v : "ANa", l : "L15読2" },
+    { ja : "近年|きんねん", en : "recent years", v : "N/Adv", l : "Tobira: 文法ワークブック" },
 
     // Genki
     { ja : '木|き', en : 'tree', l : 'Genki: 会L22' },
@@ -1597,6 +1598,7 @@ Genki.jisho = {
     { ja : "これから", en : "from now on; in the future", v : "Adv", l : "L3読" },
     { ja : "頃|ころ", en : "(approximate) time; around; about", v : "N", l : "Tobira: 漢字表" },
     { ja : "殺す|ころす", en : "to kill", v : "u-Vt", l : "L6読2" },
+    { ja : "今後|こんご", en : "from now on; hereafter", v : "N/Adv", l : "Tobira: 文法ワークブック" },
     { ja : "コンテンツ", en : "contents (of a medium such as film, manga, game, etc.)", v : "N", l : "L7読1" },
     { ja : "こんなふうに", en : "like this", v : "Adv", l : "L15読1" },
     { ja : "コンプレックス", en : "inferiority complex", v : "N", l : "L13読1" },
