@@ -491,8 +491,12 @@ window.GenkiExercises = [
   'lesson-11/grammar-wb-15|応用練習：問題4|p.159',
   'lesson-11/kanji-wb-1|漢字の練習：読み方|p.149-155',
   'lesson-11/kanji-wb-2|漢字の練習：意味|p.149-155',
-  /*'lesson-11/kanji-wb-3|漢字の練習：書き順|p.149-155',
-  'lesson-11/kanji-vocab-1|漢字の単語：|p.149-136',*/
+  'lesson-11/kanji-wb-3|漢字の練習：書き順|p.149-155',
+  'lesson-11/kanji-vocab-1|漢字の単語：各、税、支、季、節|p.149-150',
+  'lesson-11/kanji-vocab-2|漢字の単語：非、共、士、政|p.150',
+  'lesson-11/kanji-vocab-3|漢字の単語：良、泊、輸、候、産|p.151',
+  'lesson-11/kanji-vocab-4|漢字の単語：律、築、装、展、至、貿、易、興、積|p.152-153',
+  'lesson-11/kanji-vocab-5|漢字の単語：極、江、戸、郵、禁、録、燃、演|p.153-155',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
