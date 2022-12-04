@@ -499,6 +499,7 @@ window.GenkiExercises = [
   'lesson-11/kanji-vocab-5|漢字の単語：極、江、戸、郵、禁、録、燃、演|p.153-155',
   'lesson-11/kanji-wb-4|漢字の練習：問題1|p.156',
   'lesson-11/kanji-wb-5|漢字の練習：問題2|p.156',
+  'lesson-11/kanji-wb-6|漢字の練習：問題3|p.157',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
