@@ -504,6 +504,11 @@ window.GenkiExercises = [
   'lesson-11/kanji-wb-8|漢字の練習：問題5|p.158',
   'lesson-11/kanji-wb-9|漢字の練習：問題6|p.159',
   'lesson-11/kanji-wb-10|漢字の練習：問題7|p.159',
+  'lesson-11/kanji-wb-11|漢字の練習：問題8|p.160',
+
+  // Lesson 12
+  'lesson-12/vocab-1|単語：読み物・その1|p.272',
+  'lesson-12/vocab-2|単語：読み物・その2|p.272-273',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
