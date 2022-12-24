@@ -527,6 +527,10 @@ window.GenkiExercises = [
   'lesson-12/grammar-wb-11|応用練習：問題2|p.167',
   'lesson-12/grammar-wb-12|応用練習：問題3|p.168',
   'lesson-12/grammar-wb-13|応用練習：問題4|p.169',
+  'lesson-12/kanji-wb-1|漢字の練習：読み方|p.161-166',
+  'lesson-12/kanji-wb-2|漢字の練習：意味|p.161-166',
+  /*'lesson-12/kanji-wb-3|漢字の練習：書き順|p.161-166',
+  'lesson-12/kanji-vocab-1|漢字の単語：|p.161-',*/
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
