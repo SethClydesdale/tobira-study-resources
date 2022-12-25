@@ -529,8 +529,12 @@ window.GenkiExercises = [
   'lesson-12/grammar-wb-13|応用練習：問題4|p.169',
   'lesson-12/kanji-wb-1|漢字の練習：読み方|p.161-166',
   'lesson-12/kanji-wb-2|漢字の練習：意味|p.161-166',
-  /*'lesson-12/kanji-wb-3|漢字の練習：書き順|p.161-166',
-  'lesson-12/kanji-vocab-1|漢字の単語：|p.161-',*/
+  'lesson-12/kanji-wb-3|漢字の練習：書き順|p.161-166',
+  'lesson-12/kanji-vocab-1|漢字の単語：植、軽、仲、角、線|p.161',
+  'lesson-12/kanji-vocab-2|漢字の単語：側、頭、治、枚、薄、隠|p.162-163',
+  'lesson-12/kanji-vocab-3|漢字の単語：乾、柔、丈、夫、優、改|p.163-164',
+  'lesson-12/kanji-vocab-4|漢字の単語：欠、沿、羽、曲、息、吹|p.164-165',
+  'lesson-12/kanji-vocab-5|漢字の単語：込、級、爆、飾、態|p.165-166',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
