@@ -535,6 +535,8 @@ window.GenkiExercises = [
   'lesson-12/kanji-vocab-3|漢字の単語：乾、柔、丈、夫、優、改|p.163-164',
   'lesson-12/kanji-vocab-4|漢字の単語：欠、沿、羽、曲、息、吹|p.164-165',
   'lesson-12/kanji-vocab-5|漢字の単語：込、級、爆、飾、態|p.165-166',
+  'lesson-12/kanji-wb-4|漢字の練習：問題1|p.167',
+  'lesson-12/kanji-wb-5|漢字の練習：問題2|p.167-168',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
