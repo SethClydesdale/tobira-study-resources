@@ -552,6 +552,7 @@ window.GenkiExercises = [
   'lesson-13/vocab-5|単語：会話文|p.301',
   'lesson-13/kanji-1|漢字：読み方を書く・その1|p.312',
   'lesson-13/kanji-2|漢字：読み方を書く・その2|p.312',
+  'lesson-13/grammar-wb-1|基礎練習：問題1|p.171',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
