@@ -565,9 +565,13 @@ window.GenkiExercises = [
   'lesson-13/grammar-wb-11|応用練習：問題4|p.176-177',
   'lesson-13/kanji-wb-1|漢字の練習：読み方|p.173-179',
   'lesson-13/kanji-wb-2|漢字の練習：意味|p.173-179',
-  /*'lesson-13/kanji-wb-3|漢字の練習：書き順|p.173-179',
-  'lesson-13/kanji-vocab-1|漢字の単語：|p.',
-  'lesson-13/kanji-wb-4|漢字の練習：問題1|p.',*/
+  'lesson-13/kanji-wb-3|漢字の練習：書き順|p.173-179',
+  'lesson-13/kanji-vocab-1|漢字の単語：印、象、細、夢、氷、詩|p.173-174',
+  'lesson-13/kanji-vocab-2|漢字の単語：想、像、接、示、池、妻|p.174-175',
+  'lesson-13/kanji-vocab-3|漢字の単語：担、任、姿、察、章、張|p.175-176',
+  'lesson-13/kanji-vocab-4|漢字の単語：飛、俳、句、浮、則、素|p.176-177',
+  'lesson-13/kanji-vocab-5|漢字の単語：詞、溶、誕、憶、孫、娘|p.178-179',
+  /*'lesson-13/kanji-wb-4|漢字の練習：問題1|p.',*/
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
