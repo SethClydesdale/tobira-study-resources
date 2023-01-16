@@ -571,7 +571,8 @@ window.GenkiExercises = [
   'lesson-13/kanji-vocab-3|漢字の単語：担、任、姿、察、章、張|p.175-176',
   'lesson-13/kanji-vocab-4|漢字の単語：飛、俳、句、浮、則、素|p.176-177',
   'lesson-13/kanji-vocab-5|漢字の単語：詞、溶、誕、憶、孫、娘|p.178-179',
-  /*'lesson-13/kanji-wb-4|漢字の練習：問題1|p.',*/
+  'lesson-13/kanji-wb-4|漢字の練習：問題1|p.180',
+  'lesson-13/kanji-wb-5|漢字の練習：問題2|p.180-181',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
