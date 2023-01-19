@@ -576,6 +576,13 @@ window.GenkiExercises = [
   'lesson-13/kanji-wb-6|漢字の練習：問題3|p.181',
   'lesson-13/kanji-wb-7|漢字の練習：問題4|p.181-182',
   'lesson-13/kanji-wb-8|漢字の練習：問題5|p.182',
+  'lesson-13/kanji-wb-9|漢字の練習：問題6|p.183',
+  'lesson-13/kanji-wb-10|漢字の練習：問題7|p.183-184',
+  'lesson-13/kanji-wb-11|漢字の練習：問題8|p.184',
+
+  // Lesson 14
+  'lesson-14/vocab-1|単語：読み物・その1|p.319',
+  //'lesson-14/vocab-2|単語：読み物・その2|p.319-320',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
