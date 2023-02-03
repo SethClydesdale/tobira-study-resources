@@ -20,6 +20,9 @@
     isTouch : 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0,
     isTouching : false,
     
+    // tells us if timer is paused by popup
+    isTimerPausedByPopup: false,
+    
     // tells us if text selection mode is enabled (for multi-choice quizzes)
     textSelectMode : false,
     
@@ -1117,6 +1120,10 @@
       });
 
       Genki.timer = timer;
+      
+      if (storageOK && localStorage.timerAutoPause != 'false') {
+        document.addEventListener("visibilitychange", Genki.startOrPauseTimerByVisibility);
+      }
 
       // indicate the exercise has been loaded in
       document.getElementById('exercise').className += ' content-loaded ' + (o.type == 'stroke' ? 'stroke-quiz multi' : o.type) + '-quiz';
@@ -2539,6 +2546,30 @@
       } else { // try again if not a lesson
         Genki.randomExercise();
       }
+    },
+    
+
+    // start or pause timer according to page visibility
+    startOrPauseTimerByVisibility : function () {
+      if (document.hidden && Genki.timer.isRunning()) {
+        Genki.timer.pause();
+      } else if (!document.hidden && Genki.timer.isPaused() && !Genki.isTimerPausedByPopup) {
+        Genki.timer.start();
+      }
+    },
+
+
+    // pause timer when open popup
+    pauseTimerWhenOpenPopup: function () {
+       Genki.timer.pause();
+       Genki.isTimerPausedByPopup = true;
+    },
+
+
+    // start timer when close popup
+    startTimerWhenClosePopup: function () {
+       Genki.timer.start();
+       Genki.isTimerPausedByPopup = false;
     },
     
     
