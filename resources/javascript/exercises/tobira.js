@@ -602,8 +602,13 @@ window.GenkiExercises = [
   'lesson-14/grammar-wb-14|応用練習：問題5|p.189',
   'lesson-14/kanji-wb-1|漢字の練習：読み方|p.185-190',
   'lesson-14/kanji-wb-2|漢字の練習：意味|p.185-190',
-  /*'lesson-14/kanji-wb-3|漢字の練習：書き順|p.185-190',
-  'lesson-14/kanji-vocab-1|漢字の単語：|p.185-',*/
+  'lesson-14/kanji-wb-3|漢字の練習：書き順|p.185-190',
+  'lesson-14/kanji-vocab-1|漢字の単語：条、件、暖、祖、標、束、票|p.185-186',
+  'lesson-14/kanji-vocab-2|漢字の単語：責、権、期、評|p.186-187',
+  'lesson-14/kanji-vocab-3|漢字の単語：価、総、臣、除、貧、域、補|p.187-188',
+  'lesson-14/kanji-vocab-4|漢字の単語：看、板、応、党、引|p.188-189',
+  'lesson-14/kanji-vocab-5|漢字の単語：退、離、討、剣、雰、囲、偏|p.189-190',
+  'lesson-14/kanji-wb-4|漢字の練習：問題1|p.191',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
