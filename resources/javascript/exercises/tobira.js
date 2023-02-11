@@ -620,6 +620,13 @@ window.GenkiExercises = [
   // Lesson 15
   'lesson-15/vocab-1|単語：読み物1・その1|p.343',
   'lesson-15/vocab-2|単語：読み物1・その2|p.343',
+  'lesson-15/vocab-3|単語：読み物2・その1|p.346',
+  'lesson-15/vocab-4|単語：読み物2・その2|p.346',
+  'lesson-15/vocab-5|単語：読み物3・その1|p.349',
+  'lesson-15/vocab-6|単語：読み物3・その2|p.349-350',
+  'lesson-15/vocab-7|単語：討論|p.353',
+  'lesson-15/kanji-1|漢字：読み方を書く・その1|p.360',
+  'lesson-15/kanji-2|漢字：読み方を書く・その2|p.360',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
