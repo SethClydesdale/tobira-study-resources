@@ -64,6 +64,7 @@ If you have any suggestions, feedback, questions, or bugs to report, feel free t
 - [Jisho - Online Japanese Dictionary](http://jisho.org/) (extremely useful for looking up words, kanji, etc.)
 - [Dictionary of Japanese Grammar](https://core6000.neocities.org/dojg/) (godsend for quickly looking up grammar points)
 - [Capture2Text](http://capture2text.sourceforge.net/) (very useful for copying and looking up kanji in games, images, etc.)
+- [Yomichan](https://foosoft.net/projects/yomichan/) (for quickly looking up words while reading, or for using the search page in tandem with Capture2Text)
 - [KanjiTomo](https://www.kanjitomo.net/) (useful for reading manga, LNs, etc.)
 
 ##### Websites
