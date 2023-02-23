@@ -1627,20 +1627,31 @@
         if (!Genki.check.busy && input.value == input.dataset.answer) {
           Genki.check.busy = true;
           
-          setTimeout(function() {
-            var next = Genki.input.map[Genki.input.index + 1];
+          var next = Genki.input.map[Genki.input.index + 1];
 
-            // focuses the next input if available, otherwise it asks if the student wants to check their answers
-            if (next) {
-              next.focus();
+          // focuses the next input if available, otherwise it asks if the student wants to check their answers
+          if (next) {
+            next.focus();
 
-            } else {
+          } else {
+            window.setTimeout(function() { // delay required since final value seems to be erased when checked immediately
               input.blur();
               Genki.check.answers(true);
-            }
-          
+              Genki.check.busy = false;
+            }, 10);
+          }
+        }
+        
+        // checks if currently busy processing the previous answer
+        else if (Genki.check.busy) {
+          window.setTimeout(function() { // delay required to prevent text duplication when proceeding to already filled inputs
             Genki.check.busy = false;
-          }, 50);
+            
+            // use `document.activeElement` over `input` as the latter causes previously input text to disappear on firefox
+            if (document.activeElement && document.activeElement.value && document.activeElement.value == Genki.input.map[Genki.input.index - 1].value) { // clears up duplicated texts from IMEs on current input
+              document.activeElement.value = '';
+            }
+          }, 10);
         }
       },
       
