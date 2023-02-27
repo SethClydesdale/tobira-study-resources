@@ -643,8 +643,12 @@ window.GenkiExercises = [
   'lesson-15/grammar-wb-14|応用練習：問題3|p.201-202',
   'lesson-15/kanji-wb-1|漢字の練習：読み方|p.197-203',
   'lesson-15/kanji-wb-2|漢字の練習：意味|p.197-203',
-  /*'lesson-15/kanji-wb-3|漢字の練習：書き順|p.197-203',
-  'lesson-15/kanji-vocab-1|漢字の単語：|p.197-',*/
+  'lesson-15/kanji-wb-3|漢字の練習：書き順|p.197-203',
+  'lesson-15/kanji-vocab-1|漢字の単語：疑、太、付、悩、豊、届|p.197-198',
+  'lesson-15/kanji-vocab-2|漢字の単語：再、森、林、緑、捨、測、栄、養|p.198-199',
+  'lesson-15/kanji-vocab-3|漢字の単語：恐、従、恵、齢、寿、延、老、収|p.200-201',
+  'lesson-15/kanji-vocab-4|漢字の単語：財、労、貯、衛、賞、資|p.201-202',
+  'lesson-15/kanji-vocab-5|漢字の単語：源、善、農、防、募、裏|p.202-203',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
