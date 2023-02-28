@@ -649,6 +649,8 @@ window.GenkiExercises = [
   'lesson-15/kanji-vocab-3|漢字の単語：恐、従、恵、齢、寿、延、老、収|p.200-201',
   'lesson-15/kanji-vocab-4|漢字の単語：財、労、貯、衛、賞、資|p.201-202',
   'lesson-15/kanji-vocab-5|漢字の単語：源、善、農、防、募、裏|p.202-203',
+  'lesson-15/kanji-wb-4|漢字の練習：問題1|p.204',
+  'lesson-15/kanji-wb-5|漢字の練習：問題2|p.204-205',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
