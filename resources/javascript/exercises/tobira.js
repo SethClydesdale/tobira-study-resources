@@ -651,6 +651,8 @@ window.GenkiExercises = [
   'lesson-15/kanji-vocab-5|漢字の単語：源、善、農、防、募、裏|p.202-203',
   'lesson-15/kanji-wb-4|漢字の練習：問題1|p.204',
   'lesson-15/kanji-wb-5|漢字の練習：問題2|p.204-205',
+  'lesson-15/kanji-wb-6|漢字の練習：問題3|p.205',
+  'lesson-15/kanji-wb-7|漢字の練習：問題4|p.205-206',
 
   // Appendix
   'appendix/vocabulary-index|単語索引|p.362-398',
