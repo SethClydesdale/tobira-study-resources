@@ -4194,6 +4194,7 @@ Genki.jisho = {
     { ja : "-風|-ふう", en : "-style; -type; look like", v : "Suf", l : "L11読" },
     { ja : "風景|ふうけい", en : "scenery", v : "N", l : "L10読" },
     { ja : "風刺|ふうし", en : "satire", v : "VN", l : "L8読" },
+    { ja : "封筒|ふうとう", en : "envelope", v : "N", l : "Tobira: 漢字ワークブック" },
     { ja : "増える|ふえる", en : "to increase (in number/amount); multiply", v : "ru-Vi", l : "L5読" },
     { ja : "深い|ふかい", en : "deep", v : "A", l : "L7読1" },
     { ja : "不可欠(な)|ふかけつ(な)", en : "indispensable; essential", v : "ANa", l : "L12読" },
