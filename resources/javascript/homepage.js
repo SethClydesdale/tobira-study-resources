@@ -22,16 +22,16 @@
       // [NOT USED CURRENTLY; GSR remnant] edition: [OPTIONAL] restricts the announcement to a specific edition, possible values are: 3rd || 2nd, announcements are global by default
       msg : [
         {
-          content : 'Tobira Study Resources is currently under development. New exercises will be added periodically as I continue studying. You can follow updates via <a href="https://github.com/SethClydesdale/tobira-study-resources/commits/main">GitHub</a>, <a href="https://twitter.com/search?q=(%23TobiraStudyResources)%20(from%3Asethc1995)&src=typed_query&f=live">Twitter</a>, or <a href="https://ko-fi.com/sethc95/posts">Ko-fi</a>. Feel free to also contact us on <a href="https://github.com/SethClydesdale/tobira-study-resources/issues">GitHub\</a> if you have any questions or feedback.'
+          content : 'As of March 3rd, 2023, all exercises for Tobira\'s lessons are now available! If you encounter any issues or have a question, please feel to contact me on <a href="https://github.com/SethClydesdale/tobira-study-resources/issues">GitHub</a>. I wish you all the best on your Japanese studies! 頑張れー٩( \'ω\' )و'
         },
         
         {
           content : 'Looking for more self-study resources? Visit the <a href="https://tobiraweb.9640.jp/">official website</a> for Tobira or check out some of the resources in the <a href="https://github.com/SethClydesdale/tobira-study-resources#resources-for-studying-japanese">readme</a> on GitHub.'
         },
 
-        /*{
-          content : 'Want to stay up to date on the latest changes made to Tobira Study Resources? You can follow updates via <a href="https://github.com/SethClydesdale/tobira-study-resources/commits/main">GitHub</a>, <a href="https://twitter.com/search?q=(%23TobiraStudyResources)%20(from%3Asethc1995)&src=typed_query&f=live">Twitter</a>, or <a href="https://ko-fi.com/sethc95/posts">Ko-fi</a>. Feel free to also contact us on <a href="https://github.com/SethClydesdale/tobira-study-resources/issues">GitHub\</a> if you have any questions or feedback.'
-        },*/
+        {
+          content : 'Want to stay up to date on the latest changes made to Tobira Study Resources? You can follow updates via <a href="https://github.com/SethClydesdale/tobira-study-resources/commits/main">GitHub</a>, <a href="https://twitter.com/search?q=%23TobiraStudyResources%20from%3Asethc1995&src=typed_query&f=live">Twitter</a>, or <a href="https://ko-fi.com/sethc95/posts">Ko-fi</a>. Feel free to also contact us on <a href="https://github.com/SethClydesdale/tobira-study-resources/issues">GitHub\</a> if you have any questions or feedback.'
+        },
 
         {
           content : 'Have a question about the site? Check out the <a href="' + getPaths() + 'help/">FAQ</a>! If you can\'t find an answer to your question, feel free to contact us via <a href="https://github.com/SethClydesdale/tobira-study-resources/issues">GitHub\'s issues</a> and we\'ll try to answer your question in a timely manner.'

@@ -2620,6 +2620,7 @@ Genki.jisho = {
     { ja : "摂氏|せっし", en : "centigrade; Celsius", v : "N", l : "L1読" },
     { ja : "接する|せっする", en : "to touch; to come in contact with", v : "VN", l : "Tobira: 漢字表" },
     { ja : "絶対(に)|ぜったい(に)", en : "absolutely; surely", v : "Adv", l : "L4読" },
+    { ja : "接頭語|せっとうご", en : "prefix", v : "N", l : "Tobira: 漢字ワークブック" },
     { ja : "説得|せっとく", en : "persuasion", v : "VN", l : "L15読3" },
     { ja : "切腹|せっぷく", en : "ritual suicide by disembowelment", v : "VN", l : "L11会2" },
     { ja : "節分|せつぶん", en : "the day before the first day of spring", v : "N", l : "L6読1" },
