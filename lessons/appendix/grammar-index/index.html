@@ -42,17 +42,17 @@
         font-size:15px;
       }
 
-      .table.grammar-table td:nth-child(2) { background:#F7F7F7 }
-      .table.grammar-table tr td:first-child {
+      .table.grammar-table td:nth-child(2), .table td { background:#F7F7F7 }
+      .table.grammar-table tr td:first-child, .table .table-head td {
         width:50px;
         font-weight:bold;
         text-align:center;
         background:#EEE;
       }
-      .dark-mode .table.grammar-table tr td:first-child { background:#222; }
-      .dark-mode .table.grammar-table tr td:nth-child(2) { background:#1A1A1A; }
+      .dark-mode .table.grammar-table tr td:first-child, .dark-mode .table .table-head td { background:#222; }
+      .dark-mode .table.grammar-table tr td:nth-child(2), .dark-mode .table td { background:#1A1A1A; }
 
-      .table.grammar-table ul, .table.grammar-table ol {
+      .table.grammar-table ul, .table.grammar-table ol, .table ul, .table ol {
         margin:0;
         padding-left:30px;
       }
@@ -85,6 +85,7 @@
           <div>
             <h2 id="quick-nav">クイックナビゲーション</h2>
             <ul id="quick-nav-list">
+              <li><a href="#grammar-note-usage">文法ノートの使い方</a></li>
               <li><a href="#lesson-grammar-1">第1課：日本の地理</a></li>
               <li><a href="#lesson-grammar-2">第2課：日本語のスピーチスタイル</a></li>
               <li><a href="#lesson-grammar-3">第3課：日本のテクノロジー</a></li>
@@ -110,6 +111,323 @@
               <ul id="quick-search-results"></ul>
             </div>
           </div>
+        </div>
+
+        <h2 id="grammar-note-usage" class="lesson-title">文法ノートの使い方</h2>
+        <div>
+          <h3 id="note-1" class="workbook-title">Abbreviations used in the Grammar Notes</h3>
+          <table class="table">
+            <tr class="table-head center">
+              <td style="width:15%;">Abbreviation</td>
+              <td style="width:50%;">Meaning</td>
+              <td style="width:35%;">Examples</td>
+            </tr>
+
+            <tr>
+              <td class="center">S</td>
+              <td>Sentence</td>
+              <td>学生が来る</td>
+            </tr>
+
+            <tr>
+              <td class="center">N</td>
+              <td>Noun</td>
+              <td>学生; 日本; バス</td>
+            </tr>
+
+            <tr>
+              <td class="center">NP</td>
+              <td>Noun Phrase</td>
+              <td>日本語の勉強</td>
+            </tr>
+
+            <tr>
+              <td class="center">VN</td>
+              <td>Noun which forms a suru-verb by affixing する</td>
+              <td>勉強; 買い物; サイン</td>
+            </tr>
+
+            <tr>
+              <td class="center">V</td>
+              <td>Verb</td>
+              <td>話す; 食べる; <ruby>来<rt>く</rt></ruby>る</td>
+            </tr>
+
+            <tr>
+              <td class="center">V-masu</td>
+              <td>Stem of verb's masu form (=masu form minus masu)</td>
+              <td>放し; 食べ; <ruby>来<rt>き</rt></ruby></td>
+            </tr>
+
+            <tr>
+              <td class="center">V-nai</td>
+              <td>Stem of verb's nai form (=nai form minus nai)</td>
+              <td>話さ; 食べ; <ruby>来<rt>こ</rt></ruby></td>
+            </tr>
+
+            <tr>
+              <td class="center">V-vol</td>
+              <td>Verb's volitional form</td>
+              <td>話そう; 食べよう; <ruby>来<rt>こ</rt></ruby>よう</td>
+            </tr>
+
+            <tr>
+              <td class="center">A</td>
+              <td>i-adjective</td>
+              <td>大きい; おもしろい</td>
+            </tr>
+
+            <tr>
+              <td class="center">A-stem</td>
+              <td>Stem of i-adjective</td>
+              <td>大き; おもしろ</td>
+            </tr>
+
+            <tr>
+              <td class="center">A-nai</td>
+              <td>Stem of i-adjective's nai form (=nai form minus nai)</td>
+              <td>大きく; おもしろく</td>
+            </tr>
+
+            <tr>
+              <td class="center">ANa</td>
+              <td>Stem of na-adjective</td>
+              <td><ruby>静<rt>しず</rt></ruby>か; <ruby>便利<rt>べんり</rt></ruby></td>
+            </tr>
+
+            <tr>
+              <td class="center">ANo</td>
+              <td>Stem of no-adjective</td>
+              <td><ruby>普通<rt>ふつう</rt></ruby>; <ruby>最高<rt>さいこう</rt></ruby></td>
+            </tr>
+
+            <tr>
+              <td class="center">An</td>
+              <td>Non-conjugational adjective</td>
+              <td>すぐ; ゆっくり; 大きく; <ruby>静<rt>しず</rt></ruby>かに</td>
+            </tr>
+
+            <tr>
+              <td class="center">DemP</td>
+              <td>Demonstrative pronoun</td>
+              <td>これ; それ; あれ</td>
+            </tr>
+
+            <tr>
+              <td class="center">DemA</td>
+              <td>Demonstative adjective</td>
+              <td>この; その; こんな; あんな</td>
+            </tr>
+
+            <tr>
+              <td class="center">Conj</td>
+              <td>Conjunction</td>
+              <td>が; から; しかし</td>
+            </tr>
+
+            <tr>
+              <td class="center">Prt</td>
+              <td>Particle</td>
+              <td>が; を; に; よ; ね</td>
+            </tr>
+
+            <tr>
+              <td class="center">QW</td>
+              <td>Question word</td>
+              <td>何; だれ; いつ; どの; いくら</td>
+            </tr>
+
+            <tr>
+              <td class="center">Da</td>
+              <td>だ and its conjugations</td>
+              <td>だ; だった; です; でした</td>
+            </tr>
+
+            <tr>
+              <td class="center">te</td>
+              <td>te-form</td>
+              <td>話して; 高くて; <ruby>静<rt>しず</rt></ruby>かで</td>
+            </tr>
+
+            <tr>
+              <td class="center">plain</td>
+              <td>plain form</td>
+              <td>話す; 話した; 高い; <ruby>静<rt>しず</rt></ruby>かだった</td>
+            </tr>
+
+            <tr>
+              <td class="center">non-past</td>
+              <td>non-past form</td>
+              <td>話す; 高い; <ruby>静<rt>しず</rt></ruby>かだ</td>
+            </tr>
+
+            <tr>
+              <td class="center">past</td>
+              <td>past form</td>
+              <td>話した; 高った; <ruby>静<rt>しず</rt></ruby>かだった</td>
+            </tr>
+
+            <tr>
+              <td class="center">aff</td>
+              <td>affirmative form</td>
+              <td>話す; 高い; <ruby>静<rt>しず</rt></ruby>かだ</td>
+            </tr>
+
+            <tr>
+              <td class="center">neg</td>
+              <td>negative form</td>
+              <td>話さない; 高くない; <ruby>静<rt>しず</rt></ruby>かじゃない</td>
+            </tr>
+
+            <tr>
+              <td class="center">cond</td>
+              <td>conditional form (=ba-form)</td>
+              <td>話せば; 高ければ; <ruby>静<rt>しず</rt></ruby>かなら(ば); 静かであれば</td>
+            </tr>
+          </table>
+          <br>
+          
+          <h3 id="note-2" class="workbook-title">Symbols used in the Grammar Notes</h3>
+          <table class="table">
+            <tr class="table-head center">
+              <td style="width:15%;">Symbol</td>
+              <td style="width:50%;">Meaning</td>
+              <td style="width:35%;">Examples</td>
+            </tr>
+
+            <tr>
+              <td>A/B; {A/B}</td>
+              <td>Either A or B</td>
+              <td>Vteくる/いく; N{では／じゃ}なくて</td>
+            </tr>
+
+            <tr>
+              <td>{A/B}{C/D}</td>
+              <td>AC, AD, BC or BD</td>
+              <td>N{で／から}{できる／できている}</td>
+            </tr>
+
+            <tr>
+              <td>(A)</td>
+              <td>A is optional.</td>
+              <td>N(Prt)も</td>
+            </tr>
+
+            <tr>
+              <td>A+B</td>
+              <td>A is followed by B.</td>
+              <td>Adj+N</td>
+            </tr>
+            
+            <tr>
+              <td>×</td>
+              <td>The following word/phrase/sentence is ungrammatical/unacceptable</td>
+              <td>本を{読む(の)なら/×読んだら}、電気をつけなさい。</td>
+            </tr>
+
+            <tr>
+              <td>??</td>
+              <td>The following word/phrase/sentence is quite unnatural.</td>
+              <td>トムは<ruby>急<rt>きゅう</rt></ruby>に{<ruby>怒<rt>おこ</rt></ruby>り<ruby>出<rt>だ</rt></ruby>した／??<ruby>怒<rt>おこ</rt></ruby>り始めた}。</td>
+            </tr>
+          </table>
+          <br>
+          
+          <h3 id="note-3" class="workbook-title">Types of Grammar Structures</h3>
+          <p>The connection forms for some grammar structures listed in the Grammar Notes are listed by type: Type 1, Type 2a, etc. A list of each of these types and their connection forms follows.</p>
+          <table class="table">
+            <tr class="table-head center">
+              <td style="width:15%;">Type</td>
+              <td style="width:35%;">Connection Forms</td>
+              <td style="width:50%;">Examples</td>
+            </tr>
+
+            <tr>
+              <td class="t-bold center">Type 1</td>
+              <td>
+                <ul>
+                  <li>{V/A}-plain</li>
+                  <li>{ANa/N}+{だ／じゃない／だった／じゃなかった}</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>{話す／話さない／話した／話さなかった}から</li>
+                  <li>{高い／高くない／高った／高くなかった}から</li>
+                  <li>{<ruby>便利<rt>べんり</rt></ruby>だ／便利じゃない／便利だった／便利じゃなかった}から</li>
+                  <li>{学生だ／学生じゃない／学生だった／学生じゃなかった}から</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="t-bold center">Type 2a</td>
+              <td>
+                <ul>
+                  <li>{V/A}-plain</li>
+                  <li>{ANa/N}{な／じゃない／だった／じゃなかった}</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>{<ruby>便利<rt>べんり</rt></ruby>な／便利じゃない／便利だった／便利じゃなかった}ので</li>
+                  <li>{学生な／学生じゃない／学生だった／学生じゃなかった}ので</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="t-bold center">Type 2b</td>
+              <td>
+                <ul>
+                  <li>{V/A}-plain</li>
+                  <li>ANa{な／じゃない／だった／じゃなかった}</li>
+                  <li>N{の／じゃない／だった／じゃなかった}</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>{<ruby>便利<rt>べんり</rt></ruby>な／便利じゃない／便利だった／便利じゃなかった}時</li>
+                  <li>{学生の／学生じゃない／学生だった／学生じゃなかった}時</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="t-bold center">Type 2c</td>
+              <td>
+                <ul>
+                  <li>{V/A}-plain</li>
+                  <li>ANa{な／じゃない／だった／じゃなかった}</li>
+                  <li>N{である／じゃない／だった／じゃなかった}</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>{<ruby>便利<rt>べんり</rt></ruby>な／便利じゃない／便利だった／便利じゃなかった}ことに気がつく</li>
+                  <li>{学生である／学生じゃない／学生だった／学生じゃなかった}ことに気がつく</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="t-bold center">Type 3</td>
+              <td>
+                <ul>
+                  <li>{V/A}-plain</li>
+                  <li>{ANa/N}{null／じゃない／だった／じゃなかった}</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>{<ruby>便利<rt>べんり</rt></ruby>／便利じゃない／便利だった／便利じゃなかった}でしょう</li>
+                  <li>{学生／学生じゃない／学生だった／学生じゃなかった}でしょう</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <br>
+          
         </div>
 
         <h2 id="lesson-grammar-1" class="lesson-title">第1課：日本の地理 (Tobira: p.17-21)</h2>
