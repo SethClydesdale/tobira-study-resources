@@ -22,7 +22,7 @@
       // [NOT USED CURRENTLY; GSR remnant] edition: [OPTIONAL] restricts the announcement to a specific edition, possible values are: 3rd || 2nd, announcements are global by default
       msg : [
         {
-          content : 'As of March 3rd, 2023, all exercises for Tobira\'s lessons are now available! If you encounter any issues or have a question, please feel free to contact me on <a href="https://github.com/SethClydesdale/tobira-study-resources/issues">GitHub</a>. I wish you all the best on your Japanese studies! 頑張れー٩( \'ω\' )و'
+          content : 'As of March 3rd, 2023, all exercises for Tobira\'s lessons are now available! If you encounter any issues or have a question, please feel free to contact me on <a href="https://github.com/SethClydesdale/tobira-study-resources/issues">GitHub</a>. I wish you all the best on your Japanese studies! 頑張って٩( \'ω\' )و'
         },
         
         {
