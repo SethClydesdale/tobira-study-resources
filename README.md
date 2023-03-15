@@ -6,6 +6,8 @@ Tobira Study Resources is a website that offers a vast collection of exercises f
 
 **Offline Version:** [download](https://github.com/SethClydesdale/tobira-study-resources/archive/refs/heads/main.zip)
 
+If you're interested in learning Japanese, please see [this guide](https://sethclydesdale.github.io/tobira-study-resources/help/japanese-guide/)!
+
 -----
 
 **Quick Links**
