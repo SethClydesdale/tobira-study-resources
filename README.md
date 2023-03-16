@@ -64,6 +64,7 @@ If you have any suggestions, feedback, questions, or bugs to report, feel free t
 - [Capture2Text](http://capture2text.sourceforge.net/) (very useful for copying and looking up kanji in games, images, etc.)
 - [Yomichan](https://foosoft.net/projects/yomichan/) (for quickly looking up words while reading, or for using the search page in tandem with Capture2Text)
 - [KanjiTomo](https://www.kanjitomo.net/) (useful for reading manga, LNs, etc.)
+- [Useful Tools List](https://sethclydesdale.github.io/tobira-study-resources/help/japanese-guide/#tools) (more in-depth list of tools for Japanese study)
 
 ##### Websites
 - [Tobira Official Website](https://tobiraweb.9640.jp/)
