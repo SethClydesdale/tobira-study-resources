@@ -24,6 +24,10 @@
         {
           content : 'As of March 3rd, 2023, all exercises for Tobira\'s lessons are now available! If you encounter any issues or have a question, please feel free to contact me on <a href="https://github.com/SethClydesdale/tobira-study-resources/issues">GitHub</a>. I wish you all the best on your Japanese studies! 頑張って！٩( \'ω\' )و'
         },
+      
+        {
+          content : 'Interested in learning Japanese? Check out <a href="' + getPaths() + 'help/japanese-guide/">our guide</a> for more information on how to learn the language, as well as useful tools that you can utilize in your studies!'
+        },
         
         {
           content : 'Looking for more self-study resources? Visit the <a href="https://tobiraweb.9640.jp/">official website</a> for Tobira or check out some of the resources in the <a href="https://github.com/SethClydesdale/tobira-study-resources#resources-for-studying-japanese">readme</a> on GitHub.'
