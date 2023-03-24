@@ -43,10 +43,6 @@
     
     <script src="https://sethclydesdale.github.io/tobira-study-resources/resources/javascript/all.min.js"></script>
     <script>(function (window, document) {
-      if (navigator.cookieEnabled && window.localStorage && localStorage.GenkiEdition == '3rd') {
-        document.getElementById('404-home').href += 'lessons-3rd/';
-      }
-        
       // makes corrections to the page if used on the local file system
       if (window.location.protocol == 'file:') {
         var domain = 'https://sethclydesdale.github.io/tobira-study-resources/',
