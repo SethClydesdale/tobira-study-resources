@@ -1577,14 +1577,18 @@
               document.getElementById('genki-modal-ok').style.display = 'inline-block';
               
               // notify the user that break time has ended
-              if (!Genki.local && Genki.canNotify && Notification.permission == 'granted') {
-                navigator.serviceWorker.register('sw.js');
-                navigator.serviceWorker.ready.then(function(registration) {
-                  registration.showNotification(document.title.replace(/ \| Tobira Study Resources.*$/, ''), {
-                    body : 'Break time is up!',
-                    icon : document.querySelector('meta[property="og:image"]').content,
-                    tag : 'breakTime-' + Genki.active.index
-                  });
+              if (!Genki.local && Genki.canNotify) {
+                navigator.serviceWorker.register(getPaths() + 'resources/javascript/sw.js');
+                Notification.requestPermission(function(result) {
+                  if (result == 'granted') {
+                    navigator.serviceWorker.ready.then(function(registration) {
+                      registration.showNotification(document.title.replace(/ \| Tobira Study Resources.*$/, ''), {
+                        body : 'Break time is up!',
+                        icon : document.querySelector('meta[property="og:image"]').content,
+                        tag : 'breakTime-' + Genki.active.index
+                      });
+                    });
+                  }
                 });
                 /*var notif = new Notification(document.title.replace(/ \| Tobira Study Resources.*$/, ''), {
                   body : 'Break time is up!',
