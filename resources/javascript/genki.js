@@ -1524,7 +1524,6 @@
           
           // request permission to show a notification when break time is up
           if (!Genki.local && Genki.canNotify && !/denied|granted/.test(Notification.permission)) {
-            navigator.serviceWorker.register('sw.js');
             Notification.requestPermission();
           }
           
@@ -1579,6 +1578,7 @@
               
               // notify the user that break time has ended
               if (!Genki.local && Genki.canNotify && Notification.permission == 'granted') {
+                navigator.serviceWorker.register('sw.js');
                 navigator.serviceWorker.ready.then(function(registration) {
                   registration.showNotification(document.title.replace(/ \| Tobira Study Resources.*$/, ''), {
                     body : 'Break time is up!',
