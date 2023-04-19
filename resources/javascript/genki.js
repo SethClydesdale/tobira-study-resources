@@ -1479,10 +1479,10 @@
           document.getElementById('appendix-tool').style.display = ''; // shows tools
           
           // scroll to the main titles
-          Genki.scrollTo(/\/dictionary\//.test(window.location) ? '#practice-words' : '.title');
+          Genki.scrollTo(/\/vocabulary-index\//.test(window.location) ? '#practice-words' : '.title');
           
           // launch exercise prompt based on the current page
-          if (/\/dictionary\//.test(window.location)) Genki.appendix.jisho.launchExercise();
+          if (/\/vocabulary-index\//.test(window.location)) Genki.appendix.jisho.launchExercise();
           else if (/\/map-of-japan\//.test(window.location)) Genki.appendix.studyMap();
           else if (/\/numbers-chart\//.test(window.location)) Genki.appendix.studyChart('numbers');
           else if (/\/conjugation-chart\//.test(window.location)) Genki.appendix.studyChart('conjugation');
@@ -2235,7 +2235,7 @@
             content : 'To change the exercise type, you must quit the current exercise. Do you want to quit?',
             buttonText : 'Quit',
             closeButtonText : 'Cancel',
-            keepOpen : /\/dictionary\//.test(window.location) || (!Genki.tools && /"format"/.test(Genki.exerciseData)) ? true : false,
+            keepOpen : /\/vocabulary-index\//.test(window.location) || (!Genki.tools && /"format"/.test(Genki.exerciseData)) ? true : false,
             
             // clicking "OK" will reload the exercise, leading to the exercise type selection screen
             callback : function () {
