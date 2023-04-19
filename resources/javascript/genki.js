@@ -217,7 +217,7 @@
           title : 'Please Select an Exercise Type',
           content : 'Please select the type of exercise you would like to do, then click "Begin" to start studying.<br><br>'+
           '<div class="center">'+
-            (/\/dictionary\/|\/custom-vocab\//.test(window.location) ? '' : '<div>'+
+            (/\/vocabulary-index\/|\/custom-vocab\//.test(window.location) ? '' : '<div>'+
               '<b>Current Exercise</b><br>'+
               document.title.replace(/ \| Tobira Study Resources.*$/, '')+
             '</div><br>')+
@@ -1364,7 +1364,7 @@
           (document.querySelector('.alt-phrase') ? '<br><br>' + Genki.lang.sub_answers : '')+
           '<div class="center">'+
             (
-              /\/dictionary\//.test(window.location) ? Genki.lang.back_to_dict :
+              /\/vocabulary-index\//.test(window.location) ? Genki.lang.back_to_dict :
               '<button class="button" onclick="Genki.reset();"><i class="fa">&#xf021;</i>Try Again</button>'
             )+
             '<button class="button" onclick="Genki.breakTime();"><i class="fa">&#xf0f4;</i>Take a Break</button>'+
@@ -1672,7 +1672,7 @@
 
           // show restart button
           document.getElementById('review-exercise').innerHTML = (
-            /\/dictionary\//.test(window.location) ? Genki.lang.back_to_dict :
+            /\/vocabulary-index\//.test(window.location) ? Genki.lang.back_to_dict :
             '<button class="button" onclick="Genki.reset();"><i class="fa">&#xf021;</i>Restart</button>'
           ) + (document.querySelector('.drag-quiz') ? Genki.lang.toggle_furigana + document.getElementById('toggle-orientation').outerHTML : '');
 

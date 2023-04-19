@@ -416,11 +416,11 @@
       },
       
       
-      // launches an exercise based on a selected list of words
-      launchExercise : function () {
+      // purges bad definition ids (don't exist anymore or on the current site; e.g. going from tobira --> genki version which have different selectors)
+      purgeBadSelectors : function () {
         var j = Genki.appendix.jisho.selected.length;
         
-        // verify selected before launching the exercise
+        // verify selected definitions
         for (var i = 0, badId = []; i < j; i++) {
           if (!document.querySelector('#japanese-english [data-def="' + Genki.appendix.jisho.selected[i] + '"]')) {
             badId.push(Genki.appendix.jisho.selected[i]);
@@ -442,6 +442,15 @@
           // update with new length
           j = Genki.appendix.jisho.selected.length;
         }
+      },
+      
+      
+      // launches an exercise based on a selected list of words
+      launchExercise : function () {
+        var j = Genki.appendix.jisho.selected.length;
+        
+        // remove bad selectors before starting
+        Genki.appendix.jisho.purgeBadSelectors();
         
         // initiate an exercise once 5 or more words have been selected
         if (j < 5) {
@@ -500,6 +509,10 @@
           }
         });
         
+        // remove bad selectors before showing current selection
+        Genki.appendix.jisho.purgeBadSelectors();
+
+        // disply currently selected words
         var list = document.getElementById('selected_words_list'),
             checked = storageOK && localStorage.selectedDefinitions ? localStorage.selectedDefinitions.split(',') : [],
             i = 0,
