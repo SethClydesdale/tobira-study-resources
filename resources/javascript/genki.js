@@ -1373,6 +1373,21 @@
         '</div>'+
       '</div>';
       
+      // save results in local storage
+      if (Genki.active.exercise.length > 0 && !/appendix|study-tools/.test(Genki.active.exercise[0])) {
+        var lesson = Genki.active.exercise[0],
+            lessonsResults = JSON.parse(localStorage.TobiraResults);
+
+        if (!lessonsResults) lessonsResults = {};
+        lessonsResults[lesson] = Genki.stats.score;
+
+        localStorage.TobiraResults = JSON.stringify(lessonsResults);
+
+        // refresh the exercise list with the new results
+        Genki.create.removeExerciseList();
+        Genki.create.exerciseList();
+      }
+      
       // changes display over certain buttons
       if (type == 'stroke')  {
         document.getElementById('toggle-stroke-numbers').style.display = '';
@@ -2143,6 +2158,16 @@
         // add the "more exercises" buttons to the document
         document.getElementById('quiz-timer').insertAdjacentHTML('afterend', more + '</div>');
       },
+      
+
+      // removes the exercise list when needed update without refreshing the page
+      removeExerciseList : function () {
+        var list = document.getElementById('exercise-list'),
+            toggle = document.getElementById('toggle-exercises');
+        
+        if (list) list.parentNode.removeChild(list);
+        if (toggle) toggle.parentNode.removeChild(toggle);
+      },
 
 
       // creates the exercise list
@@ -2151,7 +2176,7 @@
             list = 
             '<nav id="exercise-list">'+
               '<h3 class="main-title">Exercise List</h3>'+
-              '<button id="random-exercise" class="button" onclick="Genki.randomExercise();" title="Random Exericse"><i class="fa">&#xf074;</i></button>'+
+              '<button id="random-exercise" class="button" onclick="Genki.randomExercise();" title="Random Exercise"><i class="fa">&#xf074;</i></button>'+
               '<div id="lessons-list"><h4 ' + attrs + '>ページリンク</h4><ul id="page-links">',
             lesson = '\\.\\.\\/',
             i = 0,
@@ -2168,6 +2193,11 @@
               'kanji-review-wb' : '漢字ワークブック・復習漢字の練習',
               'kanji-wb' : '漢字ワークブック'
             };
+        
+        
+        if (storageOK && !localStorage.TobiraResults) {
+          localStorage.TobiraResults = JSON.stringify({});
+        }
 
         // loop over all the exercises and place them into their respectice lesson group
         for (; i < j; i++) {
@@ -2189,8 +2219,21 @@
             list += '<li><h4 class="sub-lesson-title">' + groupTitles[group] + '</h4></li>';
           }
           
-          // add the exercise link to the group
-          list += '<li><a href="' + (lesson == '\\.\\.\\/' ? linkData[0] : '../../../' + Genki.ed + '/' + linkData[0] + '/') + Genki.local + Genki.debug + '" ' + (linkData[2] ? 'data-page="Tobira' + /*(+linkData[0].replace(/lesson-(\d+).*//*, '$1') < 13 ? 'I' : 'II') +*/ (/grammar-wb/.test(linkData[0]) ? ' Grammar Power' : /kanji-wb|kanji-review-wb|kanji-vocab/.test(linkData[0]) ? ' Power Up Your Kanji' : '') + ': ' + linkData[2] + '"' : '') + ' title="' + linkData[1] + '">' + linkData[1] + '</a></li>';
+          // add the exercise link to the group and display results
+          var resultsStorage = JSON.parse(localStorage.TobiraResults),
+              
+              lessonResult = resultsStorage ? parseInt(resultsStorage[linkData[0]]) : null,
+              resultSpans = {
+                perfect: '<span class="exercise-results result--perfect" title="Exercise score"><i class="fa">&#xf005;</i> ',
+                good: '<span class="exercise-results result--good" title="Exercise score"><i class="fa">&#xf00c;</i> ',
+                average: '<span class="exercise-results result--average" title="Exercise score"><i class="fa">&#xf10c;</i> ',
+                low: '<span class="exercise-results result--low" title="Exercise score"><i class="fa">&#xf00d;</i> ',
+              },
+
+              resultSpan =  lessonResult == 100 ? resultSpans.perfect : lessonResult >= 70 ? resultSpans.good : lessonResult >= 50 ? resultSpans.average : resultSpans.low,
+              prevScore = lessonResult ? resultSpan + lessonResult +'%' +'</span>' : '';
+
+          list += '<li class="menu-item-list"><a href="' + (lesson == '\\.\\.\\/' ? linkData[0] : '../../../' + Genki.ed + '/' + linkData[0] + '/') + Genki.local + Genki.debug + '" ' + (linkData[2] ? 'data-page="Tobira' + /*(+linkData[0].replace(/lesson-(\d+).*//*, '$1') < 13 ? 'I' : 'II') +*/ (/grammar-wb/.test(linkData[0]) ? ' Grammar Power' : /kanji-wb|kanji-review-wb|kanji-vocab/.test(linkData[0]) ? ' Power Up Your Kanji' : '') + ': ' + linkData[2] + '"' : '') + ' title="' + linkData[1] + '">' + linkData[1] + '</a>'+ " "+  prevScore +'</li>';
           
         }
 
@@ -2205,6 +2248,7 @@
           // highlight the active exercise and scoll to it
           active = document.querySelector('a[href*="' + Genki.active.exercise[0] + '"]');
           active.className += ' active-lesson';
+          active = active.parentNode;
 
           // jump to the active exercise
           document.getElementById('lessons-list').scrollTop = active.offsetTop - (active.getBoundingClientRect().height + (window.matchMedia && matchMedia('(pointer:coarse)').matches ? 0 : 6));
