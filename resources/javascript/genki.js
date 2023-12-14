@@ -2,6 +2,13 @@
 (function (window, document) {
   'use strict';
   
+  const PracticeType = Object.freeze({
+    DRAG: 'drag',
+    MULTI: 'multi',
+    WRITING: 'writing',
+    FILL: 'fill',
+    STROKE: 'stroke'
+  });
   // primary object for functionality of exercises
   var Genki = {
     
@@ -297,7 +304,7 @@
               
               // BEGIN conversion conditions for vocab or kana
               // multi-choice conversion
-              if (o.type == 'multi') {
+              if (o.type == PracticeType.MULTI) {
                 var quizlet = [], keys = [], keys2 = [], currentAnswer, sentence, answer, answers, def, i, j, k, n, n2;
                 
                 // get keys for randomization of the vocabulary
@@ -433,12 +440,12 @@
               var img = document.querySelector('.multi-quiz-image');
               
               // hide multi-choice images if written test is chosen
-              if (o.type == 'fill' && img) {
+              if (o.type == PracticeType.FILL && img) {
                 img.style.display = 'none';
               }
               
               // show multi-choice images if multiple choice is chosen
-              else if (o.type == 'multi' && img) {
+              else if (o.type == PracticeType.MULTI && img) {
                 img.style.display = '';
               }
             }
@@ -474,7 +481,7 @@
       Genki.active.type = o.type;
 
       // # 1. DRAG AND DROP #
-      if (o.type == 'drag') {
+      if (o.type == PracticeType.DRAG) {
         var quiz = '<div id="quiz-info">' + o.info + '</div><div id="question-list">',
             dropList = '<div id="drop-list">',
             keysQ = [],
@@ -579,7 +586,7 @@
 
 
       // # 3. WRITING PRACTICE #
-      else if (o.type == 'writing') {
+      else if (o.type == PracticeType.WRITING) {
         var quiz = '<div id="quiz-info">' + o.info + '<br>If you don\'t know how to type in Japanese on your computer, please visit our help page by <a href="../../../help/writing/' + Genki.local + '" target="_blank">clicking here</a>.</div><div id="question-list">',
             columns = o.columns,
             width = 'style="width:' + (100 / (columns + 1)) + '%;"',
@@ -629,7 +636,7 @@
 
 
       // # 4. MULTIPLE CHOICE #
-      else if (o.type == 'multi') {
+      else if (o.type == PracticeType.multi) {
         var quiz = '<div id="quiz-info">' + o.info + '<br><b style="color:#6F6;">NEW:</b> You can now choose between "Instant" and "Classic" Feedback Mode for multiple choice quizzes in the <a href="#genki-site-settings" onclick="GenkiSettings.manager(); return false;">Site Settings</a>.' + '</div><div id="question-list">',
             answers = '<div id="answer-list">',
             option = 65, // used for tagging answers as A(65), B(66), C(67)..
@@ -713,7 +720,7 @@
       
       
       // # 5. FILL IN THE BLANKS #
-      else if (o.type == 'fill') {
+      else if (o.type == PracticeType.FILL) {
         var helper = false;
         
         // check if furigana is present and add a toggle button
@@ -836,7 +843,7 @@
       
       
       // # 6. STROKE ORDER #
-      else if (o.type == 'stroke') {
+      else if (o.type == PracticeType.STROKE) {
         var quiz = '<div id="quiz-info">' + o.info + '</div><div id="question-list">',
             answers = '<div id="answer-list">',
             strokeOrderHidden = storageOK && localStorage.strokeOrderVisible == 'false',
@@ -1009,7 +1016,9 @@
 
               // global mistakes are incremented along with mistakes specific to problems
               target.dataset.mistakes = ++target.dataset.mistakes;
-              ++Genki.stats.mistakes;
+
+              // allows to see how many times target was gotten wrong while overall answers wrong number isn't bloated
+              target.dataset.mistakes > 1 ? Genki.stats.mistakes : ++Genki.stats.mistakes;
 
             } else {
               target.className += ' answer-correct';
@@ -1220,7 +1229,7 @@
 
       } else {
         // set the canvas as the answer if doing a stroke order exercise
-        if (answer && flag == 'stroke') {
+        if (answer && flag == PracticeType.STROKE) {
           var kanji = KanjiCanvas.recognize(answer.dataset.canvas), index; // find kanji with the given strokes
           
           // set the answer item as the canvas
@@ -1255,7 +1264,7 @@
 
         if (next) {
           // instantly show if the answer was wrong or correct
-          if (Genki.feedbackMode == 'instant' && Genki.active.type == 'multi') {
+          if (Genki.feedbackMode == 'instant' && Genki.active.type == PracticeType.MULTI) {
             // cache for nodes used in instant feedback mode
             if (!Genki.multiNodes) {
               Genki.multiNodes = {
@@ -1290,7 +1299,7 @@
           }
 
         } else { // end the quiz if there's no new question
-          Genki.endQuiz(flag == 'stroke' ? flag : 'multi');
+          Genki.endQuiz(flag == PracticeType.STROKE ? flag : PracticeType.MULTI);
 
           // show all questions and answers
           for (var q = document.querySelectorAll('[id^="quiz-q"]'), i = 0, j = q.length; i < j; i++) {
@@ -1303,7 +1312,7 @@
       }
       
       // initialize canvas for stroke order quizzes
-      if (flag == 'stroke' && document.getElementById('canvas-' + Genki.stats.solved)) {
+      if (flag == PracticeType.STROKE && document.getElementById('canvas-' + Genki.stats.solved)) {
         KanjiCanvas.init('canvas-' + Genki.stats.solved);
       }
     },
