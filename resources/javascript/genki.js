@@ -175,6 +175,18 @@
       }
     },
 
+    
+    // quiz types
+    // feel free to use as a reference for selecting types or within code as Genki.QuizType.TYPE
+    QuizType : {
+      DRAG: 'drag',
+      KANA: 'kana',
+      WRITING: 'writing',
+      MULTI: 'multi',
+      FILL: 'fill',
+      STROKE: 'stroke',
+      DRAWING: 'drawing'
+    },
 
     // To generate a quiz simply pass an object with the necessary data (see vocab-1/index.html and other quiz files for examples)
     generateQuiz : function (o) {
@@ -1009,8 +1021,10 @@
 
               // global mistakes are incremented along with mistakes specific to problems
               target.dataset.mistakes = ++target.dataset.mistakes;
-              ++Genki.stats.mistakes;
-
+              
+              // allows to see how many times target was gotten wrong while overall answers wrong number isn't bloated
+              target.dataset.mistakes > 1 ? Genki.stats.mistakes : ++Genki.stats.mistakes;
+              
             } else {
               target.className += ' answer-correct';
               
@@ -1379,7 +1393,7 @@
             lessonsResults = JSON.parse(localStorage.TobiraResults);
 
         if (!lessonsResults) lessonsResults = {};
-        lessonsResults[lesson] = Genki.stats.score;
+        lessonsResults[lesson] = (typeof lessonsResults[lesson] == 'undefined' || Genki.stats.score > lessonsResults[lesson]) ? Genki.stats.score : lessonsResults[lesson];
 
         localStorage.TobiraResults = JSON.stringify(lessonsResults);
 
@@ -2231,7 +2245,7 @@
               },
 
               resultSpan =  lessonResult == 100 ? resultSpans.perfect : lessonResult >= 70 ? resultSpans.good : lessonResult >= 50 ? resultSpans.average : resultSpans.low,
-              prevScore = lessonResult ? resultSpan + lessonResult +'%' +'</span>' : '';
+              prevScore = lessonResult > -1 ? resultSpan + lessonResult +'%' +'</span>' : '';
 
           list += '<li class="menu-item-list"><a href="' + (lesson == '\\.\\.\\/' ? linkData[0] : '../../../' + Genki.ed + '/' + linkData[0] + '/') + Genki.local + Genki.debug + '" ' + (linkData[2] ? 'data-page="Tobira' + /*(+linkData[0].replace(/lesson-(\d+).*//*, '$1') < 13 ? 'I' : 'II') +*/ (/grammar-wb/.test(linkData[0]) ? ' Grammar Power' : /kanji-wb|kanji-review-wb|kanji-vocab/.test(linkData[0]) ? ' Power Up Your Kanji' : '') + ': ' + linkData[2] + '"' : '') + ' title="' + linkData[1] + '">' + linkData[1] + '</a>'+ " "+  prevScore +'</li>';
           
