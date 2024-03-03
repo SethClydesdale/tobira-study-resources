@@ -1623,7 +1623,7 @@ ruby rt {
   /* START ruby-position:under; hack */
   font-size:11px; /* if font size is changed, various values will need to be adjusted */
   display:block;
-  display:ruby-text;
+  text-align:center;
   /*OLD: (w/valign:top this doesn't seem necessary)
   height:15px;
   line-height:15px;*/
@@ -1640,7 +1640,6 @@ ruby rt {
 
 .helper-hidden .multi-vocab rt {
   display:block;
-  display:ruby-text;
   visibility:hidden;
 }
 
