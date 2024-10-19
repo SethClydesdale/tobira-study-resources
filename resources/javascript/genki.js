@@ -2201,7 +2201,7 @@
           '<div id="related" class="indent-block">'+
             '<h3>Related Projects</h3>'+
             '<a href="https://sethclydesdale.github.io/genki-study-resources/lessons-3rd/" title="Genki Study Resources"><img src="' + getPaths() + 'resources/images/genki-img.png" alt="Genki Study Resources"></a>'+
-            '<a href="https://sethclydesdale.github.io/tobira-study-resources/" title="Colloquial Kansai Japanese"><img src="' + getPaths() + 'resources/images/kansai-img.png" alt="Colloquial Kansai Japanese"></a>'+
+            '<a href="https://sethclydesdale.github.io/colloquial-kansai-dictionary/" title="Colloquial Kansai Japanese"><img src="' + getPaths() + 'resources/images/kansai-img.png" alt="Colloquial Kansai Japanese"></a>'+
           '</div>';
         
         if (Genki.exercises) {
