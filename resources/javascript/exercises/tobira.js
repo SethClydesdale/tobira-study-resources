@@ -1,11 +1,4 @@
 window.GenkiExercises = [
-  // Page links
-  '../../../|Home',
-  '../../../help/|Help & FAQ',
-  '../../../report/|Bug Reports & Feedback',
-  '../../../download/|Download',
-  '../../../donate/|Donate',
-
   // Lesson 1
   'lesson-1/vocab-1|単語：読み物・その1|p.6',
   'lesson-1/vocab-2|単語：読み物・その2|p.6-7',
