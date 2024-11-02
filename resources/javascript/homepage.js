@@ -167,11 +167,11 @@
           // loop over the exercises if a value is present
           if (value) {
             for (; i < QuickSearcher.exLen; i++) {
-              if (QuickSearcher.li[i].innerText.toLowerCase().indexOf(value.toLowerCase()) != -1 && QuickSearcher.li[i].getElementsByTagName('A')[0] && !/note/.test(QuickSearcher.li[i].id)) {
+              if ((QuickSearcher.li[i].innerHTML.replace(/||<.*?>/g, '').toLowerCase().indexOf(value.toLowerCase()) != -1 || (QuickSearcher.li[i].dataset && QuickSearcher.li[i].dataset.keywords && QuickSearcher.li[i].dataset.keywords.toLowerCase().indexOf(value.toLowerCase()) != -1)) && QuickSearcher.li[i].getElementsByTagName('A')[0] && !/note/.test(QuickSearcher.li[i].id)) {
                 // clone the link (if on homepage) or create a new link (if on the grammar index)
                 if (QuickSearcher.grammarIndex) {
                   clone = document.createElement('LI');
-                  clone.innerHTML = '<a href="#' + QuickSearcher.li[i].id + '">' + QuickSearcher.li[i].innerText.replace(/|/g, '') + '</a>';
+                  clone.innerHTML = '<a href="#' + QuickSearcher.li[i].id + '">' + QuickSearcher.li[i].innerHTML.replace(/||<a.*?>.*?<\/a>/g, '') + '</a>';
                 } else {
                   clone = QuickSearcher.li[i].cloneNode(true); // clone the match for displaying in the results node
                 }
@@ -286,7 +286,7 @@
     if (!list.innerHTML) {
       // gets all sub section titles and parses them into a list
       for (var sec = document.querySelectorAll('#exercises-' + lesson + ' h3'), i = 0, j = sec.length, str = ''; i < j; i++) {
-        str += '<li><a href="#' + sec[i].id + '">' + sec[i].innerText.replace(/\s\(.*\)$/, '').replace(/|/g, '') + '</a></li>';
+        str += '<li><a href="#' + sec[i].id + '">' + sec[i].innerHTML.replace(/\s\(.*\)$/, '').replace(/<a.*?>.*?<\/a>/g, '') + '</a></li>';
       }
       
       // add the html to the list

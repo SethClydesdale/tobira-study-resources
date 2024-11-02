@@ -1656,6 +1656,10 @@ ruby rt {
   padding:0 2px;
 }
 
+.workbook-title ruby rt, #index-list li a ruby rt, .main-color ruby rt, #quick-search-results ruby rt, a ruby rt, .section-title ruby rt {
+  color:#367;
+}
+
 /* hover to view furigana for multi-choice vocab */
 .helper-hidden .multi-vocab ruby {
   display:inline-block;
