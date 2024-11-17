@@ -1856,22 +1856,15 @@
                     // alternative answers are given as %(alt1/alt2/etc.)
                     if (/%\(.*?\)/.test(answer)) {
                       alt = answer.replace(/.*?%\((.*?)\).*/, '$1').split('/');
-
+                      
                       // loop through alternatives
-                      if (k == 'answer' || k == 'answer2') {
-                        while (alt.length) {
-                          if (val == answer.replace(/%\(.*?\)/, alt[0])) {
-                            correct = true;
-                            break; // break out if correct answer is found
-                          }
-
-                          alt.splice(0, 1); // remove the checked answer
+                      while (alt.length) {
+                        if (val == answer.replace(/%\(.*?\)/, alt[0])) {
+                          correct = true;
+                          break; // break out if correct answer is found
                         }
-                      }
 
-                      // search hidden mixed kana/kanji alternatives
-                      else if ((k == 'answer3' || k == 'answer4' || k == 'answer5' || k == 'answer6' || k == 'answer7' || k == 'answer8' || k == 'answer9' || k == 'answer10') && alt.indexOf(val) != -1) {
-                        correct = true;
+                        alt.splice(0, 1); // remove the checked answer
                       }
                     } 
 
