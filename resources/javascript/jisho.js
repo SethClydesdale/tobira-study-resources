@@ -3964,7 +3964,7 @@ Genki.jisho = {
     { ja : '初めは|はじめは', en : 'at first', l : 'Genki: 読L18-III' },
     { ja : 'はじめまして', en : 'How do you do?', l : 'Genki: 会G' },
     { ja : '始める|はじめる', en : 'to begin', v : 'ru', l : 'Genki: 会L8' },
-    { ja : '場所|ばじょ', en : 'place', l : 'Genki: 読L16-II, 会L23' },
+    { ja : '場所|ばしょ', en : 'place', l : 'Genki: 読L16-II, 会L23' },
     { ja : '走る|はしる', en : 'to run; to drive; to rush', v : 'u', l : 'Genki: 読L15-II, 会L22' },
     { ja : '走り書き|はしりがき', en : 'hasty writing', l : 'Genki: 読L15-漢字表' },
     { ja : 'バス', en : 'bus', l : 'Genki: 会L5' },
