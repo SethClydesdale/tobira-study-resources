@@ -73,6 +73,19 @@
       <a id="fork-me" href="https://github.com/SethClydesdale/tobira-study-resources">Fork Me</a>
     </header>
 
+    <div id="announcement">
+      <div id="announce-inner">
+        <h3><i class="fa">&#xf0a1;</i> News and Info</h3>
+        <div id="announce-list">
+          <div id="announcement-controls" style="display:none;">
+            <button class="button announce-controls button-left" onclick="GenkiAnn.next(-1, true);"><i class="fa">&#xf060;</i></button>
+            <button class="button announce-controls button-right" onclick="GenkiAnn.next(+1, true);"><i class="fa">&#xf061;</i></button>
+          </div>
+          <noscript><div class="announcement">Please enable JavaScript to get the latest news and info.</div></noscript>
+        </div>
+      </div>
+    </div>
+
     <div id="content">
       <div id="appendix-tool" class="content-block">
         <h2 id="main-dict-title" class="title center" data-page="Tobira: p.399-401">巻末 - 文法索引</h2>
@@ -8024,7 +8037,7 @@
         <div class="center"><button id="toggler-11" class="button grammar-toggler" onclick="TobiraGRIndex.toggle(this, 11);"><i class="fa">&#xf07c;</i>Show Grammar Points</button></div>
         <div id="exercises-11" class="lesson-exercises">
 
-          <h3 id="l11-p1" class="workbook-title">1. 少なくない</h3>
+          <h3 id="l11-p1" class="workbook-title" data-keywords="少なくない、すくなくない、sukunakunai、many、much、plenty of、not a few">1. <ruby>少<rt>すく</rt></ruby>なくない</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8072,7 +8085,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p2" class="workbook-title">2. Nounを通して</h3>
+          <h3 id="l11-p2" class="workbook-title" data-keywords="を通して、をとおして、wotooshite、through、via">2. Nounを<ruby>通<rt>とお</rt></ruby>して</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8117,7 +8130,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p3" class="workbook-title">3. Noun1からNoun2にかけて</h3>
+          <h3 id="l11-p3" class="workbook-title" data-keywords="kara、nikakete、from x to y">3. Noun1からNoun2にかけて</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8153,7 +8166,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p4" class="workbook-title">4. Nounで言うと</h3>
+          <h3 id="l11-p4" class="workbook-title" data-keywords="で言うと、でいうと、deiuto、in terms of、in、according to、from the viewpoint of">4. Nounで<ruby>言<rt>い</rt></ruby>うと</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8198,7 +8211,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p5" class="workbook-title">5. 各+Noun</h3>
+          <h3 id="l11-p5" class="workbook-title" data-keywords="kaku、each、various">5. <ruby>各<rt>かく</rt></ruby>+Noun</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8242,7 +8255,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p6" class="workbook-title">6. XばかりでなくY(も)</h3>
+          <h3 id="l11-p6" class="workbook-title" data-keywords="bakaridenaku、mo、not only x but also y">6. XばかりでなくY(も)</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8280,7 +8293,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p7" class="workbook-title">7. Noun+風</h3>
+          <h3 id="l11-p7" class="workbook-title" data-keywords="fuu、style、type、look like">7. Noun+<ruby>風<rt>ふう</rt></ruby></h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8322,7 +8335,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p8" class="workbook-title">8. Nounと共に</h3>
+          <h3 id="l11-p8" class="workbook-title" data-keywords="と共に、とともに、totomoni、with、along with、as">8. Nounと<ruby>共<rt>とも</rt></ruby>に</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8358,7 +8371,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p9" class="workbook-title">9. ～ずつ</h3>
+          <h3 id="l11-p9" class="workbook-title" data-keywords="zutsu、per、at a time、each、little by little">9. ～ずつ</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8406,7 +8419,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p10" class="workbook-title">10. Noun1からNoun2に至るまで</h3>
+          <h3 id="l11-p10" class="workbook-title" data-keywords="kara、に至るまで、にいたるまで、niitarumade、from x all the way through y、from x even to y">10. Noun1からNoun2に<ruby>至<rt>いた</rt></ruby>るまで</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8441,7 +8454,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p11" class="workbook-title">11. Noun+同士</h3>
+          <h3 id="l11-p11" class="workbook-title" data-keywords="doushi、each other、between、among、together、with">11. Noun+<ruby>同士<rt>どうし</rt></ruby></h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8489,7 +8502,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p12" class="workbook-title">12. Verbべき</h3>
+          <h3 id="l11-p12" class="workbook-title" data-keywords="beki、should、ought to">12. Verbべき</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8537,7 +8550,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p13" class="workbook-title">13. Nounからすると</h3>
+          <h3 id="l11-p13" class="workbook-title" data-keywords="karasuruto、judging from">13. Nounからすると</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8573,7 +8586,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p14" class="workbook-title">14. Verbぬ</h3>
+          <h3 id="l11-p14" class="workbook-title" data-keywords="nu、not">14. Verbぬ</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8612,7 +8625,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p15" class="workbook-title">15. Nounの上で; Noun上(で)</h3>
+          <h3 id="l11-p15" class="workbook-title" data-keywords="の上で、のうえで、nouede、in terms of、from the viewpoint of、as far as is concerned、according to">15. Nounの<ruby>上<rt>うえ</rt></ruby>で; Noun<ruby>上<rt>うえ</rt></ruby>(で)</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8662,7 +8675,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p16" class="workbook-title">16. Nounと並んで</h3>
+          <h3 id="l11-p16" class="workbook-title" data-keywords="と並んで、とならんで、tonarande、as well as、just like">16. Nounと<ruby>並<rt>なら</rt></ruby>んで</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8697,7 +8710,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p17" class="workbook-title">17. おそらく～(だろう)</h3>
+          <h3 id="l11-p17" class="workbook-title" data-keywords="osoraku、darou、probably">17. おそらく～(だろう)</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
@@ -8741,7 +8754,7 @@
           </table>
           <br>
 
-          <h3 id="l11-p18" class="workbook-title">18. まったく</h3>
+          <h3 id="l11-p18" class="workbook-title" data-keywords="mattaku、totally、utterly、entirely、completely、extremely、absolutely、really、not at all、not in the least、it's not that totally、completely、extremely">18. まったく</h3>
           <table class="table grammar-table">
             <tr>
               <td>本文</td>
