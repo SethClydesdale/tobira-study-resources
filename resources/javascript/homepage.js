@@ -22,7 +22,8 @@
       // [NOT USED CURRENTLY; GSR remnant] edition: [OPTIONAL] restricts the announcement to a specific edition, possible values are: 3rd || 2nd, announcements are global by default
       msg : [
         {
-          content : 'As of March 3rd, 2023, all exercises for Tobira\'s lessons are now available! If you encounter any issues or have a question, please feel free to contact me on <a href="https://github.com/SethClydesdale/tobira-study-resources/issues">GitHub</a>. I wish you all the best on your Japanese studies! 頑張って！٩( \'ω\' )و'
+          date : '10/26/24',
+          content : '<a href="https://ko-fi.com/post/GenkiTobira-Recent-Updates-Future-Plans-Z8Z6158OWB" target="_blank">Click here</a> to learn about the recent updates made to the website as well as my future plans.'
         },
       
         {
