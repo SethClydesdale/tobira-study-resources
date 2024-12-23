@@ -660,7 +660,7 @@ h1:hover .anchor-icon, h2:hover .anchor-icon, h3:hover .anchor-icon, h4:hover .a
 
 #quick-nav-list li ul li:before {
   background:transparent;
-  border:1px solid #17A;
+  border:2px solid #17A;
   height:4px;
   width:4px;
 }
