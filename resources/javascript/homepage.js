@@ -10,7 +10,7 @@
   
   
   // # QUICK SEARCH #
-  if (document.getElementById('quick-search')) {
+  if (false) {
     window.QuickSearcher = {
       grammarIndex : /grammar-index/.test(window.location.href),
       search : document.getElementById('quick-search'),
