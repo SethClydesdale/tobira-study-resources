@@ -1156,7 +1156,7 @@ Genki.jisho = {
     { ja : "競う|きそう", en : "to compete; contend", v : "u-Vi", l : "Tobira: 漢字表" },
     { ja : "規則|きそく", en : "rules; regulations", v : "N", l : "L13読2" },
     { ja : "擬態語|ぎたいご", en : "phenomime", v : "N", l : "L7読2" },
-    { ja : "きっかけ", en : "tigger", v : "N", l : "L7読1" },
+    { ja : "きっかけ", en : "trigger; chance; motive", v : "N", l : "L7読1" },
     { ja : "きっと", en : "surely", v : "Adv", l : "L15読2" },
     { ja : "気にする|きにする", en : "to worry; be concerned; care about", v : "Phr", l : "L11読" },
     { ja : "気になる|きになる", en : "to feel uneasy", v : "Phr", l : "L13読1" },
