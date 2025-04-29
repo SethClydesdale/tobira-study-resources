@@ -2308,7 +2308,7 @@
             Genki.toggle.list(document.getElementById(/^appendix|^study-tools/.test(Genki.active.exercise[0]) ? 'appendix' : Genki.active.exercise[0].replace(/(lesson-\d+)\/.*/, '$1')).previousSibling);
 
             // highlight the active exercise and scoll to it
-            active = document.querySelector('a[href*="' + Genki.active.exercise[0] + '"]');
+            active = document.querySelector('a[href*="' + Genki.active.exercise[0] + '"]:not(#link-grammar)');
             active.className += ' active-lesson';
             active = active.parentNode;
 
