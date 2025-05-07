@@ -56,10 +56,7 @@ The following shortcuts can only be used in multiple choice exercises to quickly
 
 | Shortcut | Description |
 | -------- | ----------- |
-| <kbd>ALT</kbd>+<kbd>A</kbd> | Selects option A |
-| <kbd>ALT</kbd>+<kbd>B</kbd> | Selects option B |
-| <kbd>ALT</kbd>+<kbd>C</kbd> | Selects option C |
-| <kbd>ALT</kbd>+<kbd>D</kbd> | Selects option D |
+| <kbd>ALT</kbd>+<kbd>A/B/C/D/etc.</kbd> | Selects option A/B/C/D/etc. |
 
 
 ### Suggestions, Feedback, Bug Reports
