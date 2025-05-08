@@ -314,12 +314,12 @@
     
     // set container params
     container.id = 'light-switch-container';
-    container.innerHTML = '<label id="light-switch-label" for="light-switch-checkbox">Dark Mode </label>';
+    container.innerHTML = '<label id="light-switch-label" for="light-switch-checkbox"><span class="en">Dark Mode</span><span class="ja">ダークモード</span> </label>';
     
     // settings button
     settings.id = 'genki-site-settings';
     settings.innerHTML = '<i class="fa">&#xf013;</i>';
-    settings.title = 'Site Settings';
+    settings.title = GenkiLang == 'ja' ? 'ウェブサイトの設定' : 'Site Settings';
     settings.href = '#';
     settings.onclick = function () {
       // prevent opening popup when one is already opened
@@ -345,7 +345,7 @@
         container = document.createElement('DIV');
     
     container.id = 'light-switch-container';
-    container.innerHTML = '<a href="' + getPaths() + 'help/stuck-loading/' + (window.location.protocol == 'file:' ? 'index.html' : '') + '"><strong>Where is Dark Mode?</strong></a>';
+    container.innerHTML = '<a href="' + getPaths() + 'help/stuck-loading/' + (window.location.protocol == 'file:' ? 'index.html' : '') + '"><strong><span class="en">Where is Dark Mode?</span><span class="ja">ダークモードはどこ？</span></strong></a>';
     
     footer.appendChild(container);
   }

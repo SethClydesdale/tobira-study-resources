@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="en" prefix="og: http://ogp.me/ns#" class="lang-en">
   <head>
     <meta charset="UTF-8">
     <title>文法索引 | Tobira Study Resources</title>
@@ -54,11 +54,11 @@
 
         <p>Welcome to the Grammar Index! Here you can quickly find and review the grammar points taught in Tobira. Use the quick navigation to jump to a lesson's grammar or use the quick search to find the grammar point you want to read up on.</p>
 
-        <div id="check-answers" class="center"><button class="button" href="#genki-site-settings" onclick="GenkiSettings.manager(); return false;"><i class="fa">&#xf013;</i>Site Settings</button><button class="button" onclick="TobiraGRIndex.toggleAll(this);"><i class="fa">&#xf07c;</i>Show All Grammar Points</button></div>
+        <div id="check-answers" class="center"><button class="button" href="#genki-site-settings" onclick="GenkiSettings.manager(); return false;"><i class="fa">&#xf013;</i><span class="en">Site Settings</span><span class="ja">設定</span></button><button class="button" onclick="TobiraGRIndex.toggleAll(this);"><i class="fa">&#xf07c;</i><span class="en">Show All Grammar Points</span><span class="ja">すべての文法を表示する</span></button></div>
 
         <div id="quick-actions" class="columns-2 clear">
           <div>
-            <h2 id="quick-nav">クイックナビゲーション</h2>
+            <h2 id="quick-nav"><span class="en">Quick Navigation</span><span class="ja">クイックナビゲーション</span></h2>
             <ul id="quick-nav-list">
               <li><a href="#grammar-note-usage">文法ノートの使い方</a></li>
               <li><a href="#lesson-grammar-1">第1課：日本の地理</a></li>
@@ -80,7 +80,7 @@
           </div>
 
           <div>
-            <h2 id="quick-search-exercises">クイックサーチ <span id="quick-search-hits"></span></h2>
+            <h2 id="quick-search-exercises"><span class="en">Quick Search</span><span class="ja">クイックサーチ</span> <span id="quick-search-hits"></span></h2>
             <div id="quick-search-wrapper">
               <input id="quick-search" type="text" placeholder="文法を探す……">
               <ul id="quick-search-results"></ul>
