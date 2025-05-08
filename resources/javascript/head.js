@@ -225,7 +225,7 @@
           '</li>'+
         
           (window.location.protocol == 'file:' ? '' : '<li>'+
-            '<span class="label" title="' + (GenkiLang == 'ja' ? '広告がトグルできます。\n広告はこのウェブサイトの開発者が支援しますが邪魔だったら無効にできます。' : 'Enable or disable Ads.\nAds help support the developer, but if they\'re annoying or distracting, you can turn them off with this option.') + '"><span class="en">広告：</span><span class="ja">Ads:</span></span>'+
+            '<span class="label" title="' + (GenkiLang == 'ja' ? '広告がトグルできます。\n広告はこのウェブサイトの開発者が支援しますが邪魔だったら無効にできます。' : 'Enable or disable Ads.\nAds help support the developer, but if they\'re annoying or distracting, you can turn them off with this option.') + '"><span class="en">Ads:</span><span class="ja">広告：</span></span>'+
             '<button id="settings-dark-mode" class="button' + (adverts == 'on' ? '' : ' opt-off') + '" onclick="GenkiSettings.updateAdverts(this);">' + (adverts == 'on' ? 'ON' : 'OFF') + '</button>'+
           '</li>')+
         
