@@ -550,7 +550,7 @@
           list.querySelector('.genki_pseudo_checkbox').focus();
           
         } else {
-          list.innerHTML = '<span class="en">No words selected.</span><span class="ja">言葉は選択しません。</span>';
+          list.innerHTML = '<span class="en">No words selected.</span><span class="ja">言葉は選択していません。</span>';
         }
       },
       
@@ -561,7 +561,7 @@
         list.removeChild(caller.parentNode);
         
         if (!list.childNodes.length) {
-          list.innerHTML = '<span class="en">No words selected.</span><span class="ja">言葉が選択しません。</span>';
+          list.innerHTML = '<span class="en">No words selected.</span><span class="ja">言葉は選択していません。</span>';
         }
       },
       

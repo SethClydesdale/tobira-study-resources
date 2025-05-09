@@ -51,7 +51,7 @@
         <h2 id="custom-quiz" class="title center">ツール - カスタム筆記テスト</h2>
         <p>Welcome to the custom written quiz tool! Here you will be able to setup your own custom quiz that requires input via keyboard. These quizzes are a bit more advanced and require some <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="blank">HTML</a> to set things up properly. Please read over the <a href="#help-notes-and-tricks">help section</a> for more information.</p>
         
-        <h2 id="quiz-settings" class="section-title">Written Quiz HTML</h2>
+        <h2 id="quiz-settings" class="section-title"><span class="en">Written Quiz HTML</span><span class="ja">筆記テストのHTML</span></h2>
         <p>Use the textarea below to setup your custom written quiz.</p>
         <ol id="study-tool-ui" class="written-quiz">
           <li class="item-row">
@@ -60,7 +60,7 @@
         </ol>
         <p><strong>Tip</strong>: You can remix existing exercises using <a href="#snippets">snippets</a>.</p>
         
-        <h3 id="quiz-code" class="sub-title">Custom Written Quiz Code (JSON)</h3>
+        <h3 id="quiz-code" class="sub-title"><span class="en">Custom Written Quiz Code (JSON)</span><span class="ja">カスタム練習コード</span></h3>
         <p>The custom written quiz code is used to save your quiz. You can save this code to a text file for later, so you don't have to setup your quiz again. When you're ready to study once more, just load the file or drag and drop it into this textarea and click "study" to continue where you left off.</p>
         
         <div id="study-tool-code">
@@ -68,17 +68,17 @@
         </div>
         
         <ul id="study-tool-settings" class="clear">
-          <li><a id="downloadCode" class="button" title="Save custom exercise" download="Custom Written Quiz">Save</a></li>
-          <li><button id="loadCode" class="button" title="Load custom exercise" onclick="this.nextSibling.click();">Load</button><input id="study-tool-file" type="file" accept=".txt,.json,.js" onchange="Genki.tools.loadCode(this);"></li>
-          <li><input id="prettyCode" type="checkbox" onchange="Genki.tools.settings.prettify(this);"><label for="prettyCode">Prettify</label></li>
-          <li><input id="noStudyWarning" type="checkbox" onchange="Genki.tools.settings.handleCheckbox(this);"><label for="noStudyWarning">Do not warn me</label></li>
+          <li><a id="downloadCode" class="button" title="Save custom exercise" download="Custom Written Quiz"><span class="en">Save</span><span class="ja">セーブする</span></a></li>
+          <li><button id="loadCode" class="button" title="Load custom exercise" onclick="this.nextSibling.click();"><span class="en">Load</span><span class="ja">ロードする</span></button><input id="study-tool-file" type="file" accept=".txt,.json,.js" onchange="Genki.tools.loadCode(this);"></li>
+          <li><input id="prettyCode" type="checkbox" onchange="Genki.tools.settings.prettify(this);"><label for="prettyCode"><span class="en">Prettify</span><span class="ja">プリティファイ</span></label></li>
+          <li><input id="noStudyWarning" type="checkbox" onchange="Genki.tools.settings.handleCheckbox(this);"><label for="noStudyWarning"><span class="en">Do not warn me</span><span class="ja">注意しないで</span></label></li>
         </ul>
         
         <div class="center">
-          <button class="button" onclick="Genki.tools.study();"><i class="fa">&#xf040;</i>Study</button>
+          <button class="button" onclick="Genki.tools.study();"><i class="fa">&#xf040;</i><span class="en">Study</span><span class="ja">勉強する</span></button>
         </div><br>
         
-        <h3 id="help-notes-and-tricks" class="section-title">Help, Notes, and Tips</h3>
+        <h3 id="help-notes-and-tricks" class="section-title"><span class="en">Help, Notes, and Tips</span><span class="ja">ヒント</span></h3>
         <p>The custom written quiz tool is a bit more advanced than the others, as it requires some minimal knowledge of HTML to use properly. However, because of this, these exercises are a bit more flexible in what you can create. Please read over each section carefully.</p>
         
         <strong>Quick Navigation</strong>
@@ -244,7 +244,7 @@
         <p>Below is the source code for existing exercises that you can remix. Click "Import" or copy and paste the exercise you want to remix into the Written Quiz HTML textarea to see how it works!</p>
         <div class="text-block fill-quiz">
           <div class="problem">
-            <button class="button" onclick="Genki.tools.importSnippet('snippet-01');">Import</button> <strong>Workbook: Volitional Form Conjugation Practice - Lesson 15</strong>
+            <button class="button" onclick="Genki.tools.importSnippet('snippet-01');"><span class="en">Import</span><span class="ja">インポートする</span></button> <strong>Workbook: Volitional Form Conjugation Practice - Lesson 15</strong>
             <textarea id="snippet-01" style="width:80%;height:100px;" onclick="this.select();" readonly><table class="table large-width center">
   <tr>
     <td>dictionary form</td>
@@ -315,7 +315,7 @@
           </div>
           
           <div class="problem">
-            <button class="button" onclick="Genki.tools.importSnippet('snippet-02');">Import</button> <strong>Workbook: ～てください - Lesson 6</strong>
+            <button class="button" onclick="Genki.tools.importSnippet('snippet-02');"><span class="en">Import</span><span class="ja">インポートする</span></button> <strong>Workbook: ～てください - Lesson 6</strong>
             <textarea id="snippet-02" style="width:80%;height:100px;" onclick="this.select();" readonly><div class="count-problems">
   <div class="problem">
     Please take a picture.<br>
@@ -365,7 +365,7 @@
           </div>
           
           <div class="problem">
-            <button class="button" onclick="Genki.tools.importSnippet('snippet-03');">Import</button> <strong>Workbook: Fill in the Blanks - Lesson 13</strong>
+            <button class="button" onclick="Genki.tools.importSnippet('snippet-03');"><span class="en">Import</span><span class="ja">インポートする</span></button> <strong>Workbook: Fill in the Blanks - Lesson 13</strong>
             <textarea id="snippet-03" style="width:80%;height:100px;" onclick="this.select();" readonly><div class="count-problems">
   <div class="problem">私の{くに|国|width:42}で、日本の{食べ物|たべもの}と{飲み物|のみもの}は高いです。</div>
   <div class="problem">私は{特に|とくに}{鳥|とり}の{肉|にく}が好きです。</div>
@@ -382,7 +382,7 @@
           </div>
           
           <div class="problem">
-            <button class="button" onclick="Genki.tools.importSnippet('snippet-04');">Import</button> <strong>Reading Practice: スーさんの日記 - Lesson 9</strong>
+            <button class="button" onclick="Genki.tools.importSnippet('snippet-04');"><span class="en">Import</span><span class="ja">インポートする</span></button> <strong>Reading Practice: スーさんの日記 - Lesson 9</strong>
             <textarea id="snippet-04" style="width:80%;height:100px;" onclick="this.select();" readonly> <p class="section-desc">スーさんは日記を書きました。</p>  
  <div class="sub-section text-passage">  
    <p>  
@@ -462,7 +462,7 @@
           </div>
           
           <div class="problem">
-            <button class="button" onclick="Genki.tools.importSnippet('snippet-05');">Import</button> <strong>Kanji Practice: Write the Readings - Lesson 15</strong>
+            <button class="button" onclick="Genki.tools.importSnippet('snippet-05');"><span class="en">Import</span><span class="ja">インポートする</span></button> <strong>Kanji Practice: Write the Readings - Lesson 15</strong>
             <textarea id="snippet-05" style="width:80%;height:100px;" onclick="this.select();" readonly><div class="columns-2 count-problems small-margin clear">  
  <div>  
    <div class="problem">生まれる　{うまれる}</div>  

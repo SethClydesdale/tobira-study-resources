@@ -51,7 +51,7 @@
         <h2 id="custom-spelling-practice" class="title center">ツール - カスタムスペリングの練習</h2>
         <p>Welcome to the custom spelling practice tool! Here you will be able to setup a list of words that you can practice spelling. First insert a couple of words you want to practice spelling. Once you've got your word list setup, click the "Study" button to begin practicing.</p>
         
-        <h2 id="spelling-practice-settings" class="section-title">Spelling Practice Settings</h2>
+        <h2 id="spelling-practice-settings" class="section-title"><span class="en">Spelling Practice Settings</span><span class="ja">スペリングの練習の設定</span></h2>
         <br>
         <ol id="study-tool-ui">
           <li class="item-row">
@@ -63,7 +63,7 @@
         </ol>
         <div><label for="spellingColumns"><strong>Columns:</strong></label> <input id="spellingColumns" type="number" value="6" min="1" max="10" style="width:50px;"></div>
         
-        <h3 id="spelling-code" class="sub-title">Custom Spelling Code (JSON)</h3>
+        <h3 id="spelling-code" class="sub-title"><span class="en">Custom Spelling Code (JSON)</span><span class="ja">カスタム練習コード</span></h3>
         <p>The custom spelling code is used to save your spelling practice list. You can save this code to a text file for later, so you don't have to setup your list again. When you're ready to study once more, just load the file or drag and drop it into this textarea and click "study" to continue where you left off.</p>
         
         <div id="study-tool-code">
@@ -71,17 +71,17 @@
         </div>
         
         <ul id="study-tool-settings" class="clear">
-          <li><a id="downloadCode" class="button" title="Save custom exercise" download="Custom Spelling Exercise">Save</a></li>
-          <li><button id="loadCode" class="button" title="Load custom exercise" onclick="this.nextSibling.click();">Load</button><input id="study-tool-file" type="file" accept=".txt,.json,.js" onchange="Genki.tools.loadCode(this);"></li>
-          <li><input id="prettyCode" type="checkbox" onchange="Genki.tools.settings.prettify(this);"><label for="prettyCode">Prettify</label></li>
-          <li><input id="noStudyWarning" type="checkbox" onchange="Genki.tools.settings.handleCheckbox(this);"><label for="noStudyWarning">Do not warn me</label></li>
+          <li><a id="downloadCode" class="button" title="Save custom exercise" download="Custom Spelling Exercise"><span class="en">Save</span><span class="ja">セーブする</span></a></li>
+          <li><button id="loadCode" class="button" title="Load custom exercise" onclick="this.nextSibling.click();"><span class="en">Load</span><span class="ja">ロードする</span></button><input id="study-tool-file" type="file" accept=".txt,.json,.js" onchange="Genki.tools.loadCode(this);"></li>
+          <li><input id="prettyCode" type="checkbox" onchange="Genki.tools.settings.prettify(this);"><label for="prettyCode"><span class="en">Prettify</span><span class="ja">プリティファイ</span></label></li>
+          <li><input id="noStudyWarning" type="checkbox" onchange="Genki.tools.settings.handleCheckbox(this);"><label for="noStudyWarning"><span class="en">Do not warn me</span><span class="ja">注意しないで</span></label></li>
         </ul>
         
         <div class="center">
-          <button class="button" onclick="Genki.tools.study();"><i class="fa">&#xf040;</i>Study</button>
+          <button class="button" onclick="Genki.tools.study();"><i class="fa">&#xf040;</i><span class="en">Study</span><span class="ja">勉強する</span></button>
         </div><br>
         
-        <h3 id="help-notes-and-tricks" class="section-title">Help, Notes, and Tips</h3>
+        <h3 id="help-notes-and-tricks" class="section-title"><span class="en">Help, Notes, and Tips</span><span class="ja">ヒント</span></h3>
         <p>
           <strong>word/kanji</strong>: the word or kanji you want to practice spelling.<br>
           <strong>furigana</strong>: a textual aid for kanji; write the kana for a kanji or romaji for kana here, if necessary.<br>

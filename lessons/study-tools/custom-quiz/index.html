@@ -51,7 +51,7 @@
         <h2 id="custom-quiz" class="title center">ツール - カスタムテスト</h2>
         <p>Welcome to the custom quiz tool! Here you will be able to setup your own custom quiz for testing yourself on points you want to memorize or improve. Start setting up your quiz using the tools below, then once you're ready to test yourself, click the "Study" button to begin your quiz.</p>
         
-        <h2 id="quiz-settings" class="section-title">Quiz Settings</h2>
+        <h2 id="quiz-settings" class="section-title"><span class="en">Quiz Settings</span><span class="ja">テストの設定</span></h2>
         <br>
         <ol id="study-tool-ui">
           <li class="item-row question-row">
@@ -69,7 +69,7 @@
           </li>
         </ol>
         
-        <h3 id="quiz-code" class="sub-title">Custom Quiz Code (JSON)</h3>
+        <h3 id="quiz-code" class="sub-title"><span class="en">Custom Quiz Code (JSON)</span><span class="ja">カスタム練習コード</span></h3>
         <p>The custom quiz code is used to save your quiz. You can save this code to a text file for later, so you don't have to setup your quiz again. When you're ready to study once more, just load the file or drag and drop it into this textarea and click "study" to continue where you left off.</p>
         
         <div id="study-tool-code">
@@ -77,17 +77,17 @@
         </div>
         
         <ul id="study-tool-settings" class="clear">
-          <li><a id="downloadCode" class="button" title="Save custom exercise" download="Custom Quiz">Save</a></li>
-          <li><button id="loadCode" class="button" title="Load custom exercise" onclick="this.nextSibling.click();">Load</button><input id="study-tool-file" type="file" accept=".txt,.json,.js" onchange="Genki.tools.loadCode(this);"></li>
-          <li><input id="prettyCode" type="checkbox" onchange="Genki.tools.settings.prettify(this);"><label for="prettyCode">Prettify</label></li>
-          <li><input id="noStudyWarning" type="checkbox" onchange="Genki.tools.settings.handleCheckbox(this);"><label for="noStudyWarning">Do not warn me</label></li>
+          <li><a id="downloadCode" class="button" title="Save custom exercise" download="Custom Quiz"><span class="en">Save</span><span class="ja">セーブする</span></a></li>
+          <li><button id="loadCode" class="button" title="Load custom exercise" onclick="this.nextSibling.click();"><span class="en">Load</span><span class="ja">ロードする</span></button><input id="study-tool-file" type="file" accept=".txt,.json,.js" onchange="Genki.tools.loadCode(this);"></li>
+          <li><input id="prettyCode" type="checkbox" onchange="Genki.tools.settings.prettify(this);"><label for="prettyCode"><span class="en">Prettify</span><span class="ja">プリティファイ</span></label></li>
+          <li><input id="noStudyWarning" type="checkbox" onchange="Genki.tools.settings.handleCheckbox(this);"><label for="noStudyWarning"><span class="en">Do not warn me</span><span class="ja">注意しないで</span></label></li>
         </ul>
         
         <div class="center">
-          <button class="button" onclick="Genki.tools.study();"><i class="fa">&#xf040;</i>Study</button>
+          <button class="button" onclick="Genki.tools.study();"><i class="fa">&#xf040;</i><span class="en">Study</span><span class="ja">勉強する</span></button>
         </div><br>
         
-        <h3 id="help-notes-and-tricks" class="section-title">Help, Notes, and Tips</h3>
+        <h3 id="help-notes-and-tricks" class="section-title"><span class="en">Help, Notes, and Tips</span><span class="ja">ヒント</span></h3>
         <p>
           <strong>question</strong>: the question to be answered. If required, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a> can be used for formatting questions.<br>
           <strong>answer</strong>: the correct or incorrect answers to the question. Use the checkbox to mark an answer as the correct answer (multiple correct answers are allowed); leave incorrect answers unchecked.<br>

@@ -51,7 +51,7 @@
         <h2 id="custom-vocab-practice" class="title center">ツール - カスタム単語の練習</h2>
         <p>Welcome to the custom vocabulary practice tool! Here you will be able to setup your own set of words to practice. First insert a couple of words you want to practice. Once you've got your word list setup, click the "Study" button to begin practicing your custom vocabulary.</p>
         
-        <h2 id="vocab-list" class="section-title">Vocabulary list</h2>
+        <h2 id="vocab-list" class="section-title"><span class="en">Vocabulary list</span><span class="ja">単語の一覧</span></h2>
         <br>
         <ol id="study-tool-ui">
           <li class="item-row">
@@ -64,7 +64,7 @@
           </li>
         </ol>
         
-        <h3 id="vocab-code" class="sub-title">Custom Vocabulary Code (JSON)</h3>
+        <h3 id="vocab-code" class="sub-title"><span class="en">Custom Vocabulary Code</span><span class="ja">カスタム練習コード</span> (JSON)</h3>
         <p>The custom vocabulary code is used to save your created vocabulary list. You can save this code to a text file for later, so you don't have to recreate your custom vocab. When you're ready to study your vocab again, just load the file or drag and drop it into this textarea and click "study" to continue where you left off.</p>
         
         <div id="study-tool-code">
@@ -72,18 +72,18 @@
         </div>
         
         <ul id="study-tool-settings" class="clear">
-          <li><a id="downloadCode" class="button" title="Save custom exercise" download="Custom Vocabulary Exercise">Save</a></li>
-          <li><button id="loadCode" class="button" title="Load custom exercise" onclick="this.nextSibling.click();">Load</button><input id="study-tool-file" type="file" accept=".txt,.json,.js" onchange="Genki.tools.loadCode(this);"></li>
-          <li><input id="prettyCode" type="checkbox" onchange="Genki.tools.settings.prettify(this);"><label for="prettyCode">Prettify</label></li>
-          <li><input id="noStudyWarning" type="checkbox" onchange="Genki.tools.settings.handleCheckbox(this);"><label for="noStudyWarning">Do not warn me</label></li>
-          <li><input id="showSentenceField" type="checkbox" onchange="Genki.tools.settings.toggleSentences(this);"><label for="showSentenceField">Show sentence fields</label></li>
+          <li><a id="downloadCode" class="button" title="Save custom exercise" download="Custom Vocabulary Exercise"><span class="en">Save</span><span class="ja">セーブする</span></a></li>
+          <li><button id="loadCode" class="button" title="Load custom exercise" onclick="this.nextSibling.click();"><span class="en">Load</span><span class="ja">ロードする</span></button><input id="study-tool-file" type="file" accept=".txt,.json,.js" onchange="Genki.tools.loadCode(this);"></li>
+          <li><input id="prettyCode" type="checkbox" onchange="Genki.tools.settings.prettify(this);"><label for="prettyCode"><span class="en">Prettify</span><span class="ja">プリティファイ</span></label></li>
+          <li><input id="noStudyWarning" type="checkbox" onchange="Genki.tools.settings.handleCheckbox(this);"><label for="noStudyWarning"><span class="en">Do not warn me</span><span class="ja">注意しないで</span></label></li>
+          <li><input id="showSentenceField" type="checkbox" onchange="Genki.tools.settings.toggleSentences(this);"><label for="showSentenceField"><span class="en">Show sentence fields</span><span class="ja">文の入力欄を見せる</span></label></li>
         </ul>
         
         <div class="center">
-          <button class="button" onclick="Genki.tools.study();"><i class="fa">&#xf040;</i>Study</button>
+          <button class="button" onclick="Genki.tools.study();"><i class="fa">&#xf040;</i><span class="en">Study</span><span class="ja">勉強する</span></button>
         </div><br>
         
-        <h3 id="help-notes-and-tricks" class="section-title">Help, Notes, and Tips</h3>
+        <h3 id="help-notes-and-tricks" class="section-title"><span class="en">Help, Notes, and Tips</span><span class="ja">ヒント</span></h3>
         <p>
           <strong>word/kanji</strong>: a Japanese word or kanji; the word to be matched to.<br>
           <strong>furigana</strong>: a textual aid for kanji; write the kana for a kanji or romaji for kana here, if necessary.<br>

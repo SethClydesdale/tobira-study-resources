@@ -479,7 +479,7 @@ h1:hover .anchor-icon, h2:hover .anchor-icon, h3:hover .anchor-icon, h4:hover .a
 
 #link-list a {
   color:#FFF;
-  text-shadow:1px 1px 0 rgba(0, 0, 0, 0.3);
+  text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
   font-weight:bold;
   text-decoration:none;
   display:inline-block;
