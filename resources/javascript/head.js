@@ -307,6 +307,11 @@
             '<a id="settings-save-exercise-data" class="button" download="Tobira Exercise Score Data" href="data:,' + (storageOK && localStorage.TobiraResults ? encodeURIComponent(localStorage.TobiraResults.replace(/\n/g, '\r\n')) : '') + '"><i class="fa">&#xf019;</i><span class="en">Save</span><span class="ja">セーブする</span></a>'+
             '<button id="settings-load-exercise-data" class="button" onclick="this.nextSibling.click();"><i class="fa">&#xf093;</i><span class="en">Load</span><span class="ja">ロードする</span></button><input id="settings-load-data" type="file" accept=".txt,.json,.js" onchange="GenkiSettings.loadExerciseData(this);" style="visibility:hidden;position:absolute;">'+
           '</li>'+
+        
+          '<li>'+
+            '<span class="label" title="' + (GenkiLang == 'ja' ? 'すべての設定が初期状態に戻せます。' : 'Resets all settings to their default value.') + '"><span class="en">Revert to Default Settings:</span><span class="ja">デフォルト設定に戻す：</span></span>'+
+            '<button id="settings-load-exercise-data" class="button" onclick="GenkiSettings.revert();"><i class="fa">&#xf0e2;</i><span class="en">Reset Settings</span><span class="ja">設定をリセットする</span></button>'+
+          '</li>'+
         '</ul>',
 
         buttonText : 'Close',
@@ -318,6 +323,68 @@
           left : '10%',
           bottom : '5%',
           right : '10%'
+        }
+      });
+    },
+    
+    
+    // asks if the user wants to reload the page to apply their new settings
+    reloadPrompt : function () {
+      GenkiModal.open({
+        title : '<span class="en">Reload Required</span><span class="ja">ページリロードが必要です</span>',
+        content : '<span class="en">The page needs to be reloaded for your changes to take effect. Do you want to reload now?</span><span class="ja">設定が変更するためにページリロードが必要です。リロードしてもよろしいですか？</span>',
+        buttonHTML : '<span class="en">Reload</span><span class="ja">リロードする</span>',
+        closeButtonText : '<span class="en">Return to Settings</span><span class="ja">設定に戻る</span>',
+
+        callback : function () {
+          window.location.reload();
+        },
+
+        closeCallback : function () {
+          setTimeout(GenkiSettings.manager, 10);
+        }
+      });
+    },
+    
+    
+    // reverts settings to their default values by deleting their localStorage items
+    revert : function () {
+      GenkiModal.open({
+        title : '<span class="en">Revert to Default Settings?</span><span class="ja">すべての設定を初期状態に戻しますか？</span>',
+        content : '<span class="en">All of your settings will be reset to their default values. Do you want to continue?</span><span class="ja">すべての設定を初期状態に戻してもよろしいですか？</span>',
+        buttonHTML : '<span class="en">Reset Settings</span><span class="ja">設定をリセットする</span>',
+        closeButtonText : '<span class="en">Return to Settings</span><span class="ja">設定に戻る</span>',
+
+        callback : function () {
+          var settings = [
+            'genkiFontSize',
+            'genkiPageWidth',
+            'genkiLang',
+            'darkMode',
+            'adverts',
+            'genkiCustomCSS',
+            'furiganaVisible',
+            'spoilerMode',
+            'vocabHorizontal',
+            'feedbackMode',
+            'genkiRandomExercise',
+            'genkiSkipExType',
+            'genkiJishoLookUp',
+            'strokeOrderVisible',
+            'tracingGuideVisible',
+            'timerAutoPause',
+            'dataBackupReminder'
+          ], i = 0, j = settings.length;
+          
+          for (; i < j; i++) {
+            localStorage.removeItem(settings[i]);
+          }
+          
+          setTimeout(GenkiSettings.reloadPrompt, 10);
+        },
+
+        closeCallback : function () {
+          setTimeout(GenkiSettings.manager, 10);
         }
       });
     },
@@ -561,21 +628,7 @@
     updateAdverts : function (caller) {
       GenkiSettings.updateButton(caller, function (state) {
         localStorage.adverts = state == 'ON' ? 'on' : 'off';
-        
-        GenkiModal.open({
-          title : '<span class="en">Reload Required</span><span class="ja">ページリロードが必要です</span>',
-          content : '<span class="en">The page needs to be reloaded for this setting to take effect. Do you want to reload now?</span><span class="ja">設定が変更するためにページリロードが必要です。リロードしてもよろしいですか？</span>',
-          buttonHTML : '<span class="en">Reload</span><span class="ja">リロードする</span>',
-          closeButtonText : '<span class="en">Return to Settings</span><span class="ja">設定に戻る</span>',
-          
-          callback : function () {
-            window.location.reload();
-          },
-          
-          closeCallback : function () {
-            setTimeout(GenkiSettings.manager, 10);
-          }
-        });
+        GenkiSettings.reloadPrompt();
       });
     },
     
