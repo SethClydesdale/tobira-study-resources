@@ -2694,7 +2694,7 @@
       var img = getPaths() + 'resources/images/stroke-order/' + order + '.png';
           
       GenkiModal.open({
-        title : kanji + ' Stroke Order',
+        title : kanji + '<span class="en"> Stroke Order</span><span class="ja">の書き順</span>',
         content :
           '<div class="kanji-stroke-order center">'+
             '<div class="big-kanji' + (kana ? ' kana-font' : '') + '"' + ( /り/.test(kanji) ? ' style="font-family:SawarabiGothic, MS Gothic, Yu Gothic, NotoSansJP, Meiryo;"' : '' ) + '>' + kanji + '</div>'+
