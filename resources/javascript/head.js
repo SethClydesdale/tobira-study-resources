@@ -199,6 +199,7 @@
       GenkiModal.open({
         title : '<span class="en">Settings Manager</span><span class="ja">ウェブサイトの設定</span>',
         content : '<p><span class="en">You can manage your settings for Tobira Study Resources in this window.<br>※ Please note that all data is saved locally to the browser, so clearing your browser\'s cache will reset your settings.</span><span class="ja">ここでTobira Study Resourcesの設定が変更できます。<br>※ウェブサイトの設定はブラウザーで保存していますのでキャッシュをクリアすると失います。注意してください。</span></p>'+
+        
         '<div class="section-title"><span class="en">Display</span><span class="ja">表示</span></div>'+
         '<ul class="genki-settings-list">'+
           '<li>'+
@@ -307,7 +308,10 @@
             '<a id="settings-save-exercise-data" class="button" download="Tobira Exercise Score Data" href="data:,' + (storageOK && localStorage.TobiraResults ? encodeURIComponent(localStorage.TobiraResults.replace(/\n/g, '\r\n')) : '') + '"><i class="fa">&#xf019;</i><span class="en">Save</span><span class="ja">セーブする</span></a>'+
             '<button id="settings-load-exercise-data" class="button" onclick="this.nextSibling.click();"><i class="fa">&#xf093;</i><span class="en">Load</span><span class="ja">ロードする</span></button><input id="settings-load-data" type="file" accept=".txt,.json,.js" onchange="GenkiSettings.loadExerciseData(this);" style="visibility:hidden;position:absolute;">'+
           '</li>'+
+        '</ul>'+
         
+        '<div class="section-title"><span class="en">Other</span><span class="ja">他の設定</span></div>'+
+        '<ul class="genki-settings-list">'+
           '<li>'+
             '<span class="label" title="' + (GenkiLang == 'ja' ? 'すべての設定が初期状態に戻せます。' : 'Resets all settings to their default value.') + '"><span class="en">Revert to Default Settings:</span><span class="ja">デフォルト設定に戻す：</span></span>'+
             '<button id="settings-load-exercise-data" class="button" onclick="GenkiSettings.revert();"><i class="fa">&#xf0e2;</i><span class="en">Reset Settings</span><span class="ja">設定をリセットする</span></button>'+
@@ -325,6 +329,11 @@
           right : '10%'
         }
       });
+      
+      // insert label title description as visible text under the label
+      for (var a = document.querySelectorAll('.genki-settings-list .label'), i = 0, j = a.length; i < j; i++) {
+        a[i].insertAdjacentHTML('beforeEnd', '<div class="desc">' + a[i].title.replace(/\n/g, '<br>') + '</div>');
+      }
     },
     
     
