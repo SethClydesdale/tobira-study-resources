@@ -2032,7 +2032,7 @@ ruby rt {
 }
 
 .genki-settings-list .label .desc {
-  font-size:13px;
+  display:block;
   font-weight:normal;
 }
 
