@@ -781,14 +781,14 @@
       GenkiModal.open({
         title : '<span class="en">Random Exercise List</span><span class="ja">ランダム練習リスト</span>',
         content : 
-          '<span class="en">Please select the exercises you would like to practice.</span><span class="ja">練習するための練習問題を選択してください。</span>'+
+          '<span class="en">Please select the exercises that you would like to practice.</span><span class="ja">練習するための練習問題を選択してください。</span>'+
           '<div class="columns-2 clear">'+
             '<div>'+
               '<h3 class="main-color"><span class="en">Selected Exercises</span><span class="ja">選択した練習問題</span></h3>'+
               '<div id="random-selected" class="random-exercise-list"></div>'+
             '</div>'+
             '<div>'+
-              '<h3 class="main-color"><span class="en">Exercies</span><span class="ja">練習問題</span></h3>'+
+              '<h3 class="main-color"><span class="en">Exercises</span><span class="ja">練習問題</span></h3>'+
               '<div id="random-list" class="random-exercise-list"></div>'+
             '</div>'+
           '</div>'+
