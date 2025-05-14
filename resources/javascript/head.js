@@ -485,7 +485,7 @@
         title : '<span class="en">Exercise Score Data</span><span class="ja">練習の得点データ</span>',
         content : 
         '<div class="center">'+
-          '<textarea id="copy-data" onfocus="this.select();" style="width:80%;height:150px;" readonly>' + (storageOK && localStorage.QuartetResults ? JSON.stringify(JSON.parse(localStorage.QuartetResults), '', '  ') : GenkiLang == 'ja' ? 'データが見つかりませんでした。(ᓀ‸ᓂ)' : 'No data found. (ᓀ‸ᓂ)') + '</textarea><br>'+
+          '<textarea id="copy-data" onfocus="this.select();" style="width:80%;height:150px;" readonly>' + (storageOK && localStorage.TobiraResults ? JSON.stringify(JSON.parse(localStorage.TobiraResults), '', '  ') : GenkiLang == 'ja' ? 'データが見つかりませんでした。(ᓀ‸ᓂ)' : 'No data found. (ᓀ‸ᓂ)') + '</textarea><br>'+
           '<button class="button" onclick="CopyText(document.getElementById(\'copy-data\').value, this);"><i class="fa">&#xf0c5;</i><span class="en">Copy</span><span class="ja">コピーする</span></button>'+
         '</div>',
         
