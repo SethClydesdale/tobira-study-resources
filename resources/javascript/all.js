@@ -167,7 +167,7 @@
 
             // offline
             player.addEventListener(Twitch.Player.OFFLINE, function () {
-              stream.childNode.stop();
+              stream.querySelector('iframe').src = 'about:blank';
             });
 
             // online
@@ -181,7 +181,7 @@
               );
               GenkiAnn.msg = document.querySelectorAll('.announcement');
 
-              stream.childNode.stop();
+              stream.querySelector('iframe').src = 'about:blank';
             });
           };
 
