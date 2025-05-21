@@ -165,7 +165,7 @@
 
             // offline
             player.addEventListener(Twitch.Player.OFFLINE, function () {
-              stream.parentNode.removeChild(stream);
+              //stream.parentNode.removeChild(stream);
             });
 
             // online
@@ -179,7 +179,7 @@
               );
               GenkiAnn.msg = document.querySelectorAll('.announcement');
 
-              stream.parentNode.removeChild(stream);
+              //stream.parentNode.removeChild(stream);
             });
           };
 
