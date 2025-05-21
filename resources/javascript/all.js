@@ -141,6 +141,51 @@
             GenkiAnn.rotate();
           }
         }
+        
+        
+        // Live Stream announcement (only shows when stream is active)
+        if (window.location.protocol != 'file:') {
+          var script = document.createElement('SCRIPT'),
+              stream = document.createElement('DIV');
+
+          stream.id = 'stream';
+          stream.style.display = 'none';
+
+          script.src = 'https://player.twitch.tv/js/embed/v1.js';
+          script.async = true;
+          script.onload = function () {
+            var options = {
+              width: 300,
+              height: 300,
+              channel: "sethc95",
+              parent: ["sethclydesdale.github.io"]
+            };
+
+            var player = new Twitch.Player("stream", options);
+
+            // offline
+            player.addEventListener(Twitch.Player.OFFLINE, function () {
+              stream.parentNode.removeChild(stream);
+            });
+
+            // online
+            player.addEventListener(Twitch.Player.ONLINE, function () {
+              document.querySelector('.announcement:not(.announce-hidden)').className += ' announce-hidden';
+              GenkiAnn.list.insertAdjacentHTML('afterBegin',
+                '<div class="announcement">'+
+                  '<span class="date">LIVE</span>'+
+                  'Come hang out and watch the development progress of Quartet Study Resources on <a href="https://www.twitch.tv/sethc95" target="_blank">Twitch</a>.'+
+                '</div>'
+              );
+              GenkiAnn.msg = document.querySelectorAll('.announcement');
+
+              stream.parentNode.removeChild(stream);
+            });
+          };
+
+          document.body.appendChild(script);
+          document.body.appendChild(stream);
+        }
       }
     };
     
