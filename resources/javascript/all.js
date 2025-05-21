@@ -158,14 +158,16 @@
               width: 300,
               height: 300,
               channel: "sethc95",
-              parent: ["sethclydesdale.github.io"]
+              parent: ["sethclydesdale.github.io"],
+              muted: true,
+              autoplay: false
             };
 
             var player = new Twitch.Player("stream", options);
 
             // offline
             player.addEventListener(Twitch.Player.OFFLINE, function () {
-              //stream.parentNode.removeChild(stream);
+              stream.childNode.stop();
             });
 
             // online
@@ -179,7 +181,7 @@
               );
               GenkiAnn.msg = document.querySelectorAll('.announcement');
 
-              //stream.parentNode.removeChild(stream);
+              stream.childNode.stop();
             });
           };
 
