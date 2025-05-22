@@ -176,7 +176,7 @@
                 document.querySelector('.announcement:not(.announce-hidden)').className += ' announce-hidden';
                 GenkiAnn.list.insertAdjacentHTML('afterBegin',
                   '<div class="announcement">'+
-                    '<span class="date">LIVE</span>'+
+                    '<span class="date"><span class="t-red" style="margin-right:1px;">●</span>LIVE</span>'+
                     'Come hang out and watch the development progress of Quartet Study Resources on <a href="https://www.twitch.tv/sethc95" target="_blank">Twitch</a>.'+
                   '</div>'
                 );
