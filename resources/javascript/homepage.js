@@ -197,13 +197,13 @@
   // # EXERCISE RESULTS #
   // Displays exercise results next to each exercise
   if (storageOK && localStorage.TobiraResults) {
-    var exResults = JSON.parse(localStorage.TobiraResults), k, a;
+    var exResults = JSON.parse(localStorage.TobiraResults), k;
 
     for (k in exResults) {
-      a = document.querySelector('a[href*="' + k + '"]');
-
-      if (a) {
-        a.parentNode.insertAdjacentHTML('beforeend', '&nbsp;<span class="exercise-results result--' + (exResults[k] == 100 ? 'perfect' : exResults[k] >= 70 ? 'good' : exResults[k] >= 50 ? 'average' : 'low') + '" title="' + (GenkiLang == 'ja' ? 'テストの得点' : 'Exercise score') + '"><i class="fa">' + (exResults[k] == 100 ? '&#xf005;' : exResults[k] >= 70 ? '&#xf00c;' : exResults[k] >= 50 ? '&#xf10c;' : '&#xf00d;') + '</i> ' + exResults[k] + '%</span>');
+      for (var a = document.querySelectorAll('a[href*="' + k + '/"]'), i = 0, j = a.length; i < j; i++) {
+        if (a[i]) {
+          a[i].parentNode.insertAdjacentHTML('beforeend', '&nbsp;<span class="exercise-results result--' + (exResults[k] == 100 ? 'perfect' : exResults[k] >= 70 ? 'good' : exResults[k] >= 50 ? 'average' : 'low') + '" title="' + (GenkiLang == 'ja' ? 'テストの得点' : 'Exercise score') + '"><i class="fa">' + (exResults[k] == 100 ? '&#xf005;' : exResults[k] >= 70 ? '&#xf00c;' : exResults[k] >= 50 ? '&#xf10c;' : '&#xf00d;') + '</i> ' + exResults[k] + '%</span>');
+        }
       }
     }
   }  
