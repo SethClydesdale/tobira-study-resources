@@ -368,7 +368,7 @@ Genki.jisho = {
     { ja : "浮く|うく", en : "to float; be cheerful", v : "u-Vi", l : "Tobira: 漢字表" },
     { ja : "受け入れる|うけいれる", en : "to accept", v : "ru-Vt", l : "L6読1" },
     { ja : "受付|うけつけ", en : "receptionist; reception desk", v : "N", l : "L3考" },
-    { ja : "付ける|うける", en : "to attach; join; affix", v : "ru-Vt", l : "Tobira: 漢字表" },
+    { ja : "付ける|つける", en : "to attach; join; affix", v : "ru-Vt", l : "Tobira: 漢字表" },
     { ja : "動かす|うごかす", en : "to move~", v : "u-Vt", l : "L3読" },
     { ja : "動く|うごく", en : "to move", v : "u-Vi", l : "L3読" },
     { ja : "薄い|うすい", en : "thin", v : "A", l : "L12読" },
