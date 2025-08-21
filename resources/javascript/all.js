@@ -173,7 +173,7 @@
                 autoplay: false
               };
 
-              var player = new Twitch.Player('stream', options);
+              var player = new Twitch.Embed('stream', options);
 
               // offline; do nothing except kill the iframe
               player.addEventListener(Twitch.Player.OFFLINE, function () {
