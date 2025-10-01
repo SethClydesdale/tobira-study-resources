@@ -15,6 +15,11 @@
       // [NOT USED CURRENTLY; GSR remnant] edition: [OPTIONAL] restricts the announcement to a specific edition, possible values are: 3rd || 2nd, announcements are global by default
       msg : [
         {
+          date : '9/30/25',
+          content : "Starting today, we will begin improving the exercise titles so that it's easier to find exercises specific to the grammar points that you want to review."
+        },
+        
+        {
           date : '9/11/25',
           content : "<strong class='t-red'>IMPORTANT:</strong> All projects will be frozen until further notice. Please <a href=\"https://ko-fi.com/post/Important-Information-Regarding-Genki-and-Quartet-D1D21L4B1S\" target=\"_blank\">click here</a> for more details."
         },
