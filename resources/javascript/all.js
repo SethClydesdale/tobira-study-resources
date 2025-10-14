@@ -15,6 +15,11 @@
       // [NOT USED CURRENTLY; GSR remnant] edition: [OPTIONAL] restricts the announcement to a specific edition, possible values are: 3rd || 2nd, announcements are global by default
       msg : [
         {
+          date : '10/14/25',
+          content : "The titles have been updated for all basic grammar exercises. <a href=\"https://ko-fi.com/post/Tobira-Study-Resources-Update-K3K21MTZAT\" target=\"_blank\">Click here</a> for more details."
+        },
+        
+        {
           date : '9/30/25',
           content : "Starting today, we will begin improving the exercise titles so that it's easier to find exercises specific to the grammar points that you want to review."
         },
