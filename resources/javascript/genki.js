@@ -2987,4 +2987,21 @@
   
   // initial setup
   Genki.init();
+  
+  
+  // # SURVEY NOTICE #
+  if (storageOK && localStorage.surveySeen != 'true') {
+    GenkiModal.open({
+      title : 'New Project Survey',
+      content : 
+      '<p>Hello!</p>'+
+      '<p>We just published a survey for our new Japanese language learning project and we\'d like to hear from you! If you\'d like to take the survey, please <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1Va17b0VOOWq1-kviAnN1xirbWDdDrEoy859TZdrd7hKyXg/viewform?usp=sharing&ouid=118165279165809355359%E2%80%8B" target="_blank">click here</a>.</p>'+
+      '<p>You can find more information on this new project and the survey <a href="https://ko-fi.com/Post/New-Project-Survey-L3L51MZM9T" target="_blank">here</a>.</p>'+
+      '<p>Thank you and we look forward to hearing from you!</p>',
+
+      closeCallback : function () {
+        localStorage.surveySeen = true;
+      }
+    });
+  }
 }(window, document));
