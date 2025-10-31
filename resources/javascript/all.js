@@ -281,7 +281,7 @@
           side : 'right',
           offset : '0px',
           tooltip : 'Squash..?',
-          image : getPaths() + '/resources/images/holiday/halloween.png',
+          image : getPaths() + 'resources/images/holiday/halloween.png',
           web : 'background-color:#000;width:2px;height:999em;position:absolute;right:42%;bottom:95%;'
         },
         // move the spider based on the percentage the document has been scrolled
