@@ -1,20 +1,13 @@
-﻿# Tobira Study Resources
-Tobira Study Resources is a website that offers a vast collection of exercises for practicing what is taught in [Tobira: Gateway to Advanced Japanese](https://tobiraweb.9640.jp/). Much like [Genki Study Resources](https://github.com/SethClydesdale/genki-study-resources), this was created to help aid those self-studying with Tobira, and if you've used its predecessor you should feel right at home! Choose one of the links below to begin testing the Japanese you've learned in Tobira!
+﻿# CJK Study Resources
+CJK Study Resources is a website that offers a vast collection of exercises for practicing Chinese, Korean and Japanese, Much like 808CJK[https://www.youtube.com/@808CJK], this was created to help aid those self-studying languages like Chinese, Japanese and korean by learning all 3 at the same time, and if you've used its predecessor you should feel right at home! Choose one of the links below to begin learning!
 
-
-**Online Version:** https://sethclydesdale.github.io/tobira-study-resources/
-
-**Offline Version:** [download](https://github.com/SethClydesdale/tobira-study-resources/archive/refs/heads/main.zip)
-
-If you're interested in learning Japanese, please see [this guide](https://sethclydesdale.github.io/tobira-study-resources/help/japanese-guide/)!
-
------
+---
 
 **Quick Links**
 - [Using the Offline Version](#using-the-offline-version)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Suggestions, Feedback, Bug Reports](#suggestions-feedback-bug-reports)
-- [Resources for Studying Japanese](#resources-for-studying-japanese)
+- [Resources for Studying](#resources-for-studying-japanese)
 - [Special Thanks](#special-thanks)
 - [Donate](#donate)
 
@@ -61,8 +54,12 @@ The following shortcuts can only be used in multiple choice exercises to quickly
 
 
 ### Suggestions, Feedback, Bug Reports
-If you have any suggestions, feedback, questions, or bugs to report, feel free to [open a new issue](https://github.com/SethClydesdale/tobira-study-resources/issues) in this repository. For alternative contact methods and detailed reporting information, please see the [report page](https://sethclydesdale.github.io/tobira-study-resources/report/) for Tobira Study Resources.
+If you have any suggestions, feedback, questions, or bugs to report, feel free to [open a new issue](https://github.com/SimonFCO/CJK-study-resources/issues) in this repository.
 
+### Resources for Studying Chinese
+
+##### Tools
+- [Interactive Pinyin Chart](https://yoyochinese.com/chinese-learning-tools/Mandarin-Chinese-pronunciation-lesson/pinyin-chart-table) (Great for learning pronounciation)
 
 ### Resources for Studying Japanese
 
@@ -85,9 +82,13 @@ If you have any suggestions, feedback, questions, or bugs to report, feel free t
 - [Imabi](http://www.imabi.net/) (very useful for more advanced learning/explanations)
 - [/r/LearnJapanese Wiki](https://www.reddit.com/r/LearnJapanese/wiki/index) (additional resources, guides, etc.)
 
+### Resources for Studying Korean
+
+##### Tools
+- [lets learn hangul](http://letslearnhangul.com/) (Great for learning the hangul alphabet)
 
 ### Special Thanks
-Tobira Study Resources was made possible thanks to...
+CJK Study Resources was made possible thanks to...
 - [Kurosio](https://www.9640.jp/), Mayumi Oka, Michio Tsutsui, Junko Kondo, Shoko Emori, Yoshiro Hanai, and Satoru Ishikawa for Tobira: Gateway to Advanced Japanese.
 - [Jen](https://twitter.com/SethC1995/status/1405616116739751945) for gifting me the Tobira textbook.
 - [Patrick Roberts](https://github.com/patrickroberts) for [his help with an algorithm](https://stackoverflow.com/a/59337819/12502093) that helped make mixed kana/kanji answers possible in written quizzes.
@@ -102,4 +103,4 @@ The following resources were used in this project. I couldn't have done it witho
 - [Kanji Canvas](https://github.com/asdfjkl/kanjicanvas) for the stroke order exercises.
 
 ### Donate
-If you found this project helpful and would like to donate, please see the [Donate page](https://sethclydesdale.github.io/tobira-study-resources/donate/) for ways to support my work.
+If you found this project helpful and would like to donate then your out off luck because i dont have anything like that currently
