@@ -303,7 +303,7 @@
               '<span class="en">Romaji Input Mode:</span><span class="ja">ローマ字入力：</span>'+
               '<span class="desc"><small class="en">Toggles Romaji Input Mode for written quizzes. If you don\'t have a Japanese keyboard or IME, enable this setting to type in Hiragana or Katakana using Romaji.</small><small class="ja">筆記テストではローマ字入力がトグルできます。</small></span>'+
             '</span>'+
-            '<button id="settings-answer-checker" class="button' + (romajiInput == 'true' ? '' : ' opt-off') + '" onclick="KantanSettings.updateRomajiInput(this);">' + (romajiInput == 'true' ? 'ON' : 'OFF') + '</button>'+
+            '<button id="settings-answer-checker" class="button' + (romajiInput == 'true' ? '' : ' opt-off') + '" onclick="GenkiSettings.updateRomajiInput(this);">' + (romajiInput == 'true' ? 'ON' : 'OFF') + '</button>'+
           '</li>'+
         
           '<li>'+
