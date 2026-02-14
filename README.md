@@ -50,6 +50,7 @@ Shortcuts that can only be used in exercises.
 | <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>E</kbd> | Open/Close the Exercise List |
 | <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Q</kbd> | Open/Close the Quick Dictionary |
 | <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>F</kbd> | Toggle Furigana on/off |
+| <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>K</kbd> | Toggle Romaji Input Mode (when enabled) between Hiragana and Katakana |
 | <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>C</kbd> | Check answers (for written exercises) |
 
 ##### Multiple Choice
@@ -96,6 +97,7 @@ Tobira Study Resources was made possible thanks to...
 - Everyone who helped support or contribute to this project, whether it was on GitHub or outside of it.
 
 The following resources were used in this project. I couldn't have done it without them, so check them out!
+- [Wanakana](https://wanakana.com/) for the Romaji IME used in written exercises.
 - [Font-Awesome](https://github.com/FortAwesome/Font-Awesome) for the awesome icons.
 - [dragula](https://github.com/bevacqua/dragula) for the simple drag and drop.
 - [easytimer.js](https://github.com/albert-gonzalez/easytimer.js) for the super easy timer.

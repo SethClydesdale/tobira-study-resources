@@ -32,6 +32,9 @@
     // tells us if text selection mode is enabled (for multi-choice quizzes)
     textSelectMode : false,
     
+    // tells us if the student prefers easy mode for written exercises
+    romajiInput : storageOK && localStorage.romajiInput || 'false',
+    
     // tells us if stroke numbers are visible (for stroke order exercises)
     strokeNumberDisplay : false,
     
@@ -140,6 +143,9 @@
       review : '<div id="review-exercise" class="center clearfix"><button id="review-button" class="button" onclick="Genki.review();"><i class="fa">&#xf02d;</i><span class="en">Review</span><span class="ja">復習する</span></button></div>',
       // furigana toggle for vocab exercises
       toggle_furigana : '<button id="toggle-furigana" class="button" onclick="Genki.toggle.furigana(this);"><i class="fa">&#xf2a8;</i><span class="en">' + ((storageOK && localStorage.furiganaVisible == 'false') ? 'Show' : 'Hide') + ' Furigana</span><span class="ja">振り仮名を' + ((storageOK && localStorage.furiganaVisible == 'false') ? '' : '非') + '表示する</span></button>',
+      // toggles Romaji Input mode
+      romaji_input_on : '<button id="toggle-romaji-input" class="button" onclick="Genki.toggle.romajiInput(this);"><i class="fa">&#xf11c;</i><span class="en">Romaji Input: </span><span class="ja">ローマ字入力：</span>ON</button>',
+      romaji_input_off : '<button id="toggle-romaji-input" class="button opt-off" onclick="Genki.toggle.romajiInput(this);"><i class="fa">&#xf11c;</i><span class="en">Romaji Input: </span><span class="ja">ローマ字入力：</span>OFF</button>',
       // check answers button for written exercises
       check_answers : '<div id="check-answers" class="center"><button id="check-answers-button" class="button" onclick="Genki.check.answers();"><i class="fa">&#xf00c;</i><span class="en">Check Answers</span><span class="ja">答え合わせをする</span></button></div>',
       back_to_dict : '<button class="button" onclick="Genki.reset();"><i class="fa">&#xf021;</i><span class="en">Back to Dictionary</span><span class="ja">辞書に戻る</span></button>'
@@ -640,7 +646,10 @@
         }
 
         // add the quiz to the document
-        zone.innerHTML = quiz + '</div>' + Genki.lang.check_answers.replace('</div>', helper ? Genki.lang.toggle_furigana + '</div>' : '</div>');
+        zone.innerHTML = quiz + '</div>' + Genki.lang.check_answers.replace('</div>',
+           Genki.lang['romaji_input_' + (Genki.romajiInput == 'false' ? 'off' : 'on')]+
+          (helper ? Genki.lang.toggle_furigana + '</div>' : '')+
+        '</div>');
         
         // add a class for non-practice writing exercises
         // this will remove helpers, forcing the student to recall what they learned
@@ -656,6 +665,9 @@
         
         // auto-focus the first input field
         Genki.input.map[0].autofocus = true;
+        
+        // activate Romaji Input if enabled
+        if (Genki.romajiInput == 'true') Genki.toggle.romajiInput(null, true);
       }
 
 
@@ -859,10 +871,18 @@
             '</span>';
           }
           
-        }) + '</div>' + Genki.lang.check_answers.replace('()', '(false, \'fill\')').replace('</div>', helper ? Genki.lang.toggle_furigana + '</div>' : '</div>');
+        }) + '</div>' + Genki.lang.check_answers.replace('()', '(false, \'fill\')').replace('</div>',
+                           '<br>'+
+                           Genki.lang['romaji_input_' + (Genki.romajiInput == 'false' ? 'off' : 'on')]+
+                           (helper ? Genki.lang.toggle_furigana : '')+
+                         '</div>'
+                        );
         
         // auto-focus the first input field
         document.querySelector('.writing-zone-input').autofocus = true;
+        
+        // activate Romaji Input if enabled
+        if (Genki.romajiInput == 'true') Genki.toggle.romajiInput(null, true);
       }
       
       
@@ -2189,6 +2209,96 @@
           default :
             break;
         }
+      },
+      
+      
+      // toggles Romaji Input mode for written quizzes
+      romajiInput : function (caller, init) {
+        getScript('wanakana.min.js', function () {
+          var state = init ? false : Genki.romajiInput,
+              input = document.querySelectorAll('.writing-zone-input'),
+              controls = document.getElementById('IME_Controls'),
+              footer = document.querySelector('footer'),
+              i = 0, j = input.length;
+
+          // turn Romaji Input off
+          if (state == 'true') {
+            state = 'false';
+            
+            for (; i < j; i++) {
+              wanakana.unbind(input[i]);
+            }
+
+            // update button states
+            caller.innerHTML = caller.innerHTML.replace(/ON/g, 'OFF');
+            caller.className += ' opt-off';
+            
+            // hide ime controls
+            if (controls) controls.style.display = 'none';
+            if (footer) footer.style.paddingBottom = '';
+          }
+
+          // turn Romaji Input on
+          else {
+            state = 'true';
+            Genki.IMEMode = Genki.IMEMode ? Genki.IMEMode : 'Hiragana';
+            
+            for (; i < j; i++) {
+              for (; i < j; i++) {
+                wanakana.bind(input[i], {
+                  IMEMode: 'to' + Genki.IMEMode
+                });
+              }
+            }
+
+            // update button states
+            if (!init) {
+              caller.innerHTML = caller.innerHTML.replace(/OFF/g, 'ON');
+              caller.className = caller.className.replace('opt-off', '');
+            }
+            
+            // showIME controls
+            if (controls) {
+              controls.style.display = '';
+            }
+            // create IME controls
+            else {
+              document.body.insertAdjacentHTML('beforeend', '<div id="IME_Controls"><button id="ime-toggle" class="button" onclick="Genki.switchIMEMode(this);" title="Toggle input mode (CTRL+ALT+K)"><i class="fa">&#xf11c;</i><span class="en">Input Mode: Hiragana</span><span class="ja">入力モード：ひらがな</span></button></div>');
+            }
+            
+            if (footer) footer.style.paddingBottom = '60px';
+          }
+
+          // update final state
+          if (!init) {
+            localStorage.romajiInput = state;
+            Genki.romajiInput = state;
+          }
+        }, function () { return window.wanakana ? true : false });
+      }
+      
+    },
+    
+    
+    // switches the IME mode between Hiragana and Katakana when Romaji Input is enabled
+    switchIMEMode : function (caller) {
+      // switch to Katakana
+      if (Genki.IMEMode == 'Hiragana') {
+        Genki.IMEMode = 'Katakana';
+        caller.innerHTML = caller.innerHTML.replace('Hiragana', 'Katakana').replace('ひらがな', 'カタカナ');
+      }
+      // switch to Hiragana
+      else {
+        Genki.IMEMode = 'Hiragana';
+        caller.innerHTML = caller.innerHTML.replace('Katakana', 'Hiragana').replace('カタカナ', 'ひらがな');
+      }
+      
+      // update inputs with new IME mode
+      for (var input = document.querySelectorAll('.writing-zone-input'), i = 0, j = input.length; i < j; i++) {
+        wanakana.unbind(input[i]);
+        wanakana.bind(input[i], {
+          IMEMode: 'to' + Genki.IMEMode
+        });
       }
     },
 

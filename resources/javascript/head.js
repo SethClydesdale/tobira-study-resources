@@ -188,6 +188,7 @@
           randomExercise = localStorage.genkiRandomExercise || 'all',
           skipExType = localStorage.genkiSkipExType || 'false',
           jishoLookUp = localStorage.genkiJishoLookUp || 'true',
+          romajiInput = localStorage.romajiInput || 'false',
           strokeOrder = localStorage.strokeOrderVisible || 'true',
           tracingGuide = localStorage.tracingGuideVisible || 'true',
           timerAutoPause = localStorage.timerAutoPause || 'true',
@@ -295,6 +296,14 @@
               '<span class="desc"><small class="en">Hides the choices in multiple choice vocab exercises, similar to a flash card mode.<br>Turn this mode on if you keep looking at the choices to remember what a word means instead of recalling it from memory.</small><small class="ja">単語の選択式モードで選択肢が隠せます。</small></span>'+
             '</span>'+
             '<button id="settings-vocab-spoiler" class="button' + (spoilerMode == 'true' ? '' : ' opt-off') + '" onclick="GenkiSettings.updateSpoilerMode(this);">' + (spoilerMode == 'true' ? 'ON' : 'OFF') + '</button>'+
+          '</li>'+
+        
+          '<li>'+
+            '<span class="label">'+
+              '<span class="en">Romaji Input Mode:</span><span class="ja">ローマ字入力：</span>'+
+              '<span class="desc"><small class="en">Toggles Romaji Input Mode for written quizzes. If you don\'t have a Japanese keyboard or IME, enable this setting to type in Hiragana or Katakana using Romaji.</small><small class="ja">筆記テストではローマ字入力がトグルできます。</small></span>'+
+            '</span>'+
+            '<button id="settings-answer-checker" class="button' + (romajiInput == 'true' ? '' : ' opt-off') + '" onclick="KantanSettings.updateRomajiInput(this);">' + (romajiInput == 'true' ? 'ON' : 'OFF') + '</button>'+
           '</li>'+
         
           '<li>'+
@@ -898,6 +907,30 @@
     },
     
     
+    // updates Romaji Input mode preference
+    updateRomajiInput : function (caller) {
+      var state = false;
+      
+      // determine state either from button
+      GenkiSettings.updateButton(caller, function (callback_state) {
+        state = callback_state;
+      });
+      
+      // update Romaji Input state
+      var button = document.getElementById('toggle-romaji-input');
+      
+      // if the button is on the page, click it
+      if (button) {
+        button.click();
+        
+      } else {
+        state = state == 'ON' ? 'true' : 'false';
+        localStorage.romajiInput = state;
+        Genki.romajiInput = state;
+      }
+    },
+    
+    
     // updates furigana preference
     updateFurigana : function (caller) {
       GenkiSettings.updateButton(caller, function (state) {
@@ -1130,6 +1163,32 @@
     xhttp.send();
 
     return xhttp;
+  };
+  
+  
+    // # GET AND LOAD LOCAL SCRIPTS #
+  window.loadedScripts = {};
+  
+  // callback value "firstRun" = true or false; tells if this is the first time the script has run
+  // check = function that returns true or false when checking for a global variable and such
+  window.getScript = function (file, callback, check) {
+    if (check) {
+      loadedScripts[file] = check();
+    }
+    
+    if (!loadedScripts[file]) {
+      loadedScripts[file] = true;
+
+      var script = document.createElement('SCRIPT');
+      script.src = getPaths() + 'resources/javascript/' + file;
+      script.onload = function () {
+        if (callback) callback(true);
+      };
+      document.body.appendChild(script);
+      
+    } else {
+      callback(false);
+    }
   };
   
   
