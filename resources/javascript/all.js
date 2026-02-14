@@ -536,6 +536,11 @@
         case 'c':
           button = document.getElementById('check-answers-button');
           break;
+        
+        // toggle IME mode (ctrl+alt+k)
+        case 'k':
+          button = window.Kantan && Kantan.pref.kanaInput == 'true' ? document.getElementById('ime-toggle') : null;
+          break;
           
         // toggle language (ctrl+alt+l)
         case 'l':
