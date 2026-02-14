@@ -539,7 +539,7 @@
         
         // toggle IME mode (ctrl+alt+k)
         case 'k':
-          button = window.Kantan && Kantan.pref.kanaInput == 'true' ? document.getElementById('ime-toggle') : null;
+          button = window.Genki && Genki.romajiInput == 'true' ? document.getElementById('ime-toggle') : null;
           break;
           
         // toggle language (ctrl+alt+l)
