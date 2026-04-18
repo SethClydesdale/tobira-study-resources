@@ -15,6 +15,11 @@
       // [NOT USED CURRENTLY; GSR remnant] edition: [OPTIONAL] restricts the announcement to a specific edition, possible values are: 3rd || 2nd, announcements are global by default
       msg : [
         {
+          date : '4/18/26',
+          content : "Check out our latest <a href=\"https://ko-fi.com/post/Kantan-Japanese-Progress-Update-4-A0A11Y0IA1\" target=\"_blank\">progress update</a> for Kantan Japanese! Progress is proceedingly smoothly and we're getting closer to a public release!"
+        },
+        
+        {
           date : '2/14/26',
           content : "Happy New Year! To kick off the new year we\'ve posted a new <a href=\"https://ko-fi.com/post/Kantan-Japanese-Progress-Update-3-Z8Z01U7DVR\" target=\"_blank\">progress update</a> for Kantan Japanese! We hope you look forward to it!"
         },
